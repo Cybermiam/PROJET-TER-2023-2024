@@ -1,0 +1,686 @@
+@prefix : <http://patrimalp.org/brocarts/thesaurus#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://patrimalp.org/brocarts/thesaurus> a owl:Ontology ;
+	owl:versionIRI <http://patrimalp.org/brocarts/thesaurus/1.0> ;
+	owl:imports <http://www.w3.org/2004/02/skos/core> ;
+	rdfs:comment "Ontologie définissnt les concepts SKOS permettant de définir les valeurs des propriétés décrivant les brocarts"@fr .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#broader
+
+skos:broader a owl:AnnotationProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://patrimalp.org/brocarts/thesaurus#AnalysisDevice
+
+:AnalysisDevice a owl:Class ;
+	rdfs:subClassOf skos:Concept ;
+	rdfs:comment "Définit l’appareil d’analyse utilisé pour l’étude de l’oeuvre" ;
+	rdfs:label "Appareil d’Analyse" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#Denomination
+
+:Denomination a owl:Class ;
+	rdfs:subClassOf skos:Concept ;
+	rdfs:comment "Définit la qualification d'une oeuvre (par exemple Sculpture en Ronde Bosse Isolée)" ;
+	rdfs:label "Dénomination" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#Localisation
+
+:Localisation a owl:Class ;
+	rdfs:subClassOf skos:Concept ;
+	rdfs:comment "Localisation du brocard sur l'oeuvre" ;
+	rdfs:label "Localisation"@fr .
+# 
+# http://patrimalp.org/brocarts/thesaurus#Material
+
+:Material a owl:Class ;
+	rdfs:subClassOf skos:Concept ;
+	rdfs:comment "Définit le materiau d'une oeuvre" ;
+	rdfs:label "Matériau" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#MaterialType
+
+:MaterialType a owl:Class ;
+	rdfs:subClassOf skos:Concept ;
+	rdfs:comment "Définit le type de matériau d'une œuvre" ;
+	rdfs:label "Type de Matériau" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#Orientation
+
+:Orientation a owl:Class ;
+	rdfs:subClassOf skos:Concept ;
+	rdfs:comment "Définit l'orientation d'un brocart" ;
+	rdfs:label "Orientation" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#PatchShape
+
+:PatchShape a owl:Class ;
+	rdfs:subClassOf skos:Concept ;
+	rdfs:comment "Définit la forme d'une plaque" ;
+	rdfs:label "Forme de Plaque" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#PreparationLayer
+
+:PreparationLayer a owl:Class ;
+	rdfs:subClassOf skos:Concept ;
+	rdfs:comment "Définit la couche de préparation d'un brocard" , "Définit la couche de préparation d'un brocart" ;
+	rdfs:label "Couche de Préparation" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#ProtectionLevel
+
+:ProtectionLevel a owl:Class ;
+	rdfs:subClassOf skos:Concept ;
+	rdfs:comment "Définit le niveau de protection d'une oeuvre" ;
+	rdfs:label "Niveau de Protection" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#Theme
+
+:Theme a owl:Class ;
+	rdfs:subClassOf skos:Concept ;
+	rdfs:comment "Définit le thème d'une œuvre" ;
+	rdfs:label "Thème" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#TypeOfBrocade
+
+:TypeOfBrocade a owl:Class ;
+	rdfs:subClassOf skos:Concept ;
+	rdfs:comment "Typologie de répartition du brocart" ;
+	rdfs:label "Type de Brocard" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#TypeOfEngraving
+
+:TypeOfEngraving a owl:Class ;
+	rdfs:subClassOf skos:Concept ;
+	rdfs:comment "Définit la typologie des gravures d'un élément de brocart" ;
+	rdfs:label "Type de Gravure" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://patrimalp.org/brocarts/thesaurus#analysisDevice1
+
+:analysisDevice1 a owl:NamedIndividual , :AnalysisDevice ;
+	skos:definition "Définit l’appareil d’analyse utilisé pour l’étude de l’oeuvre" ;
+	skos:prefLabel "Appareil d’analyse" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#analysisDevice2
+
+:analysisDevice2 a owl:NamedIndividual , :AnalysisDevice ;
+	skos:broader :analysisDevice1 ;
+	skos:prefLabel "Microscope" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#analysisDevice3
+
+:analysisDevice3 a owl:NamedIndividual , :AnalysisDevice ;
+	skos:broader :analysisDevice2 ;
+	skos:prefLabel "Microscope électronique" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#denomination1
+
+:denomination1 a owl:NamedIndividual , :Denomination ;
+	skos:definition "Définit la qualification d'une oeuvre (par exemple Sculpture en Ronde Bosse Isolée)" ;
+	skos:prefLabel "Denomination" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#denomination10
+
+:denomination10 a owl:NamedIndividual , :Denomination ;
+	skos:broader :denomination9 ;
+	skos:prefLabel "Ronde-bosse isolée" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#denomination11
+
+:denomination11 a owl:NamedIndividual , :Denomination ;
+	skos:broader :denomination9 ;
+	skos:prefLabel "Ronde-bosse en groupe" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#denomination12
+
+:denomination12 a owl:NamedIndividual , :Denomination ;
+	skos:broader :denomination5 ;
+	skos:prefLabel "Sculpture d'applique" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#denomination13
+
+:denomination13 a owl:NamedIndividual , :Denomination ;
+	skos:broader :denomination12 ;
+	skos:prefLabel "Sculpture d'applique isolée" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#denomination14
+
+:denomination14 a owl:NamedIndividual , :Denomination ;
+	skos:broader :denomination12 ;
+	skos:prefLabel "Sculpture d'applique en groupe" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#denomination2
+
+:denomination2 a owl:NamedIndividual , :Denomination ;
+	skos:broader :denomination1 ;
+	skos:prefLabel "Peinture" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#denomination3
+
+:denomination3 a owl:NamedIndividual , :Denomination ;
+	skos:broader :denomination2 ;
+	skos:prefLabel "Peinture murale" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#denomination4
+
+:denomination4 a owl:NamedIndividual , :Denomination ;
+	skos:broader :denomination2 ;
+	skos:prefLabel "Peinture sur panneau" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#denomination5
+
+:denomination5 a owl:NamedIndividual , :Denomination ;
+	skos:broader :denomination1 ;
+	skos:prefLabel "Sculpture" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#denomination6
+
+:denomination6 a owl:NamedIndividual , :Denomination ;
+	skos:broader :denomination5 ;
+	skos:prefLabel "Bas relief" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#denomination7
+
+:denomination7 a owl:NamedIndividual , :Denomination ;
+	skos:broader :denomination6 ;
+	skos:prefLabel "Bas relief isolé" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#denomination8
+
+:denomination8 a owl:NamedIndividual , :Denomination ;
+	skos:broader :denomination6 ;
+	skos:prefLabel "Bas relief en groupe" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#denomination9
+
+:denomination9 a owl:NamedIndividual , :Denomination ;
+	skos:broader :denomination5 ;
+	skos:prefLabel "Ronde-bosse" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#localisation1
+
+:localisation1 a owl:NamedIndividual , :Localisation ;
+	skos:definition "Localisation du brocard sur l'oeuvre" ;
+	skos:prefLabel "Localisation" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#localisation10
+
+:localisation10 a owl:NamedIndividual , :Localisation ;
+	skos:broader :localisation9 ;
+	skos:prefLabel "Houppelande" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#localisation11
+
+:localisation11 a owl:NamedIndividual , :Localisation ;
+	skos:broader :localisation4 ;
+	skos:prefLabel "Tunique" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#localisation12
+
+:localisation12 a owl:NamedIndividual , :Localisation ;
+	skos:broader :localisation11 ;
+	skos:prefLabel "Cotte" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#localisation13
+
+:localisation13 a owl:NamedIndividual , :Localisation ;
+	skos:broader :localisation11 ;
+	skos:prefLabel "Dalmatique" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#localisation14
+
+:localisation14 a owl:NamedIndividual , :Localisation ;
+	skos:broader :localisation13 ;
+	skos:prefLabel "Dalmatique haut" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#localisation15
+
+:localisation15 a owl:NamedIndividual , :Localisation ;
+	skos:broader :localisation13 ;
+	skos:prefLabel "Dalmatique bas" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#localisation16
+
+:localisation16 a owl:NamedIndividual , :Localisation ;
+	skos:broader :localisation7 ;
+	skos:prefLabel "Chape (arrière genou à senestre) " .
+# 
+# http://patrimalp.org/brocarts/thesaurus#localisation17
+
+:localisation17 a owl:NamedIndividual , :Localisation ;
+	skos:broader :localisation6 ;
+	skos:prefLabel "Manteau revers" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#localisation18
+
+:localisation18 a owl:NamedIndividual , :Localisation ;
+	skos:broader :localisation1 ;
+	skos:prefLabel "Sous la manche" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#localisation19
+
+:localisation19 a owl:NamedIndividual , :Localisation ;
+	skos:broader :localisation6 ;
+	skos:prefLabel "Manteau (vierge)" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#localisation2
+
+:localisation2 a owl:NamedIndividual , :Localisation ;
+	skos:broader :localisation1 ;
+	skos:prefLabel "Fond de décors" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#localisation20
+
+:localisation20 a owl:NamedIndividual , :Localisation ;
+	skos:broader :localisation6 ;
+	skos:prefLabel "Manteau (Marie Madeleine)" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#localisation21
+
+:localisation21 a owl:NamedIndividual , :Localisation ;
+	skos:broader :localisation9 ;
+	skos:prefLabel "Robe (Marie Madeleine)" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#localisation22
+
+:localisation22 a owl:NamedIndividual , :Localisation ;
+	skos:broader :localisation11 ;
+	skos:prefLabel "Tunique (saint Jean)" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#localisation23
+
+:localisation23 a owl:NamedIndividual , :Localisation ;
+	skos:broader :localisation1 ;
+	skos:prefLabel "Maximien" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#localisation3
+
+:localisation3 a owl:NamedIndividual , :Localisation ;
+	skos:broader :localisation1 ;
+	skos:prefLabel "Tenture/Fond" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#localisation4
+
+:localisation4 a owl:NamedIndividual , :Localisation ;
+	skos:broader :localisation1 ;
+	skos:prefLabel "Vêtement médiéval" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#localisation5
+
+:localisation5 a owl:NamedIndividual , :Localisation ;
+	skos:broader :localisation4 ;
+	skos:prefLabel "Cotte-Hardie" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#localisation6
+
+:localisation6 a owl:NamedIndividual , :Localisation ;
+	skos:broader :localisation4 ;
+	skos:prefLabel "Manteau" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#localisation7
+
+:localisation7 a owl:NamedIndividual , :Localisation ;
+	skos:broader :localisation6 ;
+	skos:prefLabel "Chape" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#localisation8
+
+:localisation8 a owl:NamedIndividual , :Localisation ;
+	skos:broader :localisation4 ;
+	skos:prefLabel "Pourpoint" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#localisation9
+
+:localisation9 a owl:NamedIndividual , :Localisation ;
+	skos:broader :localisation4 ;
+	skos:prefLabel "Robe" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#material1
+
+:material1 a owl:NamedIndividual , :Material ;
+	skos:definition "Définit le materiau d'une oeuvre" ;
+	skos:prefLabel "Materiau" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#material2
+
+:material2 a owl:NamedIndividual , :Material ;
+	skos:broader :material1 ;
+	skos:prefLabel "Bois polychromé" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#material3
+
+:material3 a owl:NamedIndividual , :Material ;
+	skos:broader :material1 ;
+	skos:prefLabel "Pierre polychromée" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#material4
+
+:material4 a owl:NamedIndividual , :Material ;
+	skos:broader :material1 ;
+	skos:prefLabel "Peinture murale" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#materialType1
+
+:materialType1 a owl:NamedIndividual , :MaterialType ;
+	skos:definition "Définit le type de matériau d'une œuvre" ;
+	skos:prefLabel "Type Materiau" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#materialType2
+
+:materialType2 a owl:NamedIndividual , :MaterialType ;
+	skos:broader :materialType1 ;
+	skos:prefLabel "tilleul" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#materialType3
+
+:materialType3 a owl:NamedIndividual , :MaterialType ;
+	skos:broader :materialType1 ;
+	skos:prefLabel "Pierre de Seyssel" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#orientation1
+
+:orientation1 a owl:NamedIndividual , :Orientation ;
+	skos:definition "Définit l'orientation d'un brocart" ;
+	skos:prefLabel "Orientation" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#orientation2
+
+:orientation2 a owl:NamedIndividual , :Orientation ;
+	skos:broader :orientation1 ;
+	skos:prefLabel "Face" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#orientation3
+
+:orientation3 a owl:NamedIndividual , :Orientation ;
+	skos:broader :orientation1 ;
+	skos:prefLabel "Dextre" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#orientation4
+
+:orientation4 a owl:NamedIndividual , :Orientation ;
+	skos:broader :orientation1 ;
+	skos:prefLabel "Senestre" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#orientation5
+
+:orientation5 a owl:NamedIndividual , :Orientation ;
+	skos:broader :orientation1 ;
+	skos:prefLabel "Revers" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#patchShape1
+
+:patchShape1 a owl:NamedIndividual , :PatchShape ;
+	skos:definition "Définit la forme d'une plaque" ;
+	skos:prefLabel "Forme de plaque" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#patchShape2
+
+:patchShape2 a owl:NamedIndividual , :PatchShape ;
+	skos:broader :patchShape1 ;
+	skos:prefLabel "Circulaire" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#patchShape3
+
+:patchShape3 a owl:NamedIndividual , :PatchShape ;
+	skos:broader :patchShape1 ;
+	skos:prefLabel "Elipse" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#patchShape4
+
+:patchShape4 a owl:NamedIndividual , :PatchShape ;
+	skos:broader :patchShape1 ;
+	skos:prefLabel "Recouvrant" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#patchShape5
+
+:patchShape5 a owl:NamedIndividual , :PatchShape ;
+	skos:broader :patchShape1 ;
+	skos:prefLabel "Rectangulaire" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#patchShape6
+
+:patchShape6 a owl:NamedIndividual , :PatchShape ;
+	skos:broader :patchShape1 ;
+	skos:prefLabel "Non identifiable" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#patchShape7
+
+:patchShape7 a owl:NamedIndividual , :PatchShape ;
+	skos:broader :patchShape1 ;
+	skos:prefLabel "Losange" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#preparationLayer1
+
+:preparationLayer1 a owl:NamedIndividual , :PreparationLayer ;
+	skos:definition "Définit la couche de préparation d'un brocart" ;
+	skos:prefLabel "Couche Préparation" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#preparationLayer2
+
+:preparationLayer2 a owl:NamedIndividual , :PreparationLayer ;
+	skos:broader :preparationLayer1 ;
+	skos:prefLabel "Sulfate de calcium" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#preparationLayer3
+
+:preparationLayer3 a owl:NamedIndividual , :PreparationLayer ;
+	skos:broader :preparationLayer1 ;
+	skos:prefLabel "Jaune et blanche" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#preparationLayer4
+
+:preparationLayer4 a owl:NamedIndividual , :PreparationLayer ;
+	skos:broader :preparationLayer1 ;
+	skos:prefLabel "Gypse" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#protectionLevel1
+
+:protectionLevel1 a owl:NamedIndividual , :ProtectionLevel ;
+	skos:definition "Définit le niveau de protection d'une oeuvre" ;
+	skos:prefLabel "NiveauProtection" , "Protection Level" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#protectionLevel2
+
+:protectionLevel2 a owl:NamedIndividual , :ProtectionLevel ;
+	skos:broader :protectionLevel1 ;
+	skos:prefLabel "Non protégé" , "None-protected" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#protectionLevel3
+
+:protectionLevel3 a owl:NamedIndividual , :ProtectionLevel ;
+	skos:broader :protectionLevel6 ;
+	skos:prefLabel "Inscrit au titre des objets" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#protectionLevel4
+
+:protectionLevel4 a owl:NamedIndividual , :ProtectionLevel ;
+	skos:broader :protectionLevel1 ;
+	skos:prefLabel "Classé" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#protectionLevel5
+
+:protectionLevel5 a owl:NamedIndividual , :ProtectionLevel ;
+	skos:broader :protectionLevel4 ;
+	skos:prefLabel "Classé au titre des monument historiques" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#protectionLevel6
+
+:protectionLevel6 a owl:NamedIndividual , :ProtectionLevel ;
+	skos:broader :protectionLevel1 ;
+	skos:prefLabel "Inscrit" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#theme1
+
+:theme1 a owl:NamedIndividual , :Theme ;
+	skos:definition "Définit le thème d'une œuvre" ;
+	skos:prefLabel "Type Theme" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#theme2
+
+:theme2 a owl:NamedIndividual , :Theme ;
+	skos:broader :theme1 ;
+	skos:prefLabel "Géométrique" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#theme3
+
+:theme3 a owl:NamedIndividual , :Theme ;
+	skos:broader :theme1 ;
+	skos:prefLabel "Végétal" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#theme4
+
+:theme4 a owl:NamedIndividual , :Theme ;
+	skos:broader :theme1 ;
+	skos:prefLabel "Ornementaux" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#typeOfBrocade1
+
+:typeOfBrocade1 a owl:NamedIndividual , :TypeOfBrocade ;
+	skos:definition "Typologie de répartition du brocart" ;
+	skos:prefLabel "Typologie Brocart" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#typeOfBrocade2
+
+:typeOfBrocade2 a owl:NamedIndividual , :TypeOfBrocade ;
+	skos:broader :typeOfBrocade1 ;
+	skos:prefLabel "Galons" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#typeOfBrocade3
+
+:typeOfBrocade3 a owl:NamedIndividual , :TypeOfBrocade ;
+	skos:broader :typeOfBrocade1 ;
+	skos:prefLabel "Juxtaposé" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#typeOfBrocade4
+
+:typeOfBrocade4 a owl:NamedIndividual , :TypeOfBrocade ;
+	skos:broader :typeOfBrocade1 ;
+	skos:prefLabel "Parsemé" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#typeOfBrocade5
+
+:typeOfBrocade5 a owl:NamedIndividual , :TypeOfBrocade ;
+	skos:broader :typeOfBrocade1 ;
+	skos:prefLabel "Non défini" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#typeOfEngraving1
+
+:typeOfEngraving1 a owl:NamedIndividual , :TypeOfEngraving ;
+	skos:definition "Définit la typologie des gravures d'un élément de brocart" ;
+	skos:prefLabel "Type Gravure" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#typeOfEngraving10
+
+:typeOfEngraving10 a owl:NamedIndividual , :TypeOfEngraving ;
+	skos:broader :typeOfEngraving1 ;
+	skos:prefLabel "Courbes" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#typeOfEngraving11
+
+:typeOfEngraving11 a owl:NamedIndividual , :TypeOfEngraving ;
+	skos:broader :typeOfEngraving10 ;
+	skos:prefLabel "Courbes en pointillé" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#typeOfEngraving12
+
+:typeOfEngraving12 a owl:NamedIndividual , :TypeOfEngraving ;
+	skos:broader :typeOfEngraving10 ;
+	skos:prefLabel "Courbes en traits pleins" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#typeOfEngraving13
+
+:typeOfEngraving13 a owl:NamedIndividual , :TypeOfEngraving ;
+	skos:broader :typeOfEngraving1 ;
+	skos:prefLabel "Cercles/anneaux" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#typeOfEngraving14
+
+:typeOfEngraving14 a owl:NamedIndividual , :TypeOfEngraving ;
+	skos:broader :typeOfEngraving1 ;
+	skos:prefLabel "Autre" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#typeOfEngraving15
+
+:typeOfEngraving15 a owl:NamedIndividual , :TypeOfEngraving ;
+	skos:broader :typeOfEngraving1 ;
+	skos:prefLabel "Bractées épineuses" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#typeOfEngraving2
+
+:typeOfEngraving2 a owl:NamedIndividual , :TypeOfEngraving ;
+	skos:broader :typeOfEngraving1 ;
+	skos:prefLabel "Stries" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#typeOfEngraving3
+
+:typeOfEngraving3 a owl:NamedIndividual , :TypeOfEngraving ;
+	skos:broader :typeOfEngraving2 ;
+	skos:prefLabel "Stries verticales " .
+# 
+# http://patrimalp.org/brocarts/thesaurus#typeOfEngraving4
+
+:typeOfEngraving4 a owl:NamedIndividual , :TypeOfEngraving ;
+	skos:broader :typeOfEngraving2 ;
+	skos:prefLabel "Stries horizontales" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#typeOfEngraving5
+
+:typeOfEngraving5 a owl:NamedIndividual , :TypeOfEngraving ;
+	skos:broader :typeOfEngraving2 ;
+	skos:prefLabel "Stries en biais" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#typeOfEngraving6
+
+:typeOfEngraving6 a owl:NamedIndividual , :TypeOfEngraving ;
+	skos:broader :typeOfEngraving2 ;
+	skos:prefLabel "Stries obliques" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#typeOfEngraving7
+
+:typeOfEngraving7 a owl:NamedIndividual , :TypeOfEngraving ;
+	skos:broader :typeOfEngraving2 ;
+	skos:prefLabel "Stries parallèles" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#typeOfEngraving8
+
+:typeOfEngraving8 a owl:NamedIndividual , :TypeOfEngraving ;
+	skos:broader :typeOfEngraving1 ;
+	skos:prefLabel "Quadrillage" .
+# 
+# http://patrimalp.org/brocarts/thesaurus#typeOfEngraving9
+
+:typeOfEngraving9 a owl:NamedIndividual , :TypeOfEngraving ;
+	skos:broader :typeOfEngraving8 ;
+	skos:prefLabel "Quadrillage en biais" .
+# 
+# Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

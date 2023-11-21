@@ -1,0 +1,994 @@
+@prefix : <http://patrimalp.org/brocarts/onto#> .
+@prefix sf: <http://www.opengis.net/ont/sf#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix brocartso:   <http://patrimalp.org/brocarts/onto#> .
+@prefix brocartsr:   <http://patrimalp.org/brocarts/resource/> .
+@prefix brocartsvoc: <http://patrimalp.org/brocarts/thesaurus#> .
+@prefix patrimalpo:  <http://patrimalp.org/ontologies/patrimalp#> .
+@prefix patrimalpr:  <http://patrimalp.org/resource/> .
+@prefix wikidata:    <https://www.wikidata.org/entity/> .
+@base <http://patrimalp.org/brocarts/resources/> .
+
+<http://patrimalp.org/brocarts/resources> rdf:type owl:Ontology ;
+                                      owl:versionIRI <http://patrimalp.org/brocarts/ressouces/1.0> ;
+                                      owl:imports <http://patrimalp.org/brocarts/onto/1.0> ;
+                                      rdfs:comment "Ontolgie contenant les données des brocarts issues du catalogue"@fr .
+
+   patrimalpr:site5Image1
+            rdf:type             patrimalpo:Image ;
+            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/c/c9/Prieur%C3%A9_du_Bourget_du_Lac_%28Chevet_de_la_prioriale%29.jpg" .
+    
+    patrimalpr:site4Geom
+            rdf:type       geo:Geometry ;
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.938995201 , 45.57776086]}"^^geo:geoJSONLiteral ;
+            geo:asWKT      "POINT(5.938995201 45.57776086)"^^geo:wktLiteral .
+    
+    patrimalpr:site20
+            rdf:type         patrimalpo:City ;
+            rdfs:label       "Chambéry" ;
+            geo:hasGeometry  patrimalpr:site20Geom .
+    
+    brocartsr:oeuvre7brocartsList
+            rdf:type  brocartso:ListOfBrocades .
+    
+    brocartsr:brocartE.8
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    brocartsr:oeuvre8infos
+            rdf:type                brocartso:WOAInformations ;
+            brocartso:denomination  brocartsvoc:denomination10 ;
+            brocartso:depth         17 ;
+            brocartso:height        40 ;
+            brocartso:material      brocartsvoc:material2 ;
+            brocartso:width         94 .
+    
+    patrimalpr:site1Geom
+            rdf:type       geo:Geometry ;
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.93931 , 45.5581]}"^^geo:geoJSONLiteral ;
+            geo:asWKT      "POINT(5.93931 45.5581)"^^geo:wktLiteral .
+    
+    brocartsr:oeuvre13identification
+            rdf:type                   brocartso:WOAIdentification ;
+            brocartso:creationDate     "2020-11-09"^^xsd:date ;
+            brocartso:period           "fin XVe / début XVIe" ;
+            brocartso:protectionLevel  brocartsvoc:protectionLevel2 .
+    
+    brocartsr:brocartA.3
+            rdf:type                    brocartso:Brocade ;
+            brocartso:colouredLayer     "Rouge" ;
+            brocartso:glazeColour       "Rouge" ;
+            brocartso:orientation       brocartsvoc:orientation2 ;
+            brocartso:position          brocartsvoc:localisation7 ;
+            brocartso:preparationLayer  brocartsvoc:preparationLayer2 ;
+            brocartso:theme             brocartsvoc:theme3 ;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocade4 ;
+            brocartso:typeOfEngraving   brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:oeuvre10brocartsList
+            rdf:type  brocartso:ListOfBrocades .
+    
+    patrimalpr:site9  rdf:type  patrimalpo:Monastery ;
+            rdfs:label        "Musée du Monastère Royal de Brou" ;
+            brocartso:oeuvre  brocartsr:oeuvre12 ;
+            patrimalpo:image  patrimalpr:site9Image1 ;
+            geo:hasGeometry   patrimalpr:site9Geom .
+    
+    brocartsr:brocartB.3
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    brocartsr:oeuvre7
+            rdf:type                      patrimalpo:Statue ;
+            rdfs:label                    "Saint Jean Baptiste" ;
+            brocartso:appliedBrocades     brocartsr:oeuvre7brocartsList ;
+            brocartso:generalInformation  brocartsr:oeuvre7infos ;
+            brocartso:identification      brocartsr:oeuvre7identification .
+    
+    brocartsr:oeuvre11
+            rdf:type                      patrimalpo:Statue ;
+            rdfs:label                    "Saint Crépin" ;
+            brocartso:appliedBrocades     brocartsr:oeuvre11brocartsList ;
+            brocartso:generalInformation  brocartsr:oeuvre11infos ;
+            brocartso:identification      brocartsr:oeuvre11identification .
+    
+    patrimalpr:site13Image1
+            rdf:type             patrimalpo:Image ;
+            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Chapelle_Ste_Catherine_St_Nicolas_%C3%89gieu_Rossillon_3.jpg/567px-Chapelle_Ste_Catherine_St_Nicolas_%C3%89gieu_Rossillon_3.jpg" .
+    
+    patrimalpr:site17Geom
+            rdf:type  geo:Geometry .
+    
+    patrimalpr:site3Image1
+            rdf:type             patrimalpo:Image ;
+            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/e/ed/Monast%C3%A8re_royal_de_Brou_%28%C3%A9glise%29_%281%29.JPG" .
+    
+    brocartsr:oeuvre3brocartsList
+            rdf:type  brocartso:ListOfBrocades .
+    
+    brocartsr:brocartA.12
+            rdf:type                    brocartso:Brocade ;
+            brocartso:colouredLayer     "Rouge" ;
+            brocartso:glazeColour       "Rouge" ;
+            brocartso:orientation       brocartsvoc:orientation4 ;
+            brocartso:position          brocartsvoc:localisation7 ;
+            brocartso:preparationLayer  brocartsvoc:preparationLayer2 ;
+            brocartso:theme             brocartsvoc:theme3 ;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocade4 ;
+            brocartso:typeOfEngraving   brocartsvoc:typeOfEngraving4 .
+    
+    patrimalpr:site14Geom
+            rdf:type  geo:Geometry .
+    
+    brocartsr:brocartD.3
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade3 .
+    
+    patrimalpr:site11Geom
+            rdf:type       geo:Geometry ;
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [6.21449 , 45.53363]}"^^geo:geoJSONLiteral ;
+            geo:asWKT      "POINT(6.21449 45.53363)"^^geo:wktLiteral .
+    
+    patrimalpr:site15
+            rdf:type         patrimalpo:Building ;
+            rdfs:label       "Ancienne commanderie antonine de Chambéry" ;
+            geo:hasGeometry  patrimalpr:site15Geom .
+    
+    brocartsr:brocartE.3
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    brocartsr:brocartD.1.6
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    patrimalpr:site21Geom
+            rdf:type  geo:Geometry .
+    
+    patrimalpr:site4  rdf:type  patrimalpo:Castle ;
+            rdfs:label        "Château de Montrottier" ;
+            rdfs:seeAlso      wikidata:Q2255651 ;
+            brocartso:oeuvre  brocartsr:oeuvre5 ;
+            patrimalpo:image  patrimalpr:site4Image1 ;
+            geo:hasGeometry   patrimalpr:site4Geom .
+    
+    brocartsr:oeuvre14identification
+            rdf:type                   brocartso:WOAIdentification ;
+            brocartso:creationDate     "2020-11-09"^^xsd:date ;
+            brocartso:period           "XIIIe siècle ?" ;
+            brocartso:protectionLevel  brocartsvoc:protectionLevel2 ;
+            brocartso:siteOfOrigin     patrimalpr:site6 .
+    
+    patrimalpr:site8Geom
+            rdf:type       geo:Geometry ;
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [7.716740075 , 45.1290306]}"^^geo:geoJSONLiteral ;
+            geo:asWKT      "POINT(7.716740075 45.1290306)"^^geo:wktLiteral .
+    
+    patrimalpr:site5Geom
+            rdf:type       geo:Geometry ;
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.860482407 , 45.64752788]}"^^geo:geoJSONLiteral ;
+            geo:asWKT      "POINT(5.860482407 45.64752788)"^^geo:wktLiteral .
+    
+    brocartsr:oeuvre2
+            rdf:type                      patrimalpo:Statue ;
+            rdfs:label                    "Sainte Catherine d'Alexandrie" ;
+            brocartso:appliedBrocades     brocartsr:oeuvre2brocartsList ;
+            brocartso:generalInformation  brocartsr:oeuvre2infos ;
+            brocartso:identification      brocartsr:oeuvre2identification .
+    
+    brocartsr:oeuvre15brocartsList
+            rdf:type  brocartso:ListOfBrocades .
+    
+    brocartsr:oeuvre1brocartsList
+            rdf:type  brocartso:ListOfBrocades .
+    
+    patrimalpr:site23
+            rdf:type         patrimalpo:Church ;
+            rdfs:label       "Église Saints-Pierre-et-Paul" ;
+            rdfs:seeAlso     wikidata:Q60392390 ;
+            geo:hasGeometry  patrimalpr:site23Geom .
+    
+    brocartsr:brocartC2
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    brocartsr:oeuvre4identification
+            rdf:type                   brocartso:WOAIdentification ;
+            brocartso:creationDate     "2020-10-13"^^xsd:date ;
+            brocartso:period           "Après 1496" ;
+            brocartso:protectionLevel  brocartsvoc:protectionLevel4 ;
+            brocartso:siteOfOrigin     patrimalpr:site15 .
+    
+    patrimalpr:site2Geom
+            rdf:type       geo:Geometry ;
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.226045639 , 46.19514614]}"^^geo:geoJSONLiteral ;
+            geo:asWKT      "POINT(5.226045639 46.19514614)"^^geo:wktLiteral .
+    
+    brocartsr:brocartA.6
+            rdf:type                    brocartso:Brocade ;
+            brocartso:colouredLayer     "Rouge" ;
+            brocartso:glazeColour       "Rouge" ;
+            brocartso:orientation       brocartsvoc:orientation3 , brocartsvoc:orientation2 ;
+            brocartso:position          brocartsvoc:localisation7 ;
+            brocartso:preparationLayer  brocartsvoc:preparationLayer2 ;
+            brocartso:theme             brocartsvoc:theme3 ;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocade4 ;
+            brocartso:typeOfEngraving   brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:brocartB.6
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    brocartsr:oeuvre14
+            rdf:type                      patrimalpo:Statue ;
+            rdfs:label                    "Vierge parturiente" ;
+            brocartso:appliedBrocades     brocartsr:oeuvre14brocartsList ;
+            brocartso:generalInformation  brocartsr:oeuvre14infos ;
+            brocartso:identification      brocartsr:oeuvre14identification .
+    
+    patrimalpr:site10
+            rdf:type          patrimalpo:Building ;
+            rdfs:label        "Collection privée Piémontaise " ;
+            brocartso:oeuvre  brocartsr:oeuvre13 ;
+            geo:hasGeometry   patrimalpr:site10Geom .
+    
+    brocartsr:brocartD.1.1
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    patrimalpr:site18Geom
+            rdf:type  geo:Geometry .
+    
+    patrimalpr:site8Image1
+            rdf:type             patrimalpo:Image ;
+            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/3/32/Piedmont_in_Italy.svg" .
+    
+    patrimalpr:site15Geom
+            rdf:type  geo:Geometry .
+    
+    brocartsr:oeuvre13brocartsList
+            rdf:type  brocartso:ListOfBrocades .
+    
+    patrimalpr:site12Geom
+            rdf:type       geo:Geometry ;
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.68064 , 45.80312]}"^^geo:geoJSONLiteral ;
+            geo:asWKT      "POINT(5.68064 45.80312)"^^geo:wktLiteral .
+    
+    patrimalpr:site18
+            rdf:type         patrimalpo:Church ;
+            rdfs:label       "Ancienne Eglise Saint-Julien de Duingt" ;
+            geo:hasGeometry  patrimalpr:site18Geom .
+    
+    brocartsr:oeuvre13infos
+            rdf:type                brocartso:WOAInformations ;
+            brocartso:denomination  brocartsvoc:denomination9 ;
+            brocartso:material      brocartsvoc:material2 .
+    
+    brocartsr:brocartD.1.9
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    brocartsr:brocartE.6
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade3 .
+    
+    brocartsr:oeuvre10infos
+            rdf:type                brocartso:WOAInformations ;
+            brocartso:denomination  brocartsvoc:denomination10 ;
+            brocartso:depth         9 ;
+            brocartso:height        32 ;
+            brocartso:material      brocartsvoc:material2 ;
+            brocartso:width         52 .
+    
+    brocartsr:oeuvre16identification
+            rdf:type                   brocartso:WOAIdentification ;
+            brocartso:creationDate     "2020-11-09"^^xsd:date ;
+            brocartso:period           "vers 1500" ;
+            brocartso:protectionLevel  brocartsvoc:protectionLevel4 ;
+            brocartso:siteOfOrigin     patrimalpr:site23 .
+    
+    brocartsr:brocartA.1
+            rdf:type                   brocartso:Brocade ;
+            brocartso:glazeColour      "Rouge" ;
+            brocartso:orientation      brocartsvoc:orientation2 ;
+            brocartso:patchShape       brocartsvoc:patchShape6 ;
+            brocartso:position         brocartsvoc:localisation14 , brocartsvoc:localisation15 ;
+            brocartso:theme            brocartsvoc:theme2 ;
+            brocartso:typeOfBrocade    brocartsvoc:typeOfBrocade3 ;
+            brocartso:typeOfEngraving  brocartsvoc:typeOfEngraving8 , brocartsvoc:typeOfEngraving5 , brocartsvoc:typeOfEngraving13 , brocartsvoc:typeOfEngraving12 .
+    
+    patrimalpr:site7  rdf:type  patrimalpo:Church ;
+            rdfs:label        "Église de Myans" ;
+            rdfs:seeAlso      wikidata:Q3471725 ;
+            brocartso:oeuvre  brocartsr:oeuvre9 ;
+            patrimalpo:image  patrimalpr:site7Image1 ;
+            geo:hasGeometry   patrimalpr:site7Geom .
+    
+    patrimalpr:site22Geom
+            rdf:type  geo:Geometry .
+    
+    brocartsr:oeuvre6brocartsList
+            rdf:type  brocartso:ListOfBrocades .
+    
+    brocartsr:oeuvre6identification
+            rdf:type                   brocartso:WOAIdentification ;
+            brocartso:creationDate     "2020-07-12"^^xsd:date ;
+            brocartso:period           "1/4 du XVIe siècle" ;
+            brocartso:protectionLevel  brocartsvoc:protectionLevel3 ;
+            brocartso:siteOfOrigin     patrimalpr:site16 .
+    
+    brocartsr:oeuvre14infos
+            rdf:type                brocartso:WOAInformations ;
+            brocartso:denomination  brocartsvoc:denomination11 ;
+            brocartso:material      brocartsvoc:material3 ;
+            brocartso:width         55 .
+    
+    brocartsr:brocartB.1
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade3 .
+    
+    patrimalpr:site9Geom
+            rdf:type       geo:Geometry ;
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [6.039967621 , 45.89884798]}"^^geo:geoJSONLiteral ;
+            geo:asWKT      "POINT(6.039967621 45.89884798)"^^geo:wktLiteral .
+    
+    brocartsr:oeuvre5
+            rdf:type                      patrimalpo:Statue ;
+            rdfs:label                    "Vierge de pitié entre Saint Jean et Marie Madeleine" ;
+            brocartso:appliedBrocades     brocartsr:oeuvre5brocartsList ;
+            brocartso:generalInformation  brocartsr:oeuvre5infos ;
+            brocartso:identification      brocartsr:oeuvre5identification .
+    
+    patrimalpr:site6Geom
+            rdf:type       geo:Geometry ;
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [6.21443655 , 45.5338653]}"^^geo:geoJSONLiteral ;
+            geo:asWKT      "POINT(6.21443655 45.5338653)"^^geo:wktLiteral .
+    
+    brocartsr:brocartE.11
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade3 .
+    
+    brocartsr:brocartA.9
+            rdf:type                    brocartso:Brocade ;
+            brocartso:colouredLayer     "Rouge" ;
+            brocartso:glazeColour       "Rouge" ;
+            brocartso:numberOfPatches   12 ;
+            brocartso:orientation       brocartsvoc:orientation3 ;
+            brocartso:patchHeight       7 ;
+            brocartso:patchShape        brocartsvoc:patchShape7 ;
+            brocartso:patchWidth        8 ;
+            brocartso:position          brocartsvoc:localisation16 ;
+            brocartso:preparationLayer  brocartsvoc:preparationLayer2 ;
+            brocartso:theme             brocartsvoc:theme3 ;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocade4 ;
+            brocartso:typeOfEngraving   brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:brocartA.10
+            rdf:type                    brocartso:Brocade ;
+            brocartso:colouredLayer     "Rouge" ;
+            brocartso:glazeColour       "Rouge" ;
+            brocartso:orientation       brocartsvoc:orientation4 ;
+            brocartso:position          brocartsvoc:localisation7 ;
+            brocartso:preparationLayer  brocartsvoc:preparationLayer2 ;
+            brocartso:theme             brocartsvoc:theme3 ;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocade4 ;
+            brocartso:typeOfEngraving   brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:brocartB.9
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    patrimalpr:site2Image1
+            rdf:type             patrimalpo:Image ;
+            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/e/e5/Archives_d%C3%A9partementales_Ain_Bourg_Bresse_3.jpg" .
+    
+    brocartsr:oeuvre10identification
+            rdf:type                   brocartso:WOAIdentification ;
+            brocartso:creationDate     "2020-11-09"^^xsd:date ;
+            brocartso:period           "fin XVe / début XVIe" ;
+            brocartso:protectionLevel  brocartsvoc:protectionLevel2 ;
+            brocartso:siteOfOrigin     patrimalpr:site18 .
+    
+    patrimalpr:site13
+            rdf:type          patrimalpo:Chapel ;
+            rdfs:label        "Chapelle Sainte-Catherine-et-Saint-Nicolas d'Égieu" ;
+            rdfs:seeAlso      wikidata:Q60367472 ;
+            patrimalpo:image  patrimalpr:site13Image1 ;
+            geo:hasGeometry   patrimalpr:site13Geom .
+    
+    brocartsr:brocartE.1
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade3 .
+    
+    brocartsr:brocartB.11
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    brocartsr:brocartD.1.4
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    patrimalpr:site2  rdf:type  patrimalpo:Church ;
+            rdfs:label        "Église Notre-Dame" ;
+            rdfs:seeAlso      wikidata:Q38386547 ;
+            brocartso:oeuvre  brocartsr:oeuvre3 ;
+            patrimalpo:image  patrimalpr:site2Image1 ;
+            geo:hasGeometry   patrimalpr:site2Geom .
+    
+    patrimalpr:site21
+            rdf:type         patrimalpo:GeographicalArea ;
+            rdfs:label       "Bresse" ;
+            geo:hasGeometry  patrimalpr:site21Geom .
+    
+    brocartsr:brocartE.9
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    brocartsr:brocartA.4
+            rdf:type                    brocartso:Brocade ;
+            brocartso:colouredLayer     "Rouge" ;
+            brocartso:glazeColour       "Rouge" ;
+            brocartso:orientation       brocartsvoc:orientation2 , brocartsvoc:orientation3 ;
+            brocartso:position          brocartsvoc:localisation7 ;
+            brocartso:preparationLayer  brocartsvoc:preparationLayer2 ;
+            brocartso:theme             brocartsvoc:theme3 ;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocade4 ;
+            brocartso:typeOfEngraving   brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:oeuvre14brocartsList
+            rdf:type  brocartso:ListOfBrocades .
+    
+    patrimalpr:site23Geom
+            rdf:type       geo:Geometry ;
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [6.00574 , 45.73066]}"^^geo:geoJSONLiteral ;
+            geo:asWKT      "POINT(6.00574 45.73066)"^^geo:wktLiteral .
+    
+    brocartsr:brocartB.4
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    patrimalpr:site20Geom
+            rdf:type  geo:Geometry .
+    
+    brocartsr:oeuvre8
+            rdf:type                      patrimalpo:Statue ;
+            rdfs:label                    "Saint Jean l'Evangéliste" ;
+            brocartso:appliedBrocades     brocartsr:oeuvre8brocartsList ;
+            brocartso:generalInformation  brocartsr:oeuvre8infos ;
+            brocartso:identification      brocartsr:oeuvre8identification .
+    
+    brocartsr:oeuvre12
+            rdf:type                      patrimalpo:Statue ;
+            rdfs:label                    "Marie Madeleine" ;
+            brocartso:appliedBrocades     brocartsr:oeuvre12brocartsList ;
+            brocartso:generalInformation  brocartsr:oeuvre12infos ;
+            brocartso:identification      brocartsr:oeuvre12identification .
+    
+    brocartsr:oeuvre4infos
+            rdf:type                brocartso:WOAInformations ;
+            brocartso:denomination  brocartsvoc:denomination11 ;
+            brocartso:depth         212 ;
+            brocartso:height        405 ;
+            brocartso:material      brocartsvoc:material3 ;
+            brocartso:materialType  brocartsvoc:materialType3 ;
+            brocartso:width         212 .
+    
+    brocartsr:oeuvre1infos
+            rdf:type                brocartso:WOAInformations ;
+            brocartso:denomination  brocartsvoc:denomination10 ;
+            brocartso:material      brocartsvoc:material2 ;
+            brocartso:materialType  brocartsvoc:materialType2 ;
+            brocartso:width         75 .
+    
+    brocartsr:brocartE.14
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    brocartsr:brocartA.13
+            rdf:type                    brocartso:Brocade ;
+            brocartso:colouredLayer     "Rouge" ;
+            brocartso:glazeColour       "Rouge" ;
+            brocartso:orientation       brocartsvoc:orientation4 ;
+            brocartso:position          brocartsvoc:localisation7 ;
+            brocartso:preparationLayer  brocartsvoc:preparationLayer2 ;
+            brocartso:theme             brocartsvoc:theme3 ;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocade4 ;
+            brocartso:typeOfEngraving   brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:oeuvre12identification
+            rdf:type                   brocartso:WOAIdentification ;
+            brocartso:creationDate     "2020-07-23"^^xsd:date ;
+            brocartso:period           "fin XVe / début XVIe" ;
+            brocartso:protectionLevel  brocartsvoc:protectionLevel2 .
+    
+    brocartsr:oeuvre5infos
+            rdf:type                brocartso:WOAInformations ;
+            brocartso:denomination  brocartsvoc:denomination10 ;
+            brocartso:depth         20 ;
+            brocartso:height        59 ;
+            brocartso:material      brocartsvoc:material2 ;
+            brocartso:width         64 .
+    
+    patrimalpr:site7Image1
+            rdf:type             patrimalpo:Image ;
+            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/1/11/Haute-Savoie_%28septembre_2013%29_128.JPG" .
+    
+    brocartsr:oeuvre9brocartsList
+            rdf:type  brocartso:ListOfBrocades .
+    
+    brocartsr:oeuvre2identification
+            rdf:type                   brocartso:WOAIdentification ;
+            brocartso:creationDate     "2020-11-09"^^xsd:date ;
+            brocartso:period           "fin XVe début XVIe" ;
+            brocartso:protectionLevel  brocartsvoc:protectionLevel2 ;
+            brocartso:siteOfOrigin     patrimalpr:site13 .
+    
+    patrimalpr:site16
+            rdf:type         patrimalpo:Hamlet ;
+            rdfs:label       "Hameau de Egieu" ;
+            geo:hasGeometry  patrimalpr:site16Geom .
+    
+    brocartsr:brocartE.4
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    brocartsr:brocartD.1.7
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    brocartsr:oeuvre9infos
+            rdf:type                brocartso:WOAInformations ;
+            brocartso:denomination  brocartsvoc:denomination11 ;
+            brocartso:material      brocartsvoc:material2 ;
+            brocartso:width         130 .
+    
+    brocartsr:oeuvre12brocartsList
+            rdf:type  brocartso:ListOfBrocades .
+    
+    patrimalpr:site5  rdf:type  patrimalpo:Museum ;
+            rdfs:label        "Réserve du Musée Savoisien" ;
+            brocartso:oeuvre  brocartsr:oeuvre7 , brocartsr:oeuvre11 , brocartsr:oeuvre14 , brocartsr:oeuvre16 ;
+            patrimalpo:image  patrimalpr:site5Image1 ;
+            geo:hasGeometry   patrimalpr:site5Geom .
+    
+    brocartsr:oeuvre9identification
+            rdf:type                   brocartso:WOAIdentification ;
+            brocartso:creationDate     "2020-07-09"^^xsd:date ;
+            brocartso:period           "fin XVe / début XVIe" ;
+            brocartso:protectionLevel  brocartsvoc:protectionLevel4 .
+    
+    brocartsr:oeuvre3
+            rdf:type                      patrimalpo:Statue ;
+            rdfs:label                    "Saint Roch" ;
+            brocartso:appliedBrocades     brocartsr:oeuvre3brocartsList ;
+            brocartso:generalInformation  brocartsr:oeuvre3infos ;
+            brocartso:identification      brocartsr:oeuvre3identification .
+    
+    brocartsr:brocartC3
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    brocartsr:oeuvre5brocartsList
+            rdf:type  brocartso:ListOfBrocades .
+    
+    brocartsr:brocartA.7
+            rdf:type                    brocartso:Brocade ;
+            brocartso:colouredLayer     "Rouge" ;
+            brocartso:glazeColour       "Rouge" ;
+            brocartso:orientation       brocartsvoc:orientation3 ;
+            brocartso:position          brocartsvoc:localisation7 ;
+            brocartso:preparationLayer  brocartsvoc:preparationLayer2 ;
+            brocartso:theme             brocartsvoc:theme3 ;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocade4 ;
+            brocartso:typeOfEngraving   brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:brocartE.11.1
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade3 .
+    
+    brocartsr:brocartB.7
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    brocartsr:oeuvre15
+            rdf:type                      patrimalpo:Statue ;
+            rdfs:label                    "Vierge enseignante" ;
+            brocartso:appliedBrocades     brocartsr:oeuvre15brocartsList ;
+            brocartso:generalInformation  brocartsr:oeuvre15infos ;
+            brocartso:identification      brocartsr:oeuvre15identification .
+    
+    patrimalpr:site11
+            rdf:type         patrimalpo:Church ;
+            rdfs:label       "Église Saint-Martin" ;
+            rdfs:seeAlso     wikidata:Q41795771 ;
+            geo:hasGeometry  patrimalpr:site11Geom .
+    
+    brocartsr:brocartD.1.2
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    patrimalpr:site1Image1
+            rdf:type             patrimalpo:Image ;
+            patrimalpo:imageUrl  "http://lig-tdcge.imag.fr/steamer/patrimalp/catalogData/sites/images/site01.jpg" .
+    
+    brocartsr:oeuvre3identification
+            rdf:type                   brocartso:WOAIdentification ;
+            brocartso:creationDate     "2020-07-23"^^xsd:date ;
+            brocartso:period           "1/4 du XVIe siècle" ;
+            brocartso:protectionLevel  brocartsvoc:protectionLevel5 ;
+            brocartso:siteOfOrigin     patrimalpr:site14 .
+    
+    patrimalpr:site19
+            rdf:type         patrimalpo:Chapel ;
+            rdfs:label       "Chapelle de l'Église Saint-Léger" ;
+            geo:hasGeometry  patrimalpr:site19Geom .
+    
+    brocartsr:brocartE.7
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    brocartsr:brocartA.2
+            rdf:type                    brocartso:Brocade ;
+            brocartso:colouredLayer     "Rouge" ;
+            brocartso:glazeColour       "Rouge" ;
+            brocartso:orientation       brocartsvoc:orientation2 ;
+            brocartso:position          brocartsvoc:localisation7 ;
+            brocartso:preparationLayer  brocartsvoc:preparationLayer2 ;
+            brocartso:theme             brocartsvoc:theme3 ;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocade4 ;
+            brocartso:typeOfEngraving   brocartsvoc:typeOfEngraving4 .
+    
+    patrimalpr:site8  rdf:type  patrimalpo:Museum ;
+            rdfs:label        "Musée du Château d'Annecy" ;
+            rdfs:seeAlso      wikidata:Q13389955 ;
+            brocartso:oeuvre  brocartsr:oeuvre10 ;
+            patrimalpo:image  patrimalpr:site8Image1 ;
+            geo:hasGeometry   patrimalpr:site8Geom .
+    
+    brocartsr:brocartB.2
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    brocartsr:oeuvre6
+            rdf:type                      patrimalpo:Statue ;
+            rdfs:label                    "Vierge de Calvaire" ;
+            brocartso:appliedBrocades     brocartsr:oeuvre6brocartsList ;
+            brocartso:generalInformation  brocartsr:oeuvre6infos ;
+            brocartso:identification      brocartsr:oeuvre6identification .
+    
+    brocartsr:oeuvre10
+            rdf:type                      patrimalpo:Statue ;
+            rdfs:label                    "La vision de Saint Hubert" ;
+            brocartso:appliedBrocades     brocartsr:oeuvre10brocartsList ;
+            brocartso:generalInformation  brocartsr:oeuvre10infos ;
+            brocartso:identification      brocartsr:oeuvre10identification .
+    
+    brocartsr:brocartE.12
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    brocartsr:oeuvre15identification
+            rdf:type                   brocartso:WOAIdentification ;
+            brocartso:creationDate     "2020-11-09"^^xsd:date ;
+            brocartso:period           "fin XVe / début XVIe" ;
+            brocartso:protectionLevel  brocartsvoc:protectionLevel4 .
+    
+    brocartsr:brocartA.11
+            rdf:type                    brocartso:Brocade ;
+            brocartso:colouredLayer     "Rouge" ;
+            brocartso:glazeColour       "Rouge" ;
+            brocartso:orientation       brocartsvoc:orientation4 ;
+            brocartso:position          brocartsvoc:localisation7 ;
+            brocartso:preparationLayer  brocartsvoc:preparationLayer2 ;
+            brocartso:theme             brocartsvoc:theme3 ;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocade4 ;
+            brocartso:typeOfEngraving   brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:brocartD.2
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade3 .
+    
+    brocartsr:oeuvre5identification
+            rdf:type                   brocartso:WOAIdentification ;
+            brocartso:creationDate     "2020-11-09"^^xsd:date ;
+            brocartso:period           "XVe siècle" ;
+            brocartso:protectionLevel  brocartsvoc:protectionLevel4 .
+    
+    patrimalpr:site14
+            rdf:type         patrimalpo:Building ;
+            rdfs:label       "Ancienne maladrerie des Antonins" ;
+            rdfs:seeAlso     wikidata:Q22968426 ;
+            geo:hasGeometry  patrimalpr:site14Geom .
+    
+    brocartsr:brocartE.2
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    brocartsr:brocartB.12
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    brocartsr:brocartD.1.5
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    brocartsr:oeuvre11infos
+            rdf:type                brocartso:WOAInformations ;
+            brocartso:denomination  brocartsvoc:denomination10 ;
+            brocartso:depth         14 ;
+            brocartso:height        49 ;
+            brocartso:material      brocartsvoc:material2 ;
+            brocartso:width         84 .
+    
+    patrimalpr:site6Image1
+            rdf:type             patrimalpo:Image ;
+            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/f/f9/Mairie_et_%C3%A9glise_de_Chamoux-sur-Gelon_%28juillet_2019%29.JPG" .
+    
+    brocartsr:oeuvre8brocartsList
+            rdf:type  brocartso:ListOfBrocades .
+    
+    patrimalpr:site3  rdf:type  patrimalpo:Church ;
+            rdfs:label        "Crypte de l'église Saint-Pierre de Lémenc" ;
+            rdfs:seeAlso      wikidata:Q36790222 ;
+            brocartso:oeuvre  brocartsr:oeuvre4 ;
+            patrimalpo:image  patrimalpr:site3Image1 ;
+            geo:hasGeometry   patrimalpr:site3Geom .
+    
+    brocartsr:oeuvre15infos
+            rdf:type                brocartso:WOAInformations ;
+            brocartso:denomination  brocartsvoc:denomination11 ;
+            brocartso:depth         29 ;
+            brocartso:height        43 ;
+            brocartso:material      brocartsvoc:material3 ;
+            brocartso:width         70 .
+    
+    brocartsr:oeuvre11brocartsList
+            rdf:type  brocartso:ListOfBrocades .
+    
+    brocartsr:oeuvre12infos
+            rdf:type                brocartso:WOAInformations ;
+            brocartso:denomination  brocartsvoc:denomination10 ;
+            brocartso:depth         25 ;
+            brocartso:height        56 ;
+            brocartso:material      brocartsvoc:material2 ;
+            brocartso:width         92 .
+    
+    brocartsr:oeuvre1
+            rdf:type                      patrimalpo:Statue ;
+            rdfs:label                    "Saint évêque Claude" ;
+            brocartso:appliedBrocades     brocartsr:oeuvre1brocartsList ;
+            brocartso:generalInformation  brocartsr:oeuvre1infos ;
+            brocartso:identification      brocartsr:oeuvre1identification .
+    
+    patrimalpr:site22
+            rdf:type         patrimalpo:GeographicalArea ;
+            rdfs:label       "Bugey" ;
+            geo:hasGeometry  patrimalpr:site22Geom .
+    
+    brocartsr:brocartC1
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade3 .
+    
+    brocartsr:brocartA.5
+            rdf:type                    brocartso:Brocade ;
+            brocartso:colouredLayer     "Rouge" ;
+            brocartso:glazeColour       "Rouge" ;
+            brocartso:orientation       brocartsvoc:orientation2 ;
+            brocartso:position          brocartsvoc:localisation7 , brocartsvoc:localisation13 ;
+            brocartso:preparationLayer  brocartsvoc:preparationLayer2 ;
+            brocartso:theme             brocartsvoc:theme3 ;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocade4 ;
+            brocartso:typeOfEngraving   brocartsvoc:typeOfEngraving15 , brocartsvoc:typeOfEngraving7 , brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:oeuvre16infos
+            rdf:type                brocartso:WOAInformations ;
+            brocartso:denomination  brocartsvoc:denomination11 ;
+            brocartso:depth         23 ;
+            brocartso:height        77 ;
+            brocartso:material      brocartsvoc:material2 ;
+            brocartso:width         83 .
+    
+    brocartsr:oeuvre4brocartsList
+            rdf:type  brocartso:ListOfBrocades .
+    
+    brocartsr:brocartB.5
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    patrimalpr:site4Image1
+            rdf:type             patrimalpo:Image ;
+            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/e/e6/CHS_de_Bassens_%28entr%C3%A9e%29.JPG" .
+    
+    brocartsr:oeuvre9
+            rdf:type                      patrimalpo:Statue ;
+            rdfs:label                    "Madone, Vierge à l'enfant" ;
+            brocartso:appliedBrocades     brocartsr:oeuvre9brocartsList ;
+            brocartso:generalInformation  brocartsr:oeuvre9infos ;
+            brocartso:identification      brocartsr:oeuvre9identification .
+    
+    brocartsr:oeuvre13
+            rdf:type                      patrimalpo:Statue ;
+            rdfs:label                    "Saint Jean (Oulx)" ;
+            brocartso:appliedBrocades     brocartsr:oeuvre13brocartsList ;
+            brocartso:generalInformation  brocartsr:oeuvre13infos ;
+            brocartso:identification      brocartsr:oeuvre13identification .
+    
+    brocartsr:brocartE.15
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    brocartsr:oeuvre7identification
+            rdf:type                   brocartso:WOAIdentification ;
+            brocartso:creationDate     "2020-08-05"^^xsd:date ;
+            brocartso:period           "1/4 du XVIe siècle" ;
+            brocartso:protectionLevel  brocartsvoc:protectionLevel2 ;
+            brocartso:siteOfOrigin     patrimalpr:site17 .
+    
+    patrimalpr:site3Geom
+            rdf:type       geo:Geometry ;
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.236526639 , 46.19793026]}"^^geo:geoJSONLiteral ;
+            geo:asWKT      "POINT(5.236526639 46.19793026)"^^geo:wktLiteral .
+    
+    patrimalpr:site17
+            rdf:type         patrimalpo:Valley ;
+            rdfs:label       "Haute Tarentaise" ;
+            geo:hasGeometry  patrimalpr:site17Geom .
+    
+    brocartsr:brocartE.5
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    brocartsr:brocartD.1.8
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    brocartsr:oeuvre16brocartsList
+            rdf:type  brocartso:ListOfBrocades .
+    
+    patrimalpr:site6  rdf:type  patrimalpo:Church ;
+            rdfs:label        "Église Saint Laurent" ;
+            rdfs:seeAlso      wikidata:Q3582324 ;
+            brocartso:oeuvre  brocartsr:oeuvre8 , brocartsr:oeuvre15 ;
+            patrimalpo:image  patrimalpr:site6Image1 ;
+            geo:hasGeometry   patrimalpr:site6Geom .
+    
+    brocartsr:oeuvre2brocartsList
+            rdf:type  brocartso:ListOfBrocades .
+    
+    brocartsr:oeuvre11identification
+            rdf:type                   brocartso:WOAIdentification ;
+            brocartso:creationDate     "2020-11-09"^^xsd:date ;
+            brocartso:period           "1/4 du XVIe siècle" ;
+            brocartso:protectionLevel  brocartsvoc:protectionLevel2 ;
+            brocartso:siteOfOrigin     patrimalpr:site19 .
+    
+    brocartsr:oeuvre4
+            rdf:type                      patrimalpo:Statue ;
+            rdfs:label                    "Mise au tombeau de Lémenc" ;
+            brocartso:appliedBrocades     brocartsr:oeuvre4brocartsList ;
+            brocartso:generalInformation  brocartsr:oeuvre4infos ;
+            brocartso:identification      brocartsr:oeuvre4identification .
+    
+    patrimalpr:site19Geom
+            rdf:type  geo:Geometry .
+    
+    brocartsr:brocartC4
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    brocartsr:oeuvre1identification
+            rdf:type                   brocartso:WOAIdentification ;
+            brocartso:creationDate     "2020-07-09"^^xsd:date ;
+            brocartso:period           "fin XVe début XVIe" ;
+            brocartso:protectionLevel  brocartsvoc:protectionLevel3 ;
+            brocartso:siteOfOrigin     patrimalpr:site12 .
+    
+    patrimalpr:site16Geom
+            rdf:type  geo:Geometry .
+    
+    brocartsr:oeuvre2infos
+            rdf:type                brocartso:WOAInformations ;
+            brocartso:denomination  brocartsvoc:denomination10 ;
+            brocartso:depth         16 ;
+            brocartso:height        25 ;
+            brocartso:material      brocartsvoc:material2 ;
+            brocartso:width         75 .
+    
+    brocartsr:brocartE.10
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    brocartsr:brocartA.8
+            rdf:type                    brocartso:Brocade ;
+            brocartso:colouredLayer     "Rouge" ;
+            brocartso:glazeColour       "Rouge" ;
+            brocartso:orientation       brocartsvoc:orientation3 ;
+            brocartso:position          brocartsvoc:localisation7 ;
+            brocartso:preparationLayer  brocartsvoc:preparationLayer2 ;
+            brocartso:theme             brocartsvoc:theme3 ;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocade4 ;
+            brocartso:typeOfEngraving   brocartsvoc:typeOfEngraving4 .
+    
+    patrimalpr:site13Geom
+            rdf:type       geo:Geometry ;
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.60889 , 45.84273]}"^^geo:geoJSONLiteral ;
+            geo:asWKT      "POINT(5.60889 45.84273)"^^geo:wktLiteral .
+    
+    patrimalpr:site10Geom
+            rdf:type  geo:Geometry .
+    
+    brocartsr:brocartB.8
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    brocartsr:oeuvre8identification
+            rdf:type                   brocartso:WOAIdentification ;
+            brocartso:creationDate     "2020-11-09"^^xsd:date ;
+            brocartso:period           "fin XVe (entre 1470 et 1493 ?)" ;
+            brocartso:protectionLevel  brocartsvoc:protectionLevel6 .
+    
+    brocartsr:oeuvre6infos
+            rdf:type                brocartso:WOAInformations ;
+            brocartso:denomination  brocartsvoc:denomination10 ;
+            brocartso:depth         10 ;
+            brocartso:height        16 ;
+            brocartso:material      brocartsvoc:material2 ;
+            brocartso:width         46 .
+    
+    patrimalpr:site9Image1
+            rdf:type             patrimalpo:Image ;
+            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/c/c7/Ch%C3%A2teau_de_Montrottier.jpg" .
+    
+    brocartsr:oeuvre3infos
+            rdf:type                brocartso:WOAInformations ;
+            brocartso:denomination  brocartsvoc:denomination10 ;
+            brocartso:depth         18 ;
+            brocartso:height        33 ;
+            brocartso:material      brocartsvoc:material2 ;
+            brocartso:width         77 .
+    
+    brocartsr:oeuvre16
+            rdf:type                      patrimalpo:Statue ;
+            rdfs:label                    "Vierge de pitié" ;
+            brocartso:appliedBrocades     brocartsr:oeuvre16brocartsList ;
+            brocartso:generalInformation  brocartsr:oeuvre16infos ;
+            brocartso:identification      brocartsr:oeuvre16identification .
+    
+    patrimalpr:site12
+            rdf:type         patrimalpo:Presbitery ;
+            rdfs:label       "Cure de Chazey-Bons" ;
+            rdfs:seeAlso     wikidata:Q27305626 ;
+            geo:hasGeometry  patrimalpr:site12Geom .
+    
+    brocartsr:brocartB.10
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    brocartsr:brocartD.1.3
+            rdf:type                 brocartso:Brocade ;
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocade4 .
+    
+    brocartsr:oeuvre7infos
+            rdf:type                brocartso:WOAInformations ;
+            brocartso:denomination  brocartsvoc:denomination10 ;
+            brocartso:depth         13 ;
+            brocartso:height        34 ;
+            brocartso:material      brocartsvoc:material2 ;
+            brocartso:width         96 .
+    
+    patrimalpr:site1  rdf:type  patrimalpo:Building ;
+            rdfs:label        "Archives départementales de l'Ain" ;
+            rdfs:seeAlso      wikidata:Q2860468 ;
+            brocartso:oeuvre  brocartsr:oeuvre1 , brocartsr:oeuvre2 , brocartsr:oeuvre6 ;
+            patrimalpo:image  patrimalpr:site1Image1 ;
+            geo:hasGeometry   patrimalpr:site1Geom .
+    
+    patrimalpr:site7Geom
+            rdf:type       geo:Geometry ;
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [6.126436125 , 45.89758021]}"^^geo:geoJSONLiteral ;
+            geo:asWKT      "POINT(6.126436125 45.89758021)"^^geo:wktLiteral .

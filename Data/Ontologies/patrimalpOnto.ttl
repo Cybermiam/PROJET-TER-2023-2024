@@ -1,0 +1,162 @@
+@prefix : <http://patrimalp.org/ontologies/patrimalp#> .
+@prefix sf: <http://www.opengis.net/ont/sf#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix patrimalpo: <http://patrimalp.org/ontologies/patrimalp#> .
+@base <http://patrimalp.org/ontologies/patrimalp> .
+
+<http://patrimalp.org/ontologies/patrimalp> rdf:type owl:Ontology ;
+                                             owl:versionIRI <http://patrimalp.org/ontologies/patrimalp/1.0> ;
+                                             owl:imports <http://www.opengis.net/ont/geosparql> ,
+                                                         <http://www.opengis.net/ont/sf> ;
+                                             rdfs:comment "Ontologie Patrimalp. Cette ontologie permet de définir les concepts communs à tous les domaines abordés par le projet Patrimalp (archéologie, brocarts appliqués....)"@fr .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://patrimalp.org/ontologies/patrimalp#image
+:image rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf owl:topObjectProperty ;
+       rdfs:range :Image ;
+       rdfs:label "image"@fr .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://patrimalp.org/ontologies/patrimalp#imageUrl
+:imageUrl rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Image ;
+          rdfs:range rdf:PlainLiteral ;
+          rdfs:comment "Url de l'image"@fr ;
+          rdfs:label "Url"@fr .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://patrimalp.org/ontologies/patrimalp#Building
+:Building rdf:type owl:Class ;
+          rdfs:subClassOf :Site ;
+          rdfs:label "Bâtiment"@fr .
+
+
+###  http://patrimalp.org/ontologies/patrimalp#Castle
+:Castle rdf:type owl:Class ;
+        rdfs:subClassOf :Building ;
+        rdfs:label "Castle"@en ,
+                   "Château"@fr .
+
+
+###  http://patrimalp.org/ontologies/patrimalp#Chapel
+:Chapel rdf:type owl:Class ;
+        rdfs:subClassOf :ReligiousBuilding ;
+        rdfs:label "Chapel"@en ,
+                   "Chapelle"@fr .
+
+
+###  http://patrimalp.org/ontologies/patrimalp#Church
+:Church rdf:type owl:Class ;
+        rdfs:subClassOf :ReligiousBuilding ;
+        rdfs:label "Church"@en ,
+                   "Eglise"@fr .
+
+
+###  http://patrimalp.org/ontologies/patrimalp#City
+:City rdf:type owl:Class ;
+      rdfs:subClassOf :Locality ;
+      rdfs:label "City"@fr ,
+                 "Ville"@fr .
+
+
+###  http://patrimalp.org/ontologies/patrimalp#GeographicalArea
+:GeographicalArea rdf:type owl:Class ;
+                  rdfs:subClassOf :Site ;
+                  rdfs:label "Geographical area"@en ,
+                             "Zone gégographique"@fr .
+
+
+###  http://patrimalp.org/ontologies/patrimalp#Hamlet
+:Hamlet rdf:type owl:Class ;
+        rdfs:subClassOf :Locality ;
+        rdfs:label "Hameau"@fr ,
+                   "Hamlet"@en .
+
+
+###  http://patrimalp.org/ontologies/patrimalp#Image
+:Image rdf:type owl:Class ;
+       rdfs:label "Image"@fr .
+
+
+###  http://patrimalp.org/ontologies/patrimalp#Locality
+:Locality rdf:type owl:Class ;
+          rdfs:subClassOf :Site ;
+          rdfs:label "Locality"@en ,
+                     "Localité"@fr .
+
+
+###  http://patrimalp.org/ontologies/patrimalp#Monastery
+:Monastery rdf:type owl:Class ;
+           rdfs:subClassOf :ReligiousBuilding ;
+           rdfs:label "Monastery"@en ,
+                      "Monastère"@fr .
+
+
+###  http://patrimalp.org/ontologies/patrimalp#Museum
+:Museum rdf:type owl:Class ;
+        rdfs:subClassOf :Building ;
+        rdfs:label "Museum"@en ,
+                   "Musée"@fr .
+
+
+###  http://patrimalp.org/ontologies/patrimalp#Presbitery
+:Presbitery rdf:type owl:Class ;
+            rdfs:subClassOf :ReligiousBuilding ;
+            rdfs:label "Presbytère"@fr .
+
+
+###  http://patrimalp.org/ontologies/patrimalp#ReligiousBuilding
+:ReligiousBuilding rdf:type owl:Class ;
+                   rdfs:subClassOf :Building ;
+                   rdfs:label "Bâtiment religieux"@fr ,
+                              "Religious Building"@en .
+
+
+###  http://patrimalp.org/ontologies/patrimalp#Site
+:Site rdf:type owl:Class ;
+      rdfs:subClassOf geo:Feature .
+
+
+###  http://patrimalp.org/ontologies/patrimalp#Statue
+:Statue rdf:type owl:Class ;
+        rdfs:subClassOf :WorkOfArt ;
+        rdfs:label "Statue"@fr .
+
+
+###  http://patrimalp.org/ontologies/patrimalp#Valley
+:Valley rdf:type owl:Class ;
+        rdfs:subClassOf :GeographicalArea ;
+        rdfs:label "Valley"@en ,
+                   "Vallée"@fr .
+
+
+###  http://patrimalp.org/ontologies/patrimalp#Village
+:Village rdf:type owl:Class ;
+         rdfs:subClassOf :Locality ;
+         rdfs:label "Village"@en ,
+                    "Village"@fr .
+
+
+###  http://patrimalp.org/ontologies/patrimalp#WorkOfArt
+:WorkOfArt rdf:type owl:Class ;
+           rdfs:label "Oeuvre d'art"@fr .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

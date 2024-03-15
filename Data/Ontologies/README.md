@@ -6,7 +6,7 @@ Ce répertoire contient les différentes ontologies utilisées por modéliser le
 
 ## Contenu du répertoire **ontologies**
 
-Le contenu de ce répertoire est (dans l'ordre alphabétique)
+Le contenu de ce répertoire est :
 
 - **brocartsonto.ttl** : une ontologie utilisée pour modéliser les brocarts dans le cadre du projet étudiants du M1 IC (Marine Troccaz, Nicolas Girardier et Zhenyu Liu). Cette ontologie n'est pas du tout complète.
 

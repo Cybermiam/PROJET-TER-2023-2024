@@ -5,6 +5,6 @@
     <uri id="User Entered Import Resolution" name="http://patrimalp.org/ontologies/patrimalp/1.0" uri="brocartsonto.ttl"/>
     <uri id="User Entered Import Resolution" name="http://patrimalp.org/brocarts/thesaurus/1.0" uri="brocartsThesaurus.ttl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1711035550060" name="http://www.opengis.net/ont/sf" uri="geosparql/simple_features_geometries.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1711036431991" name="http://www.opengis.net/ont/sf" uri="geosparql/simple_features_geometries.rdf"/>
     </group>
 </catalog>

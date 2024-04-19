@@ -129,15 +129,15 @@ patrimalpo:ReligiousBuilding rdf:type owl:Class ;
                                         "Religious Building"@en .
 
 
+###  http://patrimalp.org/ontologies/patrimalp#Sculpture
+patrimalpo:Sculpture rdf:type owl:Class ;
+                     rdfs:subClassOf patrimalpo:WorkOfArt ;
+                     rdfs:label "Sculpture"@fr .
+
+
 ###  http://patrimalp.org/ontologies/patrimalp#Site
 patrimalpo:Site rdf:type owl:Class ;
                 rdfs:subClassOf geo:Feature .
-
-
-###  http://patrimalp.org/ontologies/patrimalp#Statue
-patrimalpo:Statue rdf:type owl:Class ;
-                  rdfs:subClassOf patrimalpo:WorkOfArt ;
-                  rdfs:label "Statue"@fr .
 
 
 ###  http://patrimalp.org/ontologies/patrimalp#Valley

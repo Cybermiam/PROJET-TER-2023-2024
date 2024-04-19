@@ -1,0 +1,6 @@
+className	classLabel	conceptBaseName	conceptID	prefLabelFr	prefLabelEn	broaderConceptID	definition
+PreparationLayer	Couche de Préparation						Définit la couche de préparation d'un brocard
+PreparationLayer		preparationLayer	1	Couche Préparation			Définit la couche de préparation d'un brocart
+PreparationLayer		preparationLayer	2	Sulfate de calcium		1	
+PreparationLayer		preparationLayer	3	Jaune et blanche		1	
+PreparationLayer		preparationLayer	4	Gypse		1	

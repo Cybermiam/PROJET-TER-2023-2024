@@ -1,0 +1,7 @@
+className	classLabel	conceptBaseName	conceptID	prefLabelFr	prefLabelEn	broaderConceptID	definition
+Orientation	Orientation						Définit l'orientation d'un brocart
+Orientation		orientation	1	Orientation			Définit l'orientation d'un brocart
+Orientation		orientation	2	Face		1	
+Orientation		orientation	3	Dextre		1	
+Orientation		orientation	4	Senestre		1	
+Orientation		orientation	5	Revers		1	

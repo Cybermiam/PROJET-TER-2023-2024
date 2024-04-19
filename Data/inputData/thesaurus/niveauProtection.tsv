@@ -1,0 +1,8 @@
+className	classLabel	conceptBaseName	conceptID	prefLabelFr	prefLabelEn	broaderConceptID	definition
+ProtectionLevel	Niveau de Protection						Définit le niveau de protection d'une oeuvre
+ProtectionLevel		protectionLevel	1	NiveauProtection	Protection Level		Définit le niveau de protection d'une oeuvre
+ProtectionLevel		protectionLevel	2	Non protégé	None-protected	1	
+ProtectionLevel		protectionLevel	3	Inscrit au titre des objets		6	
+ProtectionLevel		protectionLevel	4	Classé		1	
+ProtectionLevel		protectionLevel	5	Classé au titre des monument historiques		4	
+ProtectionLevel		protectionLevel	6	Inscrit		1	

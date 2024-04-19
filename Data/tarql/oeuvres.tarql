@@ -1,0 +1,70 @@
+PREFIX :      <http://patrimalp.org/graph/>
+PREFIX patrimalpr: <http://patrimalp.org/resource/>
+PREFIX patrimalpo: <http://patrimalp.org/ontologies/patrimalp#>
+PREFIX brocartsr:  <http://patrimalp.org/brocarts/resource/> 
+PREFIX brocartso: <http://patrimalp.org/brocarts/onto#>
+PREFIX brocartsvoc: <http://patrimalp.org/brocarts/thesaurus#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+CONSTRUCT {
+	?siteUri brocartso:oeuvre ?oeuvreUri.
+	
+	# Following links domain oeuvreUri resource of type Sculpture to all its ranges
+	?oeuvreUri a patrimalpo:Scuplture;
+               rdfs:label ?titre;
+               brocartso:identification ?identificationUri;
+			   brocartso:generalInformation ?informationsUri;
+			   brocartso:appliedBrocades ?listeBrocartsUri;			
+			   patrimalpo:images ?imageOeuvreUri.
+
+	?identificationUri	a brocartso:WOAIdentification;
+	    brocartso:protectionLevel ?niveauProtectionUri;	   
+		brocartso:inventoryNumber ?inventaire;		
+		brocartso:creationDate ?lit_dateCreation;	
+		brocartso:siteOfConservation ?siteActuelUri;
+		brocartso:siteOfOrigin ?siteProvenanceUri;	
+		brocartso:period ?period.			
+
+	?informationsUri a 	brocartso:WOAInformations;
+		brocartso:denomination ?denominationUri;
+		brocartso:material ?materiauUri;
+		brocartso:materialType ?typeMateriauUri;
+		brocartso:width ?lit_hauteur;
+		brocartso:height ?lit_largeur;
+		brocartso:depth ?lit_profondeur;
+		brocartso:iconography ?iconographie;
+		brocartso:missingElements ?elementsManquants.	
+
+    ?listeBrocartsUri a brocartso:ListOfBrocades.
+
+	?imageOeuvreUri a patrimalpo:Image;
+		patrimalpo:auteur ?lit_auteur;
+		patrimalpo:description ?lit_description;
+		patrimalpo:imageUrl ?imageUri.
+} 
+
+FROM <file:../inputData/oeuvres.tsv> 
+WHERE {
+ BIND (URI(CONCAT('http://patrimalp.org/brocarts/resource/S', ENCODE_FOR_URI(?oeuvreID))) AS ?oeuvreUri)
+ BIND (URI(CONCAT('http://patrimalp.org/brocarts/resource/S', ENCODE_FOR_URI(?oeuvreID), 'infos')) AS ?informationsUri)
+ BIND (URI(CONCAT('http://patrimalp.org/brocarts/resource/S', ENCODE_FOR_URI(?oeuvreID), 'identification')) AS ?identificationUri)
+ BIND (URI(CONCAT('http://patrimalp.org/brocarts/resource/S', ENCODE_FOR_URI(?oeuvreID), 'brocartsList')) AS ?listeBrocartsUri)	
+ BIND (URI(CONCAT('http://patrimalp.org/resource/site', ENCODE_FOR_URI(?siteConservationID))) AS ?siteUri)	
+ BIND (URI(CONCAT('http://patrimalp.org/resource/site', ENCODE_FOR_URI(?siteProvenanceID))) AS ?siteProvenanceUri) 
+ BIND(URI(CONCAT('http://patrimalp.org/brocarts/resource/S', ENCODE_FOR_URI(?oeuvreID), '_image_', ENCODE_FOR_URI(?imageID))) AS ?imageOeuvreUri)
+ BIND (URI(CONCAT('http://patrimalp.org/brocarts/thesaurus#denomination', ENCODE_FOR_URI(?denomination))) AS ?denominationUri)
+ BIND (URI(CONCAT('http://patrimalp.org/brocarts/thesaurus#material', ENCODE_FOR_URI(?materiau))) AS ?materiauUri)
+ BIND (URI(CONCAT('http://patrimalp.org/brocarts/thesaurus#materialType', ENCODE_FOR_URI(?typeMateriau))) AS ?typeMateriauUri)
+ BIND (URI(CONCAT('http://patrimalp.org/brocarts/thesaurus#protectionLevel', ENCODE_FOR_URI(?niveauProtection))) AS ?niveauProtectionUri)
+ BIND (xsd:integer(?hauteur) AS ?lit_hauteur)
+ BIND (xsd:integer(?largeur) AS ?lit_largeur)
+ BIND (xsd:integer(?profondeur) AS ?lit_profondeur)
+ BIND (xsd:string(?auteur) AS ?lit_auteur)
+ BIND (xsd:string(?description) AS ?lit_description)
+ BIND (xsd:string(?inventaire) AS ?lit_inventaire)	
+ BIND (STRDT(?dateCreation, xsd:date) AS ?lit_dateCreation)
+ BIND (xsd:string(?period) AS ?lit_period)
+ BIND (xsd:string(?elementsManquants) AS ?lit_elementsManquants)
+ BIND (CONCAT('http://lig-tdcge.imag.fr/steamer/patrimalp/public/resources/patrimalp/brocarts/oeuvres/', ?image) AS ?imageUri)
+}

@@ -1,0 +1,39 @@
+PREFIX : <http://patrimalp.org/graph/>
+PREFIX patrimalpr: <http://patrimalp.org/resource/>
+PREFIX patrimalpo: <http://patrimalp.org/ontologies/patrimalp#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX wikidata: <https://www.wikidata.org/entity/>
+
+CONSTRUCT {
+  ?siteUri a ?siteTypeUri ;
+           rdfs:label ?name ;
+           geo:hasGeometry ?geomUri ;
+           patrimalpo:image ?imageSiteUri ;
+           rdfs:seeAlso ?seeAlsoUri .
+  
+  ?geomUri a geo:Geometry ;
+           geo:asWKT ?wkt ;
+           geo:asGeoJSON ?geoJSON .
+  
+  ?imageSiteUri a patrimalpo:Image ;
+                patrimalpo:credits ?credits;
+                patrimalpo:imageUrl ?image .
+
+
+} 
+
+WHERE { 
+#  FILTER(?siteID="2"^^xsd:string)
+  BIND (URI(tarql:expandPrefixedName(?seeAlso)) AS ?seeAlsoUri) 
+  BIND (URI(CONCAT(tarql:expandPrefix("patrimalpo"), ENCODE_FOR_URI(?siteType))) AS ?siteTypeUri)
+  BIND (URI(CONCAT(tarql:expandPrefix("patrimalpr"),'site', ENCODE_FOR_URI(?siteID))) AS ?siteUri)
+  BIND (URI(CONCAT(STR(?siteUri), 'Geom' )) AS ?geomUri)
+  BIND (URI(CONCAT(STR(?siteUri),'Image', ENCODE_FOR_URI(?imageID))) AS ?imageSiteUri)
+  BIND (STRDT(CONCAT("POINT(", ?longitude, " ", ?latitude, ")"), geo:wktLiteral) AS ?wkt)
+  BIND (STRDT(CONCAT("{\"type\": \"Point\", \"coordinates\": [", ?longitude, " , ", ?latitude, "]}"),geo:geoJSONLiteral) AS ?geoJSON)
+
+
+}

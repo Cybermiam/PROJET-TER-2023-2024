@@ -1,0 +1,6 @@
+className	classLabel	conceptBaseName	conceptID	prefLabelFr	prefLabelEn	broaderConceptID	definition
+Material	Matériau						Définit le materiau d'une oeuvre
+Material		material	1	Materiau			Définit le materiau d'une oeuvre
+Material		material	2	Bois polychromé		1	
+Material		material	3	Pierre polychromée		1	
+Material		material	4	Peinture murale		1	

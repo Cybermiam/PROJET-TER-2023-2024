@@ -1,0 +1,17 @@
+className	classLabel	conceptBaseName	conceptID	prefLabelFr	prefLabelEn	broaderConceptID	definition
+TypeOfEngraving	Type de Gravure						Définit la typologie des gravures d'un élément de brocart
+TypeOfEngraving		typeOfEngraving	1	Type Gravure			Définit la typologie des gravures d'un élément de brocart
+TypeOfEngraving		typeOfEngraving	2	Stries		1	
+TypeOfEngraving		typeOfEngraving	3	Stries verticales 		2	
+TypeOfEngraving		typeOfEngraving	4	Stries horizontales		2	
+TypeOfEngraving		typeOfEngraving	5	Stries en biais		2	
+TypeOfEngraving		typeOfEngraving	6	Stries obliques		2	
+TypeOfEngraving		typeOfEngraving	7	Stries parallèles		2	
+TypeOfEngraving		typeOfEngraving	8	Quadrillage		1	
+TypeOfEngraving		typeOfEngraving	9	Quadrillage en biais		8	
+TypeOfEngraving		typeOfEngraving	10	Courbes		1	
+TypeOfEngraving		typeOfEngraving	11	Courbes en pointillé		10	
+TypeOfEngraving		typeOfEngraving	12	Courbes en traits pleins		10	
+TypeOfEngraving		typeOfEngraving	13	Cercles/anneaux		1	
+TypeOfEngraving		typeOfEngraving	14	Autre		1	
+TypeOfEngraving		typeOfEngraving	15	Bractées épineuses		1	

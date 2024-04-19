@@ -1,0 +1,5 @@
+className	classLabel	conceptBaseName	conceptID	prefLabelFr	prefLabelEn	broaderConceptID	definition
+AnalysisDevice	Appareil d’Analyse						Définit l’appareil d’analyse utilisé pour l’étude de l’oeuvre
+AnalysisDevice		analysisDevice	1	Appareil d’analyse			Définit l’appareil d’analyse utilisé pour l’étude de l’oeuvre
+AnalysisDevice		analysisDevice	2	Microscope		1	
+AnalysisDevice		analysisDevice	3	Microscope électronique		2	

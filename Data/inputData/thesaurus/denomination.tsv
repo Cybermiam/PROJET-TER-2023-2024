@@ -1,0 +1,16 @@
+className	classLabel	conceptBaseName	conceptID	prefLabelFr	prefLabelEn	broaderConceptID	definition
+Denomination	Dénomination						Définit la qualification d'une oeuvre (par exemple Sculpture en Ronde Bosse Isolée)
+Denomination		denomination	1	Denomination			Définit la qualification d'une oeuvre (par exemple Sculpture en Ronde Bosse Isolée)
+Denomination		denomination	2	Peinture		1	
+Denomination		denomination	3	Peinture murale		2	
+Denomination		denomination	4	Peinture sur panneau		2	
+Denomination		denomination	5	Sculpture		1	
+Denomination		denomination	6	Bas relief		5	
+Denomination		denomination	7	Bas relief isolé		6	
+Denomination		denomination	8	Bas relief en groupe		6	
+Denomination		denomination	9	Ronde-bosse		5	
+Denomination		denomination	10	Ronde-bosse isolée		9	
+Denomination		denomination	11	Ronde-bosse en groupe		9	
+Denomination		denomination	12	Sculpture d'applique		5	
+Denomination		denomination	13	Sculpture d'applique isolée		12	
+Denomination		denomination	14	Sculpture d'applique en groupe		12	

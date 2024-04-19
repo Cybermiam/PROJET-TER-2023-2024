@@ -1,0 +1,29 @@
+PREFIX : <http://patrimalp.org/graph/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#> 
+PREFIX brocartsvoc: <http://patrimalp.org/brocarts/thesaurus#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+BASE <http://patrimalp.org/brocarts/thesaurus>
+
+CONSTRUCT {
+
+    ?classIRI a owl:Class;
+              rdfs:subClassOf skos:Concept;
+              rdfs:label ?classLabel;
+              rdfs:label ?classLabelEnglish;
+              rdfs:comment ?definition.
+
+   ?conceptIRI a ?classIRI;
+          skos:definition ?definition;
+		      skos:broader ?broaderConceptIRI;
+          skos:prefLabel ?prefLabelFr, ?prefLabelEn.
+} 
+ 
+WHERE {
+  BIND (URI(CONCAT("#" , ?className)) AS ?classIRI)
+  BIND (STRLANG(?classLabelEn, "en") AS ?classLabelEnglish)
+  BIND (URI(CONCAT("#" , STR(?conceptBaseName), ENCODE_FOR_URI(?conceptID))) AS ?conceptIRI)
+  BIND (URI(CONCAT("#" , ?conceptBaseName, ?broaderConceptID)) AS ?broaderConceptIRI)
+}

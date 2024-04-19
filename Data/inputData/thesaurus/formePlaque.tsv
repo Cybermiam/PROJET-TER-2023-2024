@@ -1,0 +1,9 @@
+className	classLabel	conceptBaseName	conceptID	prefLabelFr	prefLabelEn	broaderConceptID	definition
+PatchShape	Forme de Plaque						Définit la forme d'une plaque
+PatchShape		patchShape	1	Forme de plaque			Définit la forme d'une plaque
+PatchShape		patchShape	2	Circulaire		1	
+PatchShape		patchShape	3	Elipse		1	
+PatchShape		patchShape	4	Recouvrant		1	
+PatchShape		patchShape	5	Rectangulaire		1	
+PatchShape		patchShape	6	Non identifiable		1	
+PatchShape		patchShape	7	Losange		1	

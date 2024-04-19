@@ -1,0 +1,8 @@
+className	classLabel	conceptBaseName	conceptID	prefLabelFr	prefLabelEn	broaderConceptID	definition
+TypeOfBrocade	Type de Brocard						Typologie de répartition du brocart
+TypeOfBrocade		typeOfBrocade	1	Typologie Brocart			Typologie de répartition du brocart
+TypeOfBrocade		typeOfBrocade	2	Galons		1	
+TypeOfBrocade		typeOfBrocade	3	Juxtaposé		1	
+TypeOfBrocade		typeOfBrocade	4	Parsemé		1	
+TypeOfBrocade		typeOfBrocade	5	Non défini		1	
+			 				

@@ -1,0 +1,289 @@
+@prefix :           <http://patrimalp.org/graph/> .
+@prefix geo:        <http://www.opengis.net/ont/geosparql#> .
+@prefix owl:        <http://www.w3.org/2002/07/owl#> .
+@prefix patrimalpo: <http://patrimalp.org/ontologies/patrimalp#> .
+@prefix patrimalpr: <http://patrimalp.org/resource/> .
+@prefix rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wikidata:   <https://www.wikidata.org/entity/> .
+@prefix xsd:        <http://www.w3.org/2001/XMLSchema#> .
+
+:brocartsData {
+    patrimalpr:site23
+            rdf:type         patrimalpo:Church ;
+            rdfs:label       "Église Saints-Pierre-et-Paul" ;
+            rdfs:seeAlso     wikidata:Q60392390 ;
+            geo:hasGeometry  patrimalpr:site23Geom .
+    
+    patrimalpr:site1  rdf:type  patrimalpo:Building ;
+            rdfs:label        "Archives départementales de l'Ain" ;
+            rdfs:seeAlso      wikidata:Q2860468 ;
+            patrimalpo:image  patrimalpr:site1Image1 ;
+            geo:hasGeometry   patrimalpr:site1Geom .
+    
+    patrimalpr:site19Geom
+            rdf:type  geo:Geometry .
+    
+    patrimalpr:site16Geom
+            rdf:type  geo:Geometry .
+    
+    patrimalpr:site13Geom
+            rdf:type       geo:Geometry ;
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.60889 , 45.84273]}"^^geo:geoJSONLiteral ;
+            geo:asWKT      "POINT(5.60889 45.84273)"^^geo:wktLiteral .
+    
+    patrimalpr:site10Geom
+            rdf:type  geo:Geometry .
+    
+    patrimalpr:site2Image2
+            rdf:type             patrimalpo:Image ;
+            patrimalpo:credits   "Mairie de Barberaz" ;
+            patrimalpo:imageUrl  "https://trinitechambery.paroisse73.fr/sites/trinitechambery.paroisse73.fr/local/cache-vignettes/L600xH600/c386a7a9a8e0846150eadb3c1f619d-2a7fb.jpg" .
+    
+    patrimalpr:site15
+            rdf:type         patrimalpo:Building ;
+            rdfs:label       "Ancienne commanderie antonine de Chambéry" ;
+            geo:hasGeometry  patrimalpr:site15Geom .
+    
+    patrimalpr:site21Geom
+            rdf:type  geo:Geometry .
+    
+    patrimalpr:site17Geom
+            rdf:type  geo:Geometry .
+    
+    patrimalpr:site14Geom
+            rdf:type  geo:Geometry .
+    
+    patrimalpr:site6  rdf:type  patrimalpo:Church ;
+            rdfs:label        "Église Saint Laurent" ;
+            rdfs:seeAlso      wikidata:Q3582324 ;
+            patrimalpo:image  patrimalpr:site6Image1 ;
+            geo:hasGeometry   patrimalpr:site6Geom .
+    
+    patrimalpr:site11Geom
+            rdf:type       geo:Geometry ;
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [6.21449 , 45.53363]}"^^geo:geoJSONLiteral ;
+            geo:asWKT      "POINT(6.21449 45.53363)"^^geo:wktLiteral .
+    
+    patrimalpr:site22
+            rdf:type         patrimalpo:GeographicalArea ;
+            rdfs:label       "Bugey" ;
+            geo:hasGeometry  patrimalpr:site22Geom .
+    
+    patrimalpr:site22Geom
+            rdf:type  geo:Geometry .
+    
+    patrimalpr:site18Geom
+            rdf:type  geo:Geometry .
+    
+    patrimalpr:site15Geom
+            rdf:type  geo:Geometry .
+    
+    patrimalpr:site12Geom
+            rdf:type       geo:Geometry ;
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.68064 , 45.80312]}"^^geo:geoJSONLiteral ;
+            geo:asWKT      "POINT(5.68064 45.80312)"^^geo:wktLiteral .
+    
+    patrimalpr:site7Image1
+            rdf:type             patrimalpo:Image ;
+            patrimalpo:credits   "Wikimedia Commons" ;
+            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/1/11/Haute-Savoie_%28septembre_2013%29_128.JPG" .
+    
+    patrimalpr:site2Image1
+            rdf:type             patrimalpo:Image ;
+            patrimalpo:credits   "Wikimedia Commons" ;
+            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/e/e5/Archives_d%C3%A9partementales_Ain_Bourg_Bresse_3.jpg" .
+    
+    patrimalpr:site14
+            rdf:type         patrimalpo:Building ;
+            rdfs:label       "Ancienne maladrerie des Antonins" ;
+            rdfs:seeAlso     wikidata:Q22968426 ;
+            geo:hasGeometry  patrimalpr:site14Geom .
+    
+    patrimalpr:site23Geom
+            rdf:type       geo:Geometry ;
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [6.00574 , 45.73066]}"^^geo:geoJSONLiteral ;
+            geo:asWKT      "POINT(6.00574 45.73066)"^^geo:wktLiteral .
+    
+    patrimalpr:site20Geom
+            rdf:type  geo:Geometry .
+    
+    patrimalpr:site5  rdf:type  patrimalpo:Museum ;
+            rdfs:label        "Réserve du Musée Savoisien" ;
+            patrimalpo:image  patrimalpr:site5Image1 ;
+            geo:hasGeometry   patrimalpr:site5Geom .
+    
+    patrimalpr:site21
+            rdf:type         patrimalpo:GeographicalArea ;
+            rdfs:label       "Bresse" ;
+            geo:hasGeometry  patrimalpr:site21Geom .
+    
+    patrimalpr:site19
+            rdf:type         patrimalpo:Chapel ;
+            rdfs:label       "Chapelle de l'Église Saint-Léger" ;
+            geo:hasGeometry  patrimalpr:site19Geom .
+    
+    patrimalpr:site13
+            rdf:type          patrimalpo:Chapel ;
+            rdfs:label        "Chapelle Sainte-Catherine-et-Saint-Nicolas d'Égieu" ;
+            rdfs:seeAlso      wikidata:Q60367472 ;
+            patrimalpo:image  patrimalpr:site13Image1 ;
+            geo:hasGeometry   patrimalpr:site13Geom .
+    
+    patrimalpr:site4  rdf:type  patrimalpo:Castle ;
+            rdfs:label        "Château de Montrottier" ;
+            rdfs:seeAlso      wikidata:Q2255651 ;
+            patrimalpo:image  patrimalpr:site4Image1 ;
+            geo:hasGeometry   patrimalpr:site4Geom .
+    
+    patrimalpr:site20
+            rdf:type         patrimalpo:City ;
+            rdfs:label       "Chambéry" ;
+            geo:hasGeometry  patrimalpr:site20Geom .
+    
+    patrimalpr:site5Image1
+            rdf:type             patrimalpo:Image ;
+            patrimalpo:credits   "Wikimedia Commons" ;
+            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/c/c9/Prieur%C3%A9_du_Bourget_du_Lac_%28Chevet_de_la_prioriale%29.jpg" .
+    
+    patrimalpr:site18
+            rdf:type         patrimalpo:Church ;
+            rdfs:label       "Ancienne Eglise Saint-Julien de Duingt" ;
+            geo:hasGeometry  patrimalpr:site18Geom .
+    
+    patrimalpr:site8Image1
+            rdf:type             patrimalpo:Image ;
+            patrimalpo:credits   "Wikimedia Commons" ;
+            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/3/32/Piedmont_in_Italy.svg" .
+    
+    patrimalpr:site3Image1
+            rdf:type             patrimalpo:Image ;
+            patrimalpo:credits   "Wikimedia Commons" ;
+            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/e/ed/Monast%C3%A8re_royal_de_Brou_%28%C3%A9glise%29_%281%29.JPG" .
+    
+    patrimalpr:site12
+            rdf:type         patrimalpo:Presbitery ;
+            rdfs:label       "Cure de Chazey-Bons" ;
+            rdfs:seeAlso     wikidata:Q27305626 ;
+            geo:hasGeometry  patrimalpr:site12Geom .
+    
+    patrimalpr:site9  rdf:type  patrimalpo:Monastery ;
+            rdfs:label        "Musée du Monastère Royal de Brou" ;
+            patrimalpo:image  patrimalpr:site9Image1 ;
+            geo:hasGeometry   patrimalpr:site9Geom .
+    
+    patrimalpr:site3  rdf:type  patrimalpo:Church ;
+            rdfs:label        "Crypte de l'église Saint-Pierre de Lémenc" ;
+            rdfs:seeAlso      wikidata:Q36790222 ;
+            patrimalpo:image  patrimalpr:site3Image1 ;
+            geo:hasGeometry   patrimalpr:site3Geom .
+    
+    patrimalpr:site3Geom
+            rdf:type       geo:Geometry ;
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.236526639 , 46.19793026]}"^^geo:geoJSONLiteral ;
+            geo:asWKT      "POINT(5.236526639 46.19793026)"^^geo:wktLiteral .
+    
+    patrimalpr:site17
+            rdf:type         patrimalpo:Valley ;
+            rdfs:label       "Haute Tarentaise" ;
+            geo:hasGeometry  patrimalpr:site17Geom .
+    
+    patrimalpr:site7Geom
+            rdf:type       geo:Geometry ;
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [6.126436125 , 45.89758021]}"^^geo:geoJSONLiteral ;
+            geo:asWKT      "POINT(6.126436125 45.89758021)"^^geo:wktLiteral .
+    
+    patrimalpr:site4Geom
+            rdf:type       geo:Geometry ;
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.938995201 , 45.57776086]}"^^geo:geoJSONLiteral ;
+            geo:asWKT      "POINT(5.938995201 45.57776086)"^^geo:wktLiteral .
+    
+    patrimalpr:site11
+            rdf:type         patrimalpo:Church ;
+            rdfs:label       "Église Saint-Martin" ;
+            rdfs:seeAlso     wikidata:Q41795771 ;
+            geo:hasGeometry  patrimalpr:site11Geom .
+    
+    patrimalpr:site8  rdf:type  patrimalpo:Museum ;
+            rdfs:label        "Musée du Château d'Annecy" ;
+            rdfs:seeAlso      wikidata:Q13389955 ;
+            patrimalpo:image  patrimalpr:site8Image1 ;
+            geo:hasGeometry   patrimalpr:site8Geom .
+    
+    patrimalpr:site1Geom
+            rdf:type       geo:Geometry ;
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.93931 , 45.5581]}"^^geo:geoJSONLiteral ;
+            geo:asWKT      "POINT(5.93931 45.5581)"^^geo:wktLiteral .
+    
+    patrimalpr:site2  rdf:type  patrimalpo:Church ;
+            rdfs:label        "Église Notre-Dame" ;
+            rdfs:seeAlso      wikidata:Q38386547 ;
+            patrimalpo:image  patrimalpr:site2Image2 , patrimalpr:site2Image1 ;
+            geo:hasGeometry   patrimalpr:site2Geom .
+    
+    patrimalpr:site8Geom
+            rdf:type       geo:Geometry ;
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [7.716740075 , 45.1290306]}"^^geo:geoJSONLiteral ;
+            geo:asWKT      "POINT(7.716740075 45.1290306)"^^geo:wktLiteral .
+    
+    patrimalpr:site5Geom
+            rdf:type       geo:Geometry ;
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.860482407 , 45.64752788]}"^^geo:geoJSONLiteral ;
+            geo:asWKT      "POINT(5.860482407 45.64752788)"^^geo:wktLiteral .
+    
+    patrimalpr:site2Geom
+            rdf:type       geo:Geometry ;
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.226045639 , 46.19514614]}"^^geo:geoJSONLiteral ;
+            geo:asWKT      "POINT(5.226045639 46.19514614)"^^geo:wktLiteral .
+    
+    patrimalpr:site13Image1
+            rdf:type             patrimalpo:Image ;
+            patrimalpo:credits   "Wikimedia Commons" ;
+            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Chapelle_Ste_Catherine_St_Nicolas_%C3%89gieu_Rossillon_3.jpg/567px-Chapelle_Ste_Catherine_St_Nicolas_%C3%89gieu_Rossillon_3.jpg" .
+    
+    patrimalpr:site6Image1
+            rdf:type             patrimalpo:Image ;
+            patrimalpo:credits   "Wikimedia Commons" ;
+            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/f/f9/Mairie_et_%C3%A9glise_de_Chamoux-sur-Gelon_%28juillet_2019%29.JPG" .
+    
+    patrimalpr:site16
+            rdf:type         patrimalpo:Hamlet ;
+            rdfs:label       "Hameau de Egieu" ;
+            geo:hasGeometry  patrimalpr:site16Geom .
+    
+    patrimalpr:site1Image1
+            rdf:type             patrimalpo:Image ;
+            patrimalpo:credits   "Florian Bouquet" ;
+            patrimalpo:imageUrl  "http://lig-tdcge.imag.fr/steamer/patrimalp/catalogData/sites/images/site01.jpg" .
+    
+    patrimalpr:site9Image1
+            rdf:type             patrimalpo:Image ;
+            patrimalpo:credits   "Wikimedia Commons" ;
+            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/c/c7/Ch%C3%A2teau_de_Montrottier.jpg" .
+    
+    patrimalpr:site9Geom
+            rdf:type       geo:Geometry ;
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [6.039967621 , 45.89884798]}"^^geo:geoJSONLiteral ;
+            geo:asWKT      "POINT(6.039967621 45.89884798)"^^geo:wktLiteral .
+    
+    patrimalpr:site6Geom
+            rdf:type       geo:Geometry ;
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [6.21443655 , 45.5338653]}"^^geo:geoJSONLiteral ;
+            geo:asWKT      "POINT(6.21443655 45.5338653)"^^geo:wktLiteral .
+    
+    patrimalpr:site4Image1
+            rdf:type             patrimalpo:Image ;
+            patrimalpo:credits   "Wikimedia Commons" ;
+            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/e/e6/CHS_de_Bassens_%28entr%C3%A9e%29.JPG" .
+    
+    patrimalpr:site10
+            rdf:type         patrimalpo:Building ;
+            rdfs:label       "Collection privée Piémontaise " ;
+            geo:hasGeometry  patrimalpr:site10Geom .
+    
+    patrimalpr:site7  rdf:type  patrimalpo:Church ;
+            rdfs:label        "Église de Myans" ;
+            rdfs:seeAlso      wikidata:Q3471725 ;
+            patrimalpo:image  patrimalpr:site7Image1 ;
+            geo:hasGeometry   patrimalpr:site7Geom .
+}

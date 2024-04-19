@@ -1,0 +1,5 @@
+className	classLabel	conceptBaseName	conceptID	prefLabelFr	prefLabelEn	broaderConceptID	definition
+MaterialType	Type de Matériau						Définit le type de matériau d'une œuvre
+MaterialType		materialType	1	Type Materiau			Définit le type de matériau d'une œuvre
+MaterialType		materialType	2	tilleul		1	
+MaterialType		materialType	3	Pierre de Seyssel		1	

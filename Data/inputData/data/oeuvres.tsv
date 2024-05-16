@@ -1,19 +1,21 @@
-oeuvreID	dateCreation	titre	period	noInventaire	niveauProtection	dateProtection	siteConservationID	siteProvenanceID	commentProvenance	siteProvPossible	denomination	materiau	typeMateriau	hauteur	largeur	profondeur	niveauProtection	dateCreation	élémentsManquants	imageID	auteur	description	image
-1	2020-07-09	Saint évêque Claude	fin XVe début XVIe	1OM1970	3	1975-08-08	1	12			10	2	2	75	23,5	????	objet:08/08/1975	09/07/2020				Représentation d'un évêque avec ses attributs (mitre et sa chape)	
-2	2020-11-09	Sainte Catherine d'Alexandrie	fin XVe début XVIe	1OM1972	2		1	13			10	2		75	25	16	????	09/11/2020				Représentation de Sainte Catherine avec l'empereur Maximien sur la roue brisée. Elle porte une couronne et tient dans sa main une bible	
-3	2020-07-23	Saint Roch	1/4 du XVIe siècle	25-07-1958	5		2	14			10	2		77	33	18	classé au titre des monument historiques	23/07/2020				Représentation de saint Roch (saint antipesteux) en tenue de pèlerin	
-4	2020-10-13	Mise au tombeau de Lémenc	Après 1496	17-02-1900	4		3	15			11	3	3	212	405	212	Classé	13/10/2020				Mise au tombeau	
-5	2020-11-09	Vierge de pitié entre Saint Jean et Marie Madeleine	XVe siècle	1995/09/28	4		4				10	2		64	59	20	Classé	09/11/2020				Vierge de pitié entourée de saint Jean et Marie Madeleine	
-6	2020-07-12	Vierge de Calvaire	1/4 du XVIe siècle	08-08-1975	3	1975-08-08	1	16			10	2		46	16	10	Inscrit au titre des objets, 08/08/1975	12/07/2020				Représentation de la Vierge Marie dissimulée sous un manteau dont le voile dessine sur son front un pli caractéristique. Elle a les mains jointes en signe de prière.	
-7	2020-08-05	Saint Jean Baptiste	1/4 du XVIe siècle	D8668.368	2		5	17			10	2		96	34	13	????	05/08/2020				Représentation de saint Jean Baptiste. Il porte sa peau de mouton et est enveloppé dans un manteau.	
-8	2020-11-09	Saint Jean l'Evangéliste	fin XVe (entre 1470 et 1493 ?)	20-03-2003	6		6				10	2		94	40	17	inscrit 	09/11/2020				Représentation de saint Jean	
-9	2020-07-09	Madone, Vierge à l'enfant	fin XVe / début XVIe	APR. 1985	4		7				11	2		130	????	????	Classé	09/07/2020				Représentation de la Vierge et l'enfant Jésus. Cette dernière tient une pomme dans sa main, quant à Jésus il tient une colombe	
-10	2020-11-09	La vision de Saint Hubert	fin XVe / début XVIe	MA 3541	2		8	18			10	2		52	32	9	????	09/11/2020				Représentation de saint Hubert en prière devant le cerf christique	
-11	2020-11-09	Saint Crépin	1/4 du XVIe siècle	2012-5358.1	2		5	19			10	2		84	49	14	????	????				Représentation de Saint Crépin, saint patron des tanneurs	
-12	2020-07-23	Marie Madeleine	fin XVe / début XVIe	MB 957-81	2		9			20	10	2		92	56	25	????	23/07/2020				Marie madeleine, le bras tendu tenant son pot d'onguent	
-12										21													
-12										22													
-13	2020-11-09	Saint Jean (Oulx)	fin XVe / début XVIe	????	2		10				9	2		????	????	????	????	09/11/2020				Représentation de saint Jean l'Evangéliste tenant dans sa main un calice (saint jean avec calice contenant le serpent d'airain	
-14	2020-11-09	Vierge parturiente	XIIIe siècle ?	D2014.1.2.2	2		5	6	Elément du jubé de l'église prieurale demonté et replacé dans le coeur au XIXème siècle		11	3		55	76,5	23,5	????	09/11/2020				Vierge allongée sur un litière, représentation Vierge parturiente	
-15	2020-11-09	Vierge enseignante	fin XVe / début XVIe	23-08-1900	4		6				11	3		70	43	29	Classé	09/11/2020				Vierge couronnée à l'enfant qui enseigne à l'enfant Jésus	
-16	2020-11-09	Vierge de pitié	vers 1500	25/02/1952	4		5	23			11	2		83	77	23	Classé	09/11/2020				Vierge de pitié entourée de saint Jean et Marie Madeleine	
+oeuvreID	dateCreation	titre	period	noInventaire	niveauProtection	dateProtection	siteConservationID	siteProvenanceID	commentProvenance	siteProvPossible	denomination	materiau	hauteur	largeur	profondeur	niveauProtection	dateCreation	élémentsManquants	imageID	auteur	description	image
+1	2020-07-09	Saint évêque Claude	fin XVe début XVIe	1OM1970	3	1975-08-08	1	12			10	2	75	23,5	????	objet:08/08/1975	09/07/2020				Représentation d'un évêque avec ses attributs (mitre et sa chape)	
+1												5										
+2	2020-11-09	Sainte Catherine d'Alexandrie	fin XVe début XVIe	1OM1972	2		1	13			10	2	75	25	16	????	09/11/2020				Représentation de Sainte Catherine avec l'empereur Maximien sur la roue brisée. Elle porte une couronne et tient dans sa main une bible	
+3	2020-07-23	Saint Roch	1/4 du XVIe siècle	25-07-1958	5		2	14			10	2	77	33	18	classé au titre des monument historiques	23/07/2020				Représentation de saint Roch (saint antipesteux) en tenue de pèlerin	
+4	2020-10-13	Mise au tombeau de Lémenc	Après 1496	17-02-1900	4		3	15			11	3	212	405	212	Classé	13/10/2020				Mise au tombeau	
+4												6										
+5	2020-11-09	Vierge de pitié entre Saint Jean et Marie Madeleine	XVe siècle	1995/09/28	4		4				10	2	64	59	20	Classé	09/11/2020				Vierge de pitié entourée de saint Jean et Marie Madeleine	
+6	2020-07-12	Vierge de Calvaire	1/4 du XVIe siècle	08-08-1975	3	1975-08-08	1	16			10	2	46	16	10	Inscrit au titre des objets, 08/08/1975	12/07/2020				Représentation de la Vierge Marie dissimulée sous un manteau dont le voile dessine sur son front un pli caractéristique. Elle a les mains jointes en signe de prière.	
+7	2020-08-05	Saint Jean Baptiste	1/4 du XVIe siècle	D8668.368	2		5	17			10	2	96	34	13	????	05/08/2020				Représentation de saint Jean Baptiste. Il porte sa peau de mouton et est enveloppé dans un manteau.	
+8	2020-11-09	Saint Jean l'Evangéliste	fin XVe (entre 1470 et 1493 ?)	20-03-2003	6		6				10	2	94	40	17	inscrit 	09/11/2020				Représentation de saint Jean	
+9	2020-07-09	Madone, Vierge à l'enfant	fin XVe / début XVIe	APR. 1985	4		7				11	2	130	????	????	Classé	09/07/2020				Représentation de la Vierge et l'enfant Jésus. Cette dernière tient une pomme dans sa main, quant à Jésus il tient une colombe	
+10	2020-11-09	La vision de Saint Hubert	fin XVe / début XVIe	MA 3541	2		8	18			10	2	52	32	9	????	09/11/2020				Représentation de saint Hubert en prière devant le cerf christique	
+11	2020-11-09	Saint Crépin	1/4 du XVIe siècle	2012-5358.1	2		5	19			10	2	84	49	14	????	????				Représentation de Saint Crépin, saint patron des tanneurs	
+12	2020-07-23	Marie Madeleine	fin XVe / début XVIe	MB 957-81	2		9			20	10	2	92	56	25	????	23/07/2020				Marie madeleine, le bras tendu tenant son pot d'onguent	
+12										21												
+12										22												
+13	2020-11-09	Saint Jean (Oulx)	fin XVe / début XVIe	????	2		10				9	2	????	????	????	????	09/11/2020				Représentation de saint Jean l'Evangéliste tenant dans sa main un calice (saint jean avec calice contenant le serpent d'airain	
+14	2020-11-09	Vierge parturiente	XIIIe siècle ?	D2014.1.2.2	2		5	6	Elément du jubé de l'église prieurale demonté et replacé dans le coeur au XIXème siècle		11	3	55	76,5	23,5	????	09/11/2020				Vierge allongée sur un litière, représentation Vierge parturiente	
+15	2020-11-09	Vierge enseignante	fin XVe / début XVIe	23-08-1900	4		6				11	3	70	43	29	Classé	09/11/2020				Vierge couronnée à l'enfant qui enseigne à l'enfant Jésus	
+16	2020-11-09	Vierge de pitié	vers 1500	25/02/1952	4		5	23			11	2	83	77	23	Classé	09/11/2020				Vierge de pitié entourée de saint Jean et Marie Madeleine	

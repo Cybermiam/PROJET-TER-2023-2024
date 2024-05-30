@@ -8,7 +8,7 @@
 #
 # usage: generateThesaurus
 #
-# thre files are generated in the triple_store_data/thesaurus directory:
+# three files are generated in the triple_store_data/thesaurus directory:
 #
 # - brocartsThesaurus.ttl : a formatted turtle file
 # - brocartsThesaurus.trig : a formatted trig file with a named graph brocartsThesaurus

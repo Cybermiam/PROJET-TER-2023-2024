@@ -59,7 +59,7 @@ Le graphe de données généré, `sites.trig` se trouve alors dans `triple_store
 
 ### **generateAllData**
 
-Ce script peremt de générer tous les fichiers `.trig` pour les données Brocarts. Pour chaque ficher `.tsv` file contenu dans le répertoire  `../inputData/data` un fichier
+Ce script permet de générer tous les fichiers `.trig` pour les données Brocarts. Pour chaque ficher `.tsv` file contenu dans le répertoire  `../inputData/data` un fichier
 `.trig` correspondant est généré dans  le répertoire `../triple_store-data/data` et tous ces fichiers `.trig` sont fusionnés dans le fichier 
 `../triple_store_data/brocartsData.trig` qui regroupe en un seul graphe toutes les donées des brocarts.
 
@@ -73,8 +73,10 @@ Le nom du concept SKOS doit être significatif (exemple : si le fichier `.tsv` s
 
 ### **generateSKOS**
 
+permet de générer un fichier Turtle (`.ttl`) ou un fichier trig (graphe nommé) à partir d'un fichier `.tsv` définissant une hiérarchie de concepts, fichier défini dans le répertoire `input_data/thesaurus`.
+
 ```
-./generateVoc.sh <nom du fichier .tsv sans l'extension> <nom du concept skos>
+./generateSKOS.sh <nom du fichier .tsv sans l'extension> 
 ```
 
 ### **generateThesaurus**
@@ -86,9 +88,9 @@ générer tous les fichiers SKOS pour le thesaurus concernant les brocarts et le
 ```
 
 trois fichiers sont générés dans le répertoire `triple_store_data/thesaurus directory` :
-- brocartsThesaurus.ttl : un fichier turtle formatté
-- brocartsThesaurus.trig : un fichier trig formatté avec `brocartsThesaurus` comme graphe nommé
-- brocartsThesaurusOnto.ttl : un fichier turtle formatté sous la forme d'une ontologie OWL (ajout des triplets définissant l'ontologie)
+- `brocartsThesaurus.ttl` : un fichier turtle formatté
+- `brocartsThesaurus.trig` : un fichier trig formatté avec `brocartsThesaurus` comme graphe nommé
+- `brocartsThesaurusOnto.ttl` : un fichier turtle formatté sous la forme d'une ontologie OWL (ajout des triplets définissant l'ontologie)
 ce fichier est aussi copié dans le répertoire `Ontologies`
 
 

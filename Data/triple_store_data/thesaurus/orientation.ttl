@@ -1,0 +1,32 @@
+@prefix :  <http://patrimalp.org/brocarts/thesaurus#> .
+@prefix brocartsgraph:  <http://patrimalp.org/brocarts/graph/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Orientation  rdf:type   owl:Class ;
+        rdfs:subClassOf  skos:Concept ;
+        rdfs:label       "Orientation" ;
+        rdfs:comment     "Définit l'orientation d'un brocart" .
+
+:orientation1  rdf:type  :Orientation ;
+        skos:definition  "Définit l'orientation d'un brocart" ;
+        skos:prefLabel   "Orientation" .
+
+:orientation2  rdf:type  :Orientation ;
+        skos:broader    :orientation1 ;
+        skos:prefLabel  "Face" .
+
+:orientation3  rdf:type  :Orientation ;
+        skos:broader    :orientation1 ;
+        skos:prefLabel  "Dextre" .
+
+:orientation4  rdf:type  :Orientation ;
+        skos:broader    :orientation1 ;
+        skos:prefLabel  "Senestre" .
+
+:orientation5  rdf:type  :Orientation ;
+        skos:broader    :orientation1 ;
+        skos:prefLabel  "Revers" .

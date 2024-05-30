@@ -1,0 +1,452 @@
+@prefix :              <http://patrimalp.org/brocarts/thesaurus#> .
+@prefix brocartsgraph: <http://patrimalp.org/brocarts/graph/> .
+@prefix owl:           <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:           <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:          <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:          <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:           <http://www.w3.org/2001/XMLSchema#> .
+
+<http://patrimalp.org/brocarts/thesaurus> a owl:Ontology ;
+	owl:versionIRI <http://patrimalp.org/brocarts/thesaurus/1.0> ;
+	owl:imports <http://www.w3.org/2004/02/skos/core> ;
+	rdfs:comment "Ontologie définissant les concepts SKOS permettant de déclarer les valeurs des propriétés énumérées décrivant les brocarts"@fr .
+
+:typeOfEngraving6  rdf:type  :TypeOfEngraving ;
+        skos:broader    :typeOfEngraving2 ;
+        skos:prefLabel  "Stries obliques" .
+
+:analysisDevice1  rdf:type  :AnalysisDevice ;
+        skos:definition  "Définit l’appareil d’analyse utilisé pour l’étude de l’oeuvre" ;
+        skos:prefLabel   "Appareil d’analyse" .
+
+:materialType1  rdf:type  :MaterialType ;
+        skos:definition  "Définit le type de matériau d'une œuvre" ;
+        skos:prefLabel   "Type Materiau" .
+
+:Material  rdf:type      owl:Class ;
+        rdfs:comment     "Définit le matériau constituant une œuvre" ;
+        rdfs:label       "Matériau" ;
+        rdfs:subClassOf  skos:Concept .
+
+:denomination5  rdf:type  :Denomination ;
+        skos:broader    :denomination1 ;
+        skos:prefLabel  "Sculpture" .
+
+:Denomination  rdf:type  owl:Class ;
+        rdfs:comment     "Définit la qualification d'une oeuvre (par exemple Sculpture en Ronde Bosse Isolée)" ;
+        rdfs:label       "Dénomination" ;
+        rdfs:subClassOf  skos:Concept .
+
+:denomination11  rdf:type  :Denomination ;
+        skos:broader    :denomination9 ;
+        skos:prefLabel  "Ronde-bosse en groupe" .
+
+:localisation4  rdf:type  :Localisation ;
+        skos:broader    :localisation1 ;
+        skos:prefLabel  "Vêtement médiéval" .
+
+:typeOfBrocade4  rdf:type  :TypeOfBrocade ;
+        skos:broader    :typeOfBrocade1 ;
+        skos:prefLabel  "Parsemé" .
+
+:orientation3  rdf:type  :Orientation ;
+        skos:broader    :orientation1 ;
+        skos:prefLabel  "Dextre" .
+
+:localisation14  rdf:type  :Localisation ;
+        skos:broader    :localisation13 ;
+        skos:prefLabel  "Dalmatique haut" .
+
+:patchShape2  rdf:type  :PatchShape ;
+        skos:broader    :patchShape1 ;
+        skos:prefLabel  "Circulaire" .
+
+:preparationLayer3  rdf:type  :PreparationLayer ;
+        skos:broader    :preparationLayer1 ;
+        skos:prefLabel  "Jaune et blanche" .
+
+:protectionLevel2  rdf:type  :ProtectionLevel ;
+        skos:broader    :protectionLevel1 ;
+        skos:prefLabel  "None-protected" , "Non protégé" .
+
+:material3  rdf:type    :Material ;
+        skos:broader    :material1 ;
+        skos:prefLabel  "Pierre polychromée" .
+
+:TypeOfBrocade  rdf:type  owl:Class ;
+        rdfs:comment     "Typologie de répartition du brocart" ;
+        rdfs:label       "Type de Brocard" ;
+        rdfs:subClassOf  skos:Concept .
+
+:localisation21  rdf:type  :Localisation ;
+        skos:broader    :localisation9 ;
+        skos:prefLabel  "Robe (Marie Madeleine)" .
+
+:typeOfEngraving12  rdf:type  :TypeOfEngraving ;
+        skos:broader    :typeOfEngraving10 ;
+        skos:prefLabel  "Courbes en traits pleins" .
+
+:typeOfEngraving5  rdf:type  :TypeOfEngraving ;
+        skos:broader    :typeOfEngraving2 ;
+        skos:prefLabel  "Stries en biais" .
+
+:localisation9  rdf:type  :Localisation ;
+        skos:broader    :localisation4 ;
+        skos:prefLabel  "Robe" .
+
+:denomination4  rdf:type  :Denomination ;
+        skos:broader    :denomination2 ;
+        skos:prefLabel  "Peinture sur panneau" .
+
+:localisation19  rdf:type  :Localisation ;
+        skos:broader    :localisation6 ;
+        skos:prefLabel  "Manteau (vierge)" .
+
+:denomination10  rdf:type  :Denomination ;
+        skos:broader    :denomination9 ;
+        skos:prefLabel  "Ronde-bosse isolée" .
+
+:patchShape7  rdf:type  :PatchShape ;
+        skos:broader    :patchShape1 ;
+        skos:prefLabel  "Losange" .
+
+:localisation3  rdf:type  :Localisation ;
+        skos:broader    :localisation1 ;
+        skos:prefLabel  "Tenture/Fond" .
+
+:typeOfBrocade3  rdf:type  :TypeOfBrocade ;
+        skos:broader    :typeOfBrocade1 ;
+        skos:prefLabel  "Juxtaposé" .
+
+:AnalysisDevice  rdf:type  owl:Class ;
+        rdfs:comment     "Définit l’appareil d’analyse utilisé pour l’étude de l’oeuvre" ;
+        rdfs:label       "Appareil d’Analyse" ;
+        rdfs:subClassOf  skos:Concept .
+
+:orientation2  rdf:type  :Orientation ;
+        skos:broader    :orientation1 ;
+        skos:prefLabel  "Face" .
+
+:localisation13  rdf:type  :Localisation ;
+        skos:broader    :localisation11 ;
+        skos:prefLabel  "Dalmatique" .
+
+:patchShape1  rdf:type   :PatchShape ;
+        skos:definition  "Définit la forme d'une plaque" ;
+        skos:prefLabel   "Forme de plaque" .
+
+:preparationLayer2  rdf:type  :PreparationLayer ;
+        skos:broader    :preparationLayer1 ;
+        skos:prefLabel  "Sulfate de calcium" .
+
+:protectionLevel1  rdf:type  :ProtectionLevel ;
+        skos:definition  "Définit le niveau de protection d'une oeuvre" ;
+        skos:prefLabel   "Protection Level" , "NiveauProtection" .
+
+:material2  rdf:type    :Material ;
+        skos:broader    :material1 ;
+        skos:prefLabel  "Bois polychromé" .
+
+:theme4  rdf:type       :Theme ;
+        skos:broader    :theme1 ;
+        skos:prefLabel  "Ornementaux" .
+
+:denomination9  rdf:type  :Denomination ;
+        skos:broader    :denomination5 ;
+        skos:prefLabel  "Ronde-bosse" .
+
+:localisation20  rdf:type  :Localisation ;
+        skos:broader    :localisation6 ;
+        skos:prefLabel  "Manteau (Marie Madeleine)" .
+
+:typeOfEngraving11  rdf:type  :TypeOfEngraving ;
+        skos:broader    :typeOfEngraving10 ;
+        skos:prefLabel  "Courbes en pointillé" .
+
+:typeOfEngraving4  rdf:type  :TypeOfEngraving ;
+        skos:broader    :typeOfEngraving2 ;
+        skos:prefLabel  "Stries horizontales" .
+
+:localisation8  rdf:type  :Localisation ;
+        skos:broader    :localisation4 ;
+        skos:prefLabel  "Pourpoint" .
+
+:denomination3  rdf:type  :Denomination ;
+        skos:broader    :denomination2 ;
+        skos:prefLabel  "Peinture murale" .
+
+:localisation18  rdf:type  :Localisation ;
+        skos:broader    :localisation1 ;
+        skos:prefLabel  "Sous la manche" .
+
+:patchShape6  rdf:type  :PatchShape ;
+        skos:broader    :patchShape1 ;
+        skos:prefLabel  "Non identifiable" .
+
+:Theme  rdf:type         owl:Class ;
+        rdfs:comment     "Définit le thème d'une œuvre" ;
+        rdfs:label       "Thème" ;
+        rdfs:subClassOf  skos:Concept .
+
+:protectionLevel6  rdf:type  :ProtectionLevel ;
+        skos:broader    :protectionLevel1 ;
+        skos:prefLabel  "Inscrit" .
+
+:localisation2  rdf:type  :Localisation ;
+        skos:broader    :localisation1 ;
+        skos:prefLabel  "Fond de décors" .
+
+:typeOfBrocade2  rdf:type  :TypeOfBrocade ;
+        skos:broader    :typeOfBrocade1 ;
+        skos:prefLabel  "Galons" .
+
+:orientation1  rdf:type  :Orientation ;
+        skos:definition  "Définit l'orientation d'un brocart" ;
+        skos:prefLabel   "Orientation" .
+
+:localisation12  rdf:type  :Localisation ;
+        skos:broader    :localisation11 ;
+        skos:prefLabel  "Cotte" .
+
+:MaterialType  rdf:type  owl:Class ;
+        rdfs:comment     "Définit le type de matériau d'une œuvre" ;
+        rdfs:label       "Type de Matériau" ;
+        rdfs:subClassOf  skos:Concept .
+
+:preparationLayer1  rdf:type  :PreparationLayer ;
+        skos:definition  "Définit la couche de préparation d'un brocart" ;
+        skos:prefLabel   "Couche Préparation" .
+
+:typeOfEngraving9  rdf:type  :TypeOfEngraving ;
+        skos:broader    :typeOfEngraving8 ;
+        skos:prefLabel  "Quadrillage en biais" .
+
+:material1  rdf:type     :Material ;
+        skos:definition  "Définit le matériau constituant une œuvre" ;
+        skos:prefLabel   "Materiau" .
+
+:Localisation  rdf:type  owl:Class ;
+        rdfs:comment     "Localisation du brocard sur l'oeuvre" ;
+        rdfs:label       "Localisation" ;
+        rdfs:subClassOf  skos:Concept .
+
+:theme3  rdf:type       :Theme ;
+        skos:broader    :theme1 ;
+        skos:prefLabel  "Végétal" .
+
+:denomination8  rdf:type  :Denomination ;
+        skos:broader    :denomination6 ;
+        skos:prefLabel  "Bas relief en groupe" .
+
+:denomination14  rdf:type  :Denomination ;
+        skos:broader    :denomination12 ;
+        skos:prefLabel  "Sculpture d'applique en groupe" .
+
+:typeOfEngraving10  rdf:type  :TypeOfEngraving ;
+        skos:broader    :typeOfEngraving1 ;
+        skos:prefLabel  "Courbes" .
+
+:typeOfEngraving3  rdf:type  :TypeOfEngraving ;
+        skos:broader    :typeOfEngraving2 ;
+        skos:prefLabel  "Stries verticales " .
+
+:PatchShape  rdf:type    owl:Class ;
+        rdfs:comment     "Définit la forme d'une plaque" ;
+        rdfs:label       "Forme de Plaque" ;
+        rdfs:subClassOf  skos:Concept .
+
+:localisation7  rdf:type  :Localisation ;
+        skos:broader    :localisation6 ;
+        skos:prefLabel  "Chape" .
+
+:denomination2  rdf:type  :Denomination ;
+        skos:broader    :denomination1 ;
+        skos:prefLabel  "Peinture" .
+
+:TypeOfEngraving  rdf:type  owl:Class ;
+        rdfs:comment     "Définit la typologie des gravures d'un élément de brocart" ;
+        rdfs:label       "Type de Gravure" ;
+        rdfs:subClassOf  skos:Concept .
+
+:localisation17  rdf:type  :Localisation ;
+        skos:broader    :localisation6 ;
+        skos:prefLabel  "Manteau revers" .
+
+:patchShape5  rdf:type  :PatchShape ;
+        skos:broader    :patchShape1 ;
+        skos:prefLabel  "Rectangulaire" .
+
+:protectionLevel5  rdf:type  :ProtectionLevel ;
+        skos:broader    :protectionLevel4 ;
+        skos:prefLabel  "Classé au titre des monument historiques" .
+
+:material6  rdf:type    :Material ;
+        skos:broader    :material1 ;
+        skos:prefLabel  "Pierre de Seyssel" .
+
+:localisation1  rdf:type  :Localisation ;
+        skos:definition  "Localisation du brocard sur l'oeuvre" ;
+        skos:prefLabel   "Localisation" .
+
+:typeOfBrocade1  rdf:type  :TypeOfBrocade ;
+        skos:definition  "Typologie de répartition du brocart" ;
+        skos:prefLabel   "Typologie Brocart" .
+
+:localisation11  rdf:type  :Localisation ;
+        skos:broader    :localisation4 ;
+        skos:prefLabel  "Tunique" .
+
+:typeOfEngraving15  rdf:type  :TypeOfEngraving ;
+        skos:broader    :typeOfEngraving1 ;
+        skos:prefLabel  "Bractées épineuses" .
+
+:typeOfEngraving8  rdf:type  :TypeOfEngraving ;
+        skos:broader    :typeOfEngraving1 ;
+        skos:prefLabel  "Quadrillage" .
+
+:analysisDevice3  rdf:type  :AnalysisDevice ;
+        skos:broader    :analysisDevice2 ;
+        skos:prefLabel  "Microscope électronique" .
+
+:materialType3  rdf:type  :MaterialType ;
+        skos:broader    :materialType1 ;
+        skos:prefLabel  "Pierre de Seyssel" .
+
+:theme2  rdf:type       :Theme ;
+        skos:broader    :theme1 ;
+        skos:prefLabel  "Géométrique" .
+
+:denomination7  rdf:type  :Denomination ;
+        skos:broader    :denomination6 ;
+        skos:prefLabel  "Bas relief isolé" .
+
+:denomination13  rdf:type  :Denomination ;
+        skos:broader    :denomination12 ;
+        skos:prefLabel  "Sculpture d'applique isolée" .
+
+:typeOfEngraving2  rdf:type  :TypeOfEngraving ;
+        skos:broader    :typeOfEngraving1 ;
+        skos:prefLabel  "Stries" .
+
+:localisation6  rdf:type  :Localisation ;
+        skos:broader    :localisation4 ;
+        skos:prefLabel  "Manteau" .
+
+:denomination1  rdf:type  :Denomination ;
+        skos:definition  "Définit la qualification d'une oeuvre (par exemple Sculpture en Ronde Bosse Isolée)" ;
+        skos:prefLabel   "Denomination" .
+
+:orientation5  rdf:type  :Orientation ;
+        skos:broader    :orientation1 ;
+        skos:prefLabel  "Revers" .
+
+:localisation16  rdf:type  :Localisation ;
+        skos:broader    :localisation7 ;
+        skos:prefLabel  "Chape (arrière genou à senestre) " .
+
+:patchShape4  rdf:type  :PatchShape ;
+        skos:broader    :patchShape1 ;
+        skos:prefLabel  "Recouvrant" .
+
+:Orientation  rdf:type   owl:Class ;
+        rdfs:comment     "Définit l'orientation d'un brocart" ;
+        rdfs:label       "Orientation" ;
+        rdfs:subClassOf  skos:Concept .
+
+:protectionLevel4  rdf:type  :ProtectionLevel ;
+        skos:broader    :protectionLevel1 ;
+        skos:prefLabel  "Classé" .
+
+:PreparationLayer  rdf:type  owl:Class ;
+        rdfs:comment     "Définit la couche de préparation d'un brocart" ;
+        rdfs:label       "Couche de Préparation" ;
+        rdfs:subClassOf  skos:Concept .
+
+:material5  rdf:type    :Material ;
+        skos:broader    :material1 ;
+        skos:prefLabel  "Tilleul" .
+
+:localisation10  rdf:type  :Localisation ;
+        skos:broader    :localisation9 ;
+        skos:prefLabel  "Houppelande" .
+
+:localisation23  rdf:type  :Localisation ;
+        skos:broader    :localisation1 ;
+        skos:prefLabel  "Maximien" .
+
+:typeOfEngraving14  rdf:type  :TypeOfEngraving ;
+        skos:broader    :typeOfEngraving1 ;
+        skos:prefLabel  "Autre" .
+
+:typeOfEngraving7  rdf:type  :TypeOfEngraving ;
+        skos:broader    :typeOfEngraving2 ;
+        skos:prefLabel  "Stries parallèles" .
+
+:analysisDevice2  rdf:type  :AnalysisDevice ;
+        skos:broader    :analysisDevice1 ;
+        skos:prefLabel  "Microscope" .
+
+:materialType2  rdf:type  :MaterialType ;
+        skos:broader    :materialType1 ;
+        skos:prefLabel  "tilleul" .
+
+:theme1  rdf:type        :Theme ;
+        skos:definition  "Définit le thème d'une œuvre" ;
+        skos:prefLabel   "Type Theme" .
+
+:denomination6  rdf:type  :Denomination ;
+        skos:broader    :denomination5 ;
+        skos:prefLabel  "Bas relief" .
+
+:denomination12  rdf:type  :Denomination ;
+        skos:broader    :denomination5 ;
+        skos:prefLabel  "Sculpture d'applique" .
+
+:typeOfEngraving1  rdf:type  :TypeOfEngraving ;
+        skos:definition  "Définit la typologie des gravures d'un élément de brocart" ;
+        skos:prefLabel   "Type Gravure" .
+
+:localisation5  rdf:type  :Localisation ;
+        skos:broader    :localisation4 ;
+        skos:prefLabel  "Cotte-Hardie" .
+
+:typeOfBrocade5  rdf:type  :TypeOfBrocade ;
+        skos:broader    :typeOfBrocade1 ;
+        skos:prefLabel  "Non défini" .
+
+:orientation4  rdf:type  :Orientation ;
+        skos:broader    :orientation1 ;
+        skos:prefLabel  "Senestre" .
+
+:localisation15  rdf:type  :Localisation ;
+        skos:broader    :localisation13 ;
+        skos:prefLabel  "Dalmatique bas" .
+
+:ProtectionLevel  rdf:type  owl:Class ;
+        rdfs:comment     "Définit le niveau de protection d'une oeuvre" ;
+        rdfs:label       "Niveau de Protection" ;
+        rdfs:subClassOf  skos:Concept .
+
+:patchShape3  rdf:type  :PatchShape ;
+        skos:broader    :patchShape1 ;
+        skos:prefLabel  "Elipse" .
+
+:preparationLayer4  rdf:type  :PreparationLayer ;
+        skos:broader    :preparationLayer1 ;
+        skos:prefLabel  "Gypse" .
+
+:protectionLevel3  rdf:type  :ProtectionLevel ;
+        skos:broader    :protectionLevel6 ;
+        skos:prefLabel  "Inscrit au titre des objets" .
+
+:material4  rdf:type    :Material ;
+        skos:broader    :material1 ;
+        skos:prefLabel  "Peinture murale" .
+
+:localisation22  rdf:type  :Localisation ;
+        skos:broader    :localisation11 ;
+        skos:prefLabel  "Tunique (saint Jean)" .
+
+:typeOfEngraving13  rdf:type  :TypeOfEngraving ;
+        skos:broader    :typeOfEngraving1 ;
+        skos:prefLabel  "Cercles/anneaux" .

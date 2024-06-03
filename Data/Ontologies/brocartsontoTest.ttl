@@ -138,13 +138,6 @@ brocartsonto:siteOfOrigin rdf:type owl:ObjectProperty ;
                                      "Site of origin"@en .
 
 
-###  http://patrimalp.org/brocarts/onto#typeOfSculpture
-brocartsonto:typeOfSculpture rdf:type owl:ObjectProperty ;
-                          rdfs:domain brocartsonto:WOAInformations ;
-                          rdfs:label "Dénomination"@fr ,
-                                     "Type of statue"@en .
-
-
 #################################################################
 #    Data properties
 #################################################################
@@ -292,6 +285,18 @@ brocartsonto:WOAInformations rdf:type owl:Class ;
                              brocartsonto:typeNavigation "nav" ;
                              rdfs:comment "Information about the work of art"@en ;
                              rdfs:label "Informations sur l'oeuvre"@fr .
+
+
+###  http://patrimalp.org/brocarts/thesaurus#Denomination
+<http://patrimalp.org/brocarts/thesaurus#Denomination> rdf:type owl:Class .
+
+
+###  http://patrimalp.org/brocarts/thesaurus#Material
+<http://patrimalp.org/brocarts/thesaurus#Material> rdf:type owl:Class .
+
+
+###  http://patrimalp.org/brocarts/thesaurus#ProtectionLevel
+<http://patrimalp.org/brocarts/thesaurus#ProtectionLevel> rdf:type owl:Class .
 
 
 ###  http://www.w3.org/2004/02/skos/core#Concept

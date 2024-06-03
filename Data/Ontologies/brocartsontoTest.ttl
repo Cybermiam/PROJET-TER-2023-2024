@@ -60,27 +60,11 @@ brocartsonto:denomination rdf:type owl:ObjectProperty ;
                           rdfs:comment "Dénomation permettant de définir le type d'oeuvre (par exemple statue en ronde bosse isolée). Le type de l'oeuvre est définie par un concept SKOS (voir brocartsVoc:Denomination)" .
 
 
-###  http://patrimalp.org/brocarts/onto#generalInformation
-brocartsonto:generalInformation rdf:type owl:ObjectProperty ;
-                                rdfs:range brocartsonto:WOAInformations ;
-                                brocartsonto:typeNavigation "nav" ;
-                                rdfs:label "General information"@en ,
-                                           "Informations générales"@fr .
-
-
 ###  http://patrimalp.org/brocarts/onto#iconography
 brocartsonto:iconography rdf:type owl:ObjectProperty ;
                          rdfs:domain brocartsonto:WOAInformations ;
                          rdfs:label "Iconographie"@fr ,
                                     "Iconography"@en .
-
-
-###  http://patrimalp.org/brocarts/onto#identification
-brocartsonto:identification rdf:type owl:ObjectProperty ;
-                            rdfs:range brocartsonto:WOAIdentification ;
-                            brocartsonto:typeNavigation "nav" ;
-                            rdfs:label "Identification" ,
-                                       "Identification"@en .
 
 
 ###  http://patrimalp.org/brocarts/onto#imagesBrocade

@@ -55,7 +55,7 @@ brocartsonto:appliedBrocades rdf:type owl:ObjectProperty ;
 
 ###  http://patrimalp.org/brocarts/onto#denomination
 brocartsonto:denomination rdf:type owl:ObjectProperty ;
-                          rdfs:domain patrimalpo:Statue ;
+                          rdfs:domain patrimalpo:Sculpture ;
                           rdfs:range <http://patrimalp.org/brocarts/thesaurus#Denomination> ;
                           rdfs:comment "Dénomation permettant de définir le type d'oeuvre (par exemple statue en ronde bosse isolée). Le type de l'oeuvre est définie par un concept SKOS (voir brocartsVoc:Denomination)" .
 
@@ -93,7 +93,7 @@ brocartsonto:imagesBrocade rdf:type owl:ObjectProperty ;
 
 ###  http://patrimalp.org/brocarts/onto#material
 brocartsonto:material rdf:type owl:ObjectProperty ;
-                      rdfs:domain patrimalpo:Statue ;
+                      rdfs:domain patrimalpo:Sculpture ;
                       rdfs:range <http://patrimalp.org/brocarts/thesaurus#Material> ;
                       rdfs:label "Material"@en ,
                                  "Matériau"@fr .
@@ -116,7 +116,7 @@ brocartsonto:missingElements rdf:type owl:ObjectProperty ;
 
 ###  http://patrimalp.org/brocarts/onto#protectionLevel
 brocartsonto:protectionLevel rdf:type owl:ObjectProperty ;
-                             rdfs:domain patrimalpo:Statue ;
+                             rdfs:domain patrimalpo:Sculpture ;
                              rdfs:range <http://patrimalp.org/brocarts/thesaurus#ProtectionLevel> ;
                              rdfs:label "Niveau de protection"@fr ,
                                         "Protection level"@en .
@@ -138,8 +138,8 @@ brocartsonto:siteOfOrigin rdf:type owl:ObjectProperty ;
                                      "Site of origin"@en .
 
 
-###  http://patrimalp.org/brocarts/onto#typeOfStatue
-brocartsonto:typeOfStatue rdf:type owl:ObjectProperty ;
+###  http://patrimalp.org/brocarts/onto#typeOfSculpture
+brocartsonto:typeOfSculpture rdf:type owl:ObjectProperty ;
                           rdfs:domain brocartsonto:WOAInformations ;
                           rdfs:label "Dénomination"@fr ,
                                      "Type of statue"@en .

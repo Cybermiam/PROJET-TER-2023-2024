@@ -31,26 +31,27 @@ brew install gnu-sed
 
 Une fois l'installation terminée, vous pouvez utiliser **gsed** comme une commande distincte pour bénéficier de ses fonctionnalités étendues.
 
-# Problème pour utiliser les scripts sous WSL
+# Problème pour utiliser les scripts sous WSL (Windows)
 
-En cas d'erreur dans l'exécution d'un script
+Attention, la diffrénece d'encodage des fins de ligne entre windows et uniw peut poser des problèmes pour exécuter les scripts
+dans WSL. En cas d'erreur dans l'exécution d'un script
 
 ```
-------- [ generateAllVoc.sh] -------
+------- [ generateThesaurus.sh] -------
 ---- Deleting old TriG files:
 ---- Currently modifying: appareilAnalyse
-./generateAllVoc.sh: ./generateVoc.sh: /bin/bash^M: bad interpreter: No such file or directory
+./generateThesaurus.sh: ./generateSKOS.sh: /bin/bash^M: bad interpreter: No such file or directory
         Error: failed to generate data for appareilAnalyse
 ```
-exécuter la commande 
+
+Pour fixer le problème il faut exécuter la commande 
 
 ```
-dos2unix ./generateVoc.sh
-dos2unix: converting file ./generateVoc.sh to Unix format...
+dos2unix ./generateSKOS.sh
+dos2unix: converting file ./generateSKOS.sh to Unix format...
 ```
 Pour être sûr que tous le fichiers script sont au format Unix et non Windows
 
 ```
 dos2unix *.sh
-dos2unix: converting file ./generateVoc.sh to Unix format...
 ```

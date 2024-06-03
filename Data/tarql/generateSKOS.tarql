@@ -1,11 +1,12 @@
-PREFIX : <http://patrimalp.org/graph/>
+PREFIX : <http://patrimalp.org/brocarts/thesaurus#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#> 
-PREFIX brocartsvoc: <http://patrimalp.org/brocarts/thesaurus#>
+PREFIX : <http://patrimalp.org/brocarts/thesaurus#>
+PREFIX brocartsgraph: <http://patrimalp.org/brocarts/graph/> 
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
-BASE <http://patrimalp.org/brocarts/thesaurus>
+# BASE <http://patrimalp.org/brocarts/thesaurus>
 
 CONSTRUCT {
 
@@ -22,8 +23,8 @@ CONSTRUCT {
 } 
  
 WHERE {
-  BIND (URI(CONCAT("#" , ?className)) AS ?classIRI)
+  BIND (URI(CONCAT(tarql:expandPrefix("") , ?className)) AS ?classIRI)
   BIND (STRLANG(?classLabelEn, "en") AS ?classLabelEnglish)
-  BIND (URI(CONCAT("#" , STR(?conceptBaseName), ENCODE_FOR_URI(?conceptID))) AS ?conceptIRI)
-  BIND (URI(CONCAT("#" , ?conceptBaseName, ?broaderConceptID)) AS ?broaderConceptIRI)
+  BIND (URI(CONCAT("http://patrimalp.org/brocarts/thesaurus#" , STR(?conceptBaseName), ENCODE_FOR_URI(?conceptID))) AS ?conceptIRI)
+  BIND (URI(CONCAT("http://patrimalp.org/brocarts/thesaurus#" , ?conceptBaseName, ?broaderConceptID)) AS ?broaderConceptIRI)
 }

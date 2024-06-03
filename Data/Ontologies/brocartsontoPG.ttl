@@ -1,0 +1,372 @@
+@prefix : <http://patrimalp.org/brocarts/onto#> .
+@prefix sf: <http://www.opengis.net/ont/sf#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix edytem: <http://example.org/edytem#> .
+@prefix patrimalpo: <http://patrimalp.org/ontologies/patrimalp#> .
+@prefix brocartsonto: <http://patrimalp.org/brocarts/onto#> .
+@base <http://patrimalp.org/brocarts/onto> .
+
+<http://patrimalp.org/brocarts/onto> rdf:type owl:Ontology ;
+                                      owl:versionIRI <http://patrimalp.org/brocarts/onto/1.0> ;
+                                      owl:imports <http://patrimalp.org/brocarts/thesaurus/1.0> ,
+                                                  <http://patrimalp.org/ontologies/patrimalp/1.0> ;
+                                      rdfs:comment "Ontolgie contenant les concepts liés au domaine des brocarts"@fr .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://patrimalp.org/brocarts/onto#typeNavigation
+brocartsonto:typeNavigation rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://patrimalp.org/brocarts/onto#appliedBrocades
+brocartsonto:appliedBrocades rdf:type owl:ObjectProperty ;
+                             rdfs:range brocartsonto:ListOfBrocades ;
+                             brocartsonto:typeNavigation "nav" ;
+                             rdfs:label "Applied brocades"@en ,
+                                        "Brocarts appliqués"@fr .
+
+
+###  http://patrimalp.org/brocarts/onto#denomination
+brocartsonto:denomination rdf:type owl:ObjectProperty ;
+                          rdfs:domain patrimalpo:Statue ;
+                          rdfs:range <http://patrimalp.org/brocarts/thesaurus#Denomination> ;
+                          rdfs:comment "Dénomation permettant de définir le type d'oeuvre (par exemple statue en ronde bosse isolée). Le type de l'oeuvre est définie par un concept SKOS (voir brocartsVoc:Denomination)" ;
+                          rdfs:label "denomination"@en ,
+                                     "dénomination"@fr .
+
+
+###  http://patrimalp.org/brocarts/onto#generalInformation
+brocartsonto:generalInformation rdf:type owl:ObjectProperty ;
+                                rdfs:range brocartsonto:WOAInformations ;
+                                brocartsonto:typeNavigation "nav" ;
+                                rdfs:label "General information"@en ,
+                                           "Informations générales"@fr .
+
+
+###  http://patrimalp.org/brocarts/onto#iconography
+brocartsonto:iconography rdf:type owl:ObjectProperty ;
+                         rdfs:domain brocartsonto:WOAInformations ;
+                         rdfs:label "Iconographie"@fr ,
+                                    "Iconography"@en .
+
+
+###  http://patrimalp.org/brocarts/onto#identification
+brocartsonto:identification rdf:type owl:ObjectProperty ;
+                            rdfs:range brocartsonto:WOAIdentification ;
+                            brocartsonto:typeNavigation "nav" ;
+                            rdfs:label "Identification" ,
+                                       "Identification"@en .
+
+
+###  http://patrimalp.org/brocarts/onto#imagesBrocade
+brocartsonto:imagesBrocade rdf:type owl:ObjectProperty ;
+                           rdfs:domain brocartsonto:Brocade ;
+                           brocartsonto:typeNavigation "img" ;
+                           rdfs:label "Images of brocade"@en ,
+                                      "ImagesBrocart"@fr .
+
+
+###  http://patrimalp.org/brocarts/onto#location
+brocartsonto:location rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://patrimalp.org/brocarts/onto#material
+brocartsonto:material rdf:type owl:ObjectProperty ;
+                      rdfs:domain patrimalpo:Statue ;
+                      rdfs:range <http://patrimalp.org/brocarts/thesaurus#Material> ;
+                      rdfs:label "Material"@en ,
+                                 "Matériau"@fr .
+
+
+###  http://patrimalp.org/brocarts/onto#materialType
+brocartsonto:materialType rdf:type owl:ObjectProperty ;
+                          rdfs:domain brocartsonto:WOAInformations ;
+                          rdfs:label "Material type"@en ,
+                                     "Type materiau"@fr .
+
+
+###  http://patrimalp.org/brocarts/onto#missingElements
+brocartsonto:missingElements rdf:type owl:ObjectProperty ;
+                             rdfs:domain brocartsonto:WOAIdentification ,
+                                         brocartsonto:WOAInformations ;
+                             rdfs:label "Missing elements"@en ,
+                                        "Éléments manquants"@fr .
+
+
+###  http://patrimalp.org/brocarts/onto#patchShape
+brocartsonto:patchShape rdf:type owl:ObjectProperty ;
+                        rdfs:domain brocartsonto:Brocade ;
+                        rdfs:range <http://patrimalp.org/brocarts/thesaurus#PatchShape> ;
+                        rdfs:label "Forme de plaque"@fr ,
+                                   "Patch shape"@en .
+
+
+###  http://patrimalp.org/brocarts/onto#position
+brocartsonto:position rdf:type owl:ObjectProperty ;
+                      rdfs:domain brocartsonto:Brocade ;
+                      rdfs:range <http://patrimalp.org/brocarts/thesaurus#Localisation> ;
+                      brocartsonto:typeNavigation "nav" ;
+                      rdfs:label "Localisation"@fr ,
+                                 "Localisation du brocard sur l'oeuvre"@fr ,
+                                 "Position"@en .
+
+
+###  http://patrimalp.org/brocarts/onto#preparationLayer
+brocartsonto:preparationLayer rdf:type owl:ObjectProperty ;
+                              rdfs:domain brocartsonto:Brocade ;
+                              rdfs:range <http://patrimalp.org/brocarts/thesaurus#PreparationLayer> ;
+                              rdfs:comment "\"Définit la couche de préparation d'un brocart\""@fr ;
+                              rdfs:label "Couche de préparation"@fr ,
+                                         "Preparation Layer"@en .
+
+
+###  http://patrimalp.org/brocarts/onto#protectionLevel
+brocartsonto:protectionLevel rdf:type owl:ObjectProperty ;
+                             rdfs:domain brocartsonto:WOAIdentification ;
+                             rdfs:range <http://patrimalp.org/brocarts/thesaurus#ProtectionLevel> ;
+                             rdfs:label "Niveau de protection"@fr ,
+                                        "Protection level"@en .
+
+
+###  http://patrimalp.org/brocarts/onto#siteOfConversation
+brocartsonto:siteOfConversation rdf:type owl:ObjectProperty ;
+                                rdfs:domain brocartsonto:WOAIdentification ;
+                                rdfs:range patrimalpo:Site ;
+                                rdfs:label "Lieu de conservation"@fr ,
+                                           "Site of conversation"@en .
+
+
+###  http://patrimalp.org/brocarts/onto#siteOfOrigin
+brocartsonto:siteOfOrigin rdf:type owl:ObjectProperty ;
+                          rdfs:domain brocartsonto:WOAIdentification ;
+                          rdfs:range patrimalpo:Site ;
+                          rdfs:label "Lieu d'origine"@fr ,
+                                     "Site of origin"@en .
+
+
+###  http://patrimalp.org/brocarts/onto#typeOfBrocade
+brocartsonto:typeOfBrocade rdf:type owl:ObjectProperty ;
+                           rdfs:domain brocartsonto:Brocade ;
+                           rdfs:range <http://patrimalp.org/brocarts/thesaurus#TypeOfBrocade> ;
+                           rdfs:comment "Définit la typologie de répartition du brocart"@fr ;
+                           rdfs:label "type de brocart"@fr ,
+                                      "type of brocade"@en .
+
+
+###  http://patrimalp.org/brocarts/onto#typeOfEngraving
+brocartsonto:typeOfEngraving rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf owl:topObjectProperty ;
+                             rdfs:label "type of engraving"@en ,
+                                        "typologie gravure"@fr .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://patrimalp.org/brocarts/onto#author
+brocartsonto:author rdf:type owl:DatatypeProperty ;
+                    rdfs:label "Auteur"@fr ,
+                               "Author"@en .
+
+
+###  http://patrimalp.org/brocarts/onto#colouredLayer
+brocartsonto:colouredLayer rdf:type owl:DatatypeProperty ;
+                           rdfs:domain brocartsonto:Brocade ;
+                           rdfs:range xsd:string ;
+                           rdfs:label "Coloured layer"@en ,
+                                      "Couche colorée"@fr .
+
+
+###  http://patrimalp.org/brocarts/onto#constructionDate
+brocartsonto:constructionDate rdf:type owl:DatatypeProperty ;
+                              rdfs:range xsd:string ;
+                              rdfs:label "Construction date"@en ,
+                                         "Date de construction"@fr .
+
+
+###  http://patrimalp.org/brocarts/onto#creationDate
+brocartsonto:creationDate rdf:type owl:DatatypeProperty ;
+                          rdfs:domain brocartsonto:WOAIdentification ;
+                          rdfs:range xsd:date ;
+                          rdfs:label "Date de création de la fiche"@fr ,
+                                     "Date of creation of the file"@en .
+
+
+###  http://patrimalp.org/brocarts/onto#depth
+brocartsonto:depth rdf:type owl:DatatypeProperty ;
+                   rdfs:range xsd:int .
+
+
+###  http://patrimalp.org/brocarts/onto#description
+brocartsonto:description rdf:type owl:DatatypeProperty .
+
+
+###  http://patrimalp.org/brocarts/onto#glazeColour
+brocartsonto:glazeColour rdf:type owl:DatatypeProperty ;
+                         rdfs:domain brocartsonto:Brocade ;
+                         rdfs:range xsd:string ;
+                         rdfs:label "Glaze colour"@en ,
+                                    "glaçure couleur"@fr .
+
+
+###  http://patrimalp.org/brocarts/onto#hasGilding
+brocartsonto:hasGilding rdf:type owl:DatatypeProperty ;
+                        rdfs:domain brocartsonto:Brocade ;
+                        rdfs:range xsd:boolean ;
+                        rdfs:label "A dorure"@fr ,
+                                   "Has gilding"@en .
+
+
+###  http://patrimalp.org/brocarts/onto#height
+brocartsonto:height rdf:type owl:DatatypeProperty ;
+                    rdfs:range xsd:int .
+
+
+###  http://patrimalp.org/brocarts/onto#inventoryNumber
+brocartsonto:inventoryNumber rdf:type owl:DatatypeProperty ;
+                             rdfs:domain brocartsonto:WOAIdentification ;
+                             rdfs:range xsd:string ;
+                             rdfs:label "Inventory number"@en ,
+                                        "Numéro d'inventaire"@fr .
+
+
+###  http://patrimalp.org/brocarts/onto#missingParts
+brocartsonto:missingParts rdf:type owl:DatatypeProperty ;
+                          rdfs:range xsd:string ;
+                          rdfs:label "Elements manquants"@fr ,
+                                     "Missing parts"@en .
+
+
+###  http://patrimalp.org/brocarts/onto#numberOfPatches
+brocartsonto:numberOfPatches rdf:type owl:DatatypeProperty ;
+                             rdfs:domain brocartsonto:WOAInformations ;
+                             rdfs:range xsd:int ;
+                             rdfs:label "Nombre de plaques"@fr ,
+                                        "Number of patches"@en .
+
+
+###  http://patrimalp.org/brocarts/onto#patchHeight
+brocartsonto:patchHeight rdf:type owl:DatatypeProperty ;
+                         rdfs:domain brocartsonto:Brocade ;
+                         rdfs:range xsd:int ;
+                         rdfs:label "Hauteur de la plaque"@fr ,
+                                    "Patch height"@en .
+
+
+###  http://patrimalp.org/brocarts/onto#patchWidth
+brocartsonto:patchWidth rdf:type owl:DatatypeProperty ;
+                        rdfs:domain brocartsonto:Brocade ;
+                        rdfs:range xsd:int ;
+                        rdfs:label "Largeur de la plaque"@fr ,
+                                   "Platch width"@en .
+
+
+###  http://patrimalp.org/brocarts/onto#period
+brocartsonto:period rdf:type owl:DatatypeProperty ;
+                    rdfs:domain brocartsonto:WOAIdentification ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "Datation"@fr ,
+                               "Period"@en .
+
+
+###  http://patrimalp.org/brocarts/onto#width
+brocartsonto:width rdf:type owl:DatatypeProperty ;
+                   rdfs:domain brocartsonto:WOAInformations ;
+                   rdfs:range xsd:int .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://patrimalp.org/brocarts/onto#Brocade
+brocartsonto:Brocade rdf:type owl:Class ;
+                     rdfs:subClassOf patrimalpo:WorkOfArt ;
+                     rdfs:comment "Un brocart appliqué"@fr ;
+                     rdfs:label "Brocade"@en ,
+                                "Brocart"@fr .
+
+
+###  http://patrimalp.org/brocarts/onto#ListOfBrocades
+brocartsonto:ListOfBrocades rdf:type owl:Class ;
+                            brocartsonto:typeNavigation "nav" ;
+                            rdfs:comment "List Of Brocades"@en ,
+                                         "Liste des brocarts appliquées située sur une oeuvre"@fr .
+
+
+###  http://patrimalp.org/brocarts/onto#WOAIdentification
+brocartsonto:WOAIdentification rdf:type owl:Class ;
+                               brocartsonto:typeNavigation "nav" ;
+                               rdfs:comment "Work Of Art Identification"@en ;
+                               rdfs:label "Identification de l'oeuvre"@fr .
+
+
+###  http://patrimalp.org/brocarts/onto#WOAInformations
+brocartsonto:WOAInformations rdf:type owl:Class ;
+                             brocartsonto:typeNavigation "nav" ;
+                             rdfs:comment "Information about the work of art"@en ;
+                             rdfs:label "Informations sur l'oeuvre"@fr .
+
+
+###  http://patrimalp.org/brocarts/thesaurus#Denomination
+<http://patrimalp.org/brocarts/thesaurus#Denomination> rdf:type owl:Class .
+
+
+###  http://patrimalp.org/brocarts/thesaurus#Localisation
+<http://patrimalp.org/brocarts/thesaurus#Localisation> rdf:type owl:Class .
+
+
+###  http://patrimalp.org/brocarts/thesaurus#PatchShape
+<http://patrimalp.org/brocarts/thesaurus#PatchShape> rdf:type owl:Class .
+
+
+###  http://patrimalp.org/brocarts/thesaurus#PreparationLayer
+<http://patrimalp.org/brocarts/thesaurus#PreparationLayer> rdf:type owl:Class .
+
+
+###  http://patrimalp.org/brocarts/thesaurus#ProtectionLevel
+<http://patrimalp.org/brocarts/thesaurus#ProtectionLevel> rdf:type owl:Class .
+
+
+###  http://patrimalp.org/brocarts/thesaurus#TypeOfBrocade
+<http://patrimalp.org/brocarts/thesaurus#TypeOfBrocade> rdf:type owl:Class .
+
+
+###  http://patrimalp.org/ontologies/patrimalp#Site
+patrimalpo:Site rdf:type owl:Class .
+
+
+###  http://patrimalp.org/ontologies/patrimalp#Statue
+patrimalpo:Statue rdf:type owl:Class .
+
+
+###  http://patrimalp.org/ontologies/patrimalp#WorkOfArt
+patrimalpo:WorkOfArt rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

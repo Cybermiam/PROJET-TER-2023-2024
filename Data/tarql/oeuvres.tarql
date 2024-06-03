@@ -29,7 +29,6 @@ CONSTRUCT {
 	?informationsUri a 	brocartso:WOAInformations;
 		brocartso:denomination ?denominationUri;
 		brocartso:material ?materiauUri;
-		brocartso:materialType ?typeMateriauUri;
 		brocartso:width ?lit_hauteur;
 		brocartso:height ?lit_largeur;
 		brocartso:depth ?lit_profondeur;

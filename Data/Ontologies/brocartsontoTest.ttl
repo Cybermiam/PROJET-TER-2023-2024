@@ -62,7 +62,6 @@ brocartsonto:denomination rdf:type owl:ObjectProperty ;
 
 ###  http://patrimalp.org/brocarts/onto#iconography
 brocartsonto:iconography rdf:type owl:ObjectProperty ;
-                         rdfs:domain brocartsonto:WOAInformations ;
                          rdfs:label "Iconographie"@fr ,
                                     "Iconography"@en .
 
@@ -85,15 +84,12 @@ brocartsonto:material rdf:type owl:ObjectProperty ;
 
 ###  http://patrimalp.org/brocarts/onto#materialType
 brocartsonto:materialType rdf:type owl:ObjectProperty ;
-                          rdfs:domain brocartsonto:WOAInformations ;
                           rdfs:label "Material type"@en ,
                                      "Type materiau"@fr .
 
 
 ###  http://patrimalp.org/brocarts/onto#missingElements
 brocartsonto:missingElements rdf:type owl:ObjectProperty ;
-                             rdfs:domain brocartsonto:WOAIdentification ,
-                                         brocartsonto:WOAInformations ;
                              rdfs:label "Missing elements"@en ,
                                         "Éléments manquants"@fr .
 
@@ -108,7 +104,6 @@ brocartsonto:protectionLevel rdf:type owl:ObjectProperty ;
 
 ###  http://patrimalp.org/brocarts/onto#siteOfConversation
 brocartsonto:siteOfConversation rdf:type owl:ObjectProperty ;
-                                rdfs:domain brocartsonto:WOAIdentification ;
                                 rdfs:range patrimalpo:Site ;
                                 rdfs:label "Lieu de conservation"@fr ,
                                            "Site of conversation"@en .
@@ -116,7 +111,6 @@ brocartsonto:siteOfConversation rdf:type owl:ObjectProperty ;
 
 ###  http://patrimalp.org/brocarts/onto#siteOfOrigin
 brocartsonto:siteOfOrigin rdf:type owl:ObjectProperty ;
-                          rdfs:domain brocartsonto:WOAIdentification ;
                           rdfs:range patrimalpo:Site ;
                           rdfs:label "Lieu d'origine"@fr ,
                                      "Site of origin"@en .
@@ -149,7 +143,6 @@ brocartsonto:colouredLayer rdf:type owl:DatatypeProperty ;
 
 ###  http://patrimalp.org/brocarts/onto#creationDate
 brocartsonto:creationDate rdf:type owl:DatatypeProperty ;
-                          rdfs:domain brocartsonto:WOAIdentification ;
                           rdfs:range xsd:date ;
                           rdfs:label "Date de création de la fiche"@fr ,
                                      "Date of creation of the file"@en .
@@ -187,7 +180,6 @@ brocartsonto:height rdf:type owl:DatatypeProperty ;
 
 ###  http://patrimalp.org/brocarts/onto#inventoryNumber
 brocartsonto:inventoryNumber rdf:type owl:DatatypeProperty ;
-                             rdfs:domain brocartsonto:WOAIdentification ;
                              rdfs:range xsd:string ;
                              rdfs:label "Inventory number"@en ,
                                         "Numéro d'inventaire"@fr .
@@ -202,7 +194,6 @@ brocartsonto:missingParts rdf:type owl:DatatypeProperty ;
 
 ###  http://patrimalp.org/brocarts/onto#numPlaques
 brocartsonto:numPlaques rdf:type owl:DatatypeProperty ;
-                        rdfs:domain brocartsonto:WOAInformations ;
                         rdfs:range xsd:int ;
                         rdfs:label "Nombre de plaques"@fr ,
                                    "Number of plaques"@en .
@@ -210,7 +201,6 @@ brocartsonto:numPlaques rdf:type owl:DatatypeProperty ;
 
 ###  http://patrimalp.org/brocarts/onto#period
 brocartsonto:period rdf:type owl:DatatypeProperty ;
-                    rdfs:domain brocartsonto:WOAIdentification ;
                     rdfs:range xsd:string ;
                     rdfs:label "Datation"@fr ,
                                "Period"@en .
@@ -234,7 +224,6 @@ brocartsonto:plaqueWidth rdf:type owl:DatatypeProperty ;
 
 ###  http://patrimalp.org/brocarts/onto#width
 brocartsonto:width rdf:type owl:DatatypeProperty ;
-                   rdfs:domain brocartsonto:WOAInformations ;
                    rdfs:range xsd:int .
 
 
@@ -255,20 +244,6 @@ brocartsonto:ListOfBrocades rdf:type owl:Class ;
                             brocartsonto:typeNavigation "nav" ;
                             rdfs:comment "List Of Brocades"@en ,
                                          "Liste des brocarts appliquées située sur une oeuvre"@fr .
-
-
-###  http://patrimalp.org/brocarts/onto#WOAIdentification
-brocartsonto:WOAIdentification rdf:type owl:Class ;
-                               brocartsonto:typeNavigation "nav" ;
-                               rdfs:comment "Work Of Art Identification"@en ;
-                               rdfs:label "Identification de l'oeuvre"@fr .
-
-
-###  http://patrimalp.org/brocarts/onto#WOAInformations
-brocartsonto:WOAInformations rdf:type owl:Class ;
-                             brocartsonto:typeNavigation "nav" ;
-                             rdfs:comment "Information about the work of art"@en ;
-                             rdfs:label "Informations sur l'oeuvre"@fr .
 
 
 ###  http://patrimalp.org/brocarts/thesaurus#Denomination

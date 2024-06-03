@@ -17,14 +17,24 @@ set -e
 # (see https://stackoverflow.com/questions/45105935/sed-to-find-the-first-empty-line-after-match-and-replace)
 # and add a closing bracket at the end of the file for closing the named graph
 #
+input_file=$1
+prefix_expression="PREFIX"
+
+if grep -Fq "$prefix_expression" "$input_file"; then
+  echo "input file $1 in TURTLE 1.2 format"
+else
+  echo "input file $1 in TURTLE 1.1 format"
+  prefix_expression="@prefix"
+fi
+
 if [[ "$OSTYPE" == "darwin"* ]]; then
     # "Running on macOS"
     # add the named graph declaration in the first empty line after prefixes"
-    gsed '/^@prefix/!b;:a;n;/./ba;ibrocartsgraph:'$2' \{' $1 > $3
+    gsed '/^'$prefix_expression'/!b;:a;n;/./ba;ifrontletgraph:'$2' \{' $1 > $3
 elif [[ "$OSTYPE" == "linux-gnu" ]]; then
     # Running on Ubuntu or another Linux distribution"
     # add the named graph declaration in the first empty line after prefixes"
-    sed '/^@prefix/!b;:a;n;/./ba;ibrocartsgraph:'$2' \{' $1 > $3
+    sed '/^'$prefix_expression'/!b;:a;n;/./ba;ifrontletgraph:'$2' \{' $1 > $3
 else
     echo -e "\t\taddNamedGraph.sh : Unsupported operating system"
     exit 1

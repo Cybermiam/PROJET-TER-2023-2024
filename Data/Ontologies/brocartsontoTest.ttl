@@ -47,23 +47,20 @@ edytem:position rdf:type owl:ObjectProperty ;
 
 ###  http://patrimalp.org/brocarts/onto#appliedBrocades
 brocartsonto:appliedBrocades rdf:type owl:ObjectProperty ;
-                             rdfs:range brocartsonto:ListOfBrocades ;
+                             rdfs:domain patrimalpo:Sculpture ;
+                             rdfs:range brocartsonto:Brocade ;
                              brocartsonto:typeNavigation "nav" ;
-                             rdfs:label "Applied brocades"@en ,
-                                        "Brocarts appliqués"@fr .
+                             rdfs:label "applied brocade"@en ,
+                                        "brocarts appliqués"@fr .
 
 
 ###  http://patrimalp.org/brocarts/onto#denomination
 brocartsonto:denomination rdf:type owl:ObjectProperty ;
                           rdfs:domain patrimalpo:Sculpture ;
                           rdfs:range <http://patrimalp.org/brocarts/thesaurus#Denomination> ;
-                          rdfs:comment "Dénomation permettant de définir le type d'oeuvre (par exemple statue en ronde bosse isolée). Le type de l'oeuvre est définie par un concept SKOS (voir brocartsVoc:Denomination)" .
-
-
-###  http://patrimalp.org/brocarts/onto#iconography
-brocartsonto:iconography rdf:type owl:ObjectProperty ;
-                         rdfs:label "Iconographie"@fr ,
-                                    "Iconography"@en .
+                          rdfs:comment "Dénomation permettant de définir le type d'oeuvre (par exemple statue en ronde bosse isolée). Le type de l'oeuvre est définie par un concept SKOS (voir brocartsVoc:Denomination)" ;
+                          rdfs:label "denomination"@en ,
+                                     "dénomination"@fr .
 
 
 ###  http://patrimalp.org/brocarts/onto#imagesBrocade
@@ -82,18 +79,6 @@ brocartsonto:material rdf:type owl:ObjectProperty ;
                                  "Matériau"@fr .
 
 
-###  http://patrimalp.org/brocarts/onto#materialType
-brocartsonto:materialType rdf:type owl:ObjectProperty ;
-                          rdfs:label "Material type"@en ,
-                                     "Type materiau"@fr .
-
-
-###  http://patrimalp.org/brocarts/onto#missingElements
-brocartsonto:missingElements rdf:type owl:ObjectProperty ;
-                             rdfs:label "Missing elements"@en ,
-                                        "Éléments manquants"@fr .
-
-
 ###  http://patrimalp.org/brocarts/onto#protectionLevel
 brocartsonto:protectionLevel rdf:type owl:ObjectProperty ;
                              rdfs:domain patrimalpo:Sculpture ;
@@ -104,6 +89,7 @@ brocartsonto:protectionLevel rdf:type owl:ObjectProperty ;
 
 ###  http://patrimalp.org/brocarts/onto#siteOfConversation
 brocartsonto:siteOfConversation rdf:type owl:ObjectProperty ;
+                                rdfs:domain patrimalpo:Sculpture ;
                                 rdfs:range patrimalpo:Site ;
                                 rdfs:label "Lieu de conservation"@fr ,
                                            "Site of conversation"@en .
@@ -111,6 +97,7 @@ brocartsonto:siteOfConversation rdf:type owl:ObjectProperty ;
 
 ###  http://patrimalp.org/brocarts/onto#siteOfOrigin
 brocartsonto:siteOfOrigin rdf:type owl:ObjectProperty ;
+                          rdfs:domain patrimalpo:Sculpture ;
                           rdfs:range patrimalpo:Site ;
                           rdfs:label "Lieu d'origine"@fr ,
                                      "Site of origin"@en .
@@ -150,11 +137,20 @@ brocartsonto:creationDate rdf:type owl:DatatypeProperty ;
 
 ###  http://patrimalp.org/brocarts/onto#depth
 brocartsonto:depth rdf:type owl:DatatypeProperty ;
+                   rdfs:domain patrimalpo:Sculpture ;
                    rdfs:range xsd:int .
 
 
 ###  http://patrimalp.org/brocarts/onto#description
 brocartsonto:description rdf:type owl:DatatypeProperty .
+
+
+###  http://patrimalp.org/brocarts/onto#dimensions
+brocartsonto:dimensions rdf:type owl:DatatypeProperty ;
+                        rdfs:domain patrimalpo:Sculpture ;
+                        rdfs:range xsd:string ;
+                        rdfs:label "dimensions"@en ,
+                                   "dimensions"@fr .
 
 
 ###  http://patrimalp.org/brocarts/onto#glazeColour
@@ -175,21 +171,31 @@ brocartsonto:hasGilding rdf:type owl:DatatypeProperty ;
 
 ###  http://patrimalp.org/brocarts/onto#height
 brocartsonto:height rdf:type owl:DatatypeProperty ;
+                    rdfs:domain patrimalpo:Sculpture ;
                     rdfs:range xsd:int .
+
+
+###  http://patrimalp.org/brocarts/onto#iconography
+brocartsonto:iconography rdf:type owl:DatatypeProperty ;
+                         rdfs:domain patrimalpo:Sculpture ;
+                         rdfs:range xsd:string ;
+                         rdfs:label "iconographie"@fr ,
+                                    "iconography"@fr .
 
 
 ###  http://patrimalp.org/brocarts/onto#inventoryNumber
 brocartsonto:inventoryNumber rdf:type owl:DatatypeProperty ;
                              rdfs:range xsd:string ;
                              rdfs:label "Inventory number"@en ,
-                                        "Numéro d'inventaire"@fr .
+                                        "numéro d'inventaire"@fr .
 
 
 ###  http://patrimalp.org/brocarts/onto#missingParts
 brocartsonto:missingParts rdf:type owl:DatatypeProperty ;
+                          rdfs:domain patrimalpo:Sculpture ;
                           rdfs:range xsd:string ;
-                          rdfs:label "Elements manquants"@fr ,
-                                     "Missing parts"@en .
+                          rdfs:label "missing parts"@en ,
+                                     "élements manquants"@fr .
 
 
 ###  http://patrimalp.org/brocarts/onto#numPlaques
@@ -201,9 +207,10 @@ brocartsonto:numPlaques rdf:type owl:DatatypeProperty ;
 
 ###  http://patrimalp.org/brocarts/onto#period
 brocartsonto:period rdf:type owl:DatatypeProperty ;
+                    rdfs:domain patrimalpo:Sculpture ;
                     rdfs:range xsd:string ;
-                    rdfs:label "Datation"@fr ,
-                               "Period"@en .
+                    rdfs:label "datation"@fr ,
+                               "period"@en .
 
 
 ###  http://patrimalp.org/brocarts/onto#plaqueHeight
@@ -224,6 +231,7 @@ brocartsonto:plaqueWidth rdf:type owl:DatatypeProperty ;
 
 ###  http://patrimalp.org/brocarts/onto#width
 brocartsonto:width rdf:type owl:DatatypeProperty ;
+                   rdfs:domain patrimalpo:Sculpture ;
                    rdfs:range xsd:int .
 
 
@@ -237,13 +245,6 @@ brocartsonto:Brocade rdf:type owl:Class ;
                      rdfs:comment "Un brocart appliqué"@fr ;
                      rdfs:label "Brocade"@en ,
                                 "Brocart"@fr .
-
-
-###  http://patrimalp.org/brocarts/onto#ListOfBrocades
-brocartsonto:ListOfBrocades rdf:type owl:Class ;
-                            brocartsonto:typeNavigation "nav" ;
-                            rdfs:comment "List Of Brocades"@en ,
-                                         "Liste des brocarts appliquées située sur une oeuvre"@fr .
 
 
 ###  http://patrimalp.org/brocarts/thesaurus#Denomination

@@ -17739,7 +17739,7 @@
 								"_parent": {
 									"$ref": "AAAAAAGPe47UF8w0xZY="
 								},
-								"name": "denomination",
+								"name": "dénomination",
 								"reference": {
 									"$ref": "AAAAAAGOLdOmkpKAr5A="
 								},
@@ -17769,7 +17769,7 @@
 								"_parent": {
 									"$ref": "AAAAAAGPe5GOn+TpB8o="
 								},
-								"name": "materiaux",
+								"name": "matériau",
 								"reference": {
 									"$ref": "AAAAAAGOLdRkyJ1IL1U="
 								},
@@ -18135,7 +18135,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Matériaux",
+					"name": "Matériau",
 					"literals": [
 						{
 							"_type": "UMLEnumerationLiteral",
@@ -26413,7 +26413,7 @@
 											"top": 596,
 											"width": 117.34619140625,
 											"height": 13,
-											"text": "Matériaux"
+											"text": "Matériau"
 										},
 										{
 											"_type": "LabelView",
@@ -28174,7 +28174,7 @@
 									"hostEdge": {
 										"$ref": "AAAAAAGPw1Y2zgJfDJU="
 									},
-									"text": "+denomination"
+									"text": "+dénomination"
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -28450,7 +28450,7 @@
 									"hostEdge": {
 										"$ref": "AAAAAAGPw1Y2zwJrdek="
 									},
-									"text": "+materiaux"
+									"text": "+matériau"
 								},
 								{
 									"_type": "EdgeLabelView",

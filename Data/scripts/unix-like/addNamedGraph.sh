@@ -30,11 +30,11 @@ fi
 if [[ "$OSTYPE" == "darwin"* ]]; then
     # "Running on macOS"
     # add the named graph declaration in the first empty line after prefixes"
-    gsed '/^'$prefix_expression'/!b;:a;n;/./ba;ifrontletgraph:'$2' \{' $1 > $3
+    gsed '/^'$prefix_expression'/!b;:a;n;/./ba;ipatrimalpgraph:'$2' \{' $1 > $3
 elif [[ "$OSTYPE" == "linux-gnu" ]]; then
     # Running on Ubuntu or another Linux distribution"
     # add the named graph declaration in the first empty line after prefixes"
-    sed '/^'$prefix_expression'/!b;:a;n;/./ba;ifrontletgraph:'$2' \{' $1 > $3
+    sed '/^'$prefix_expression'/!b;:a;n;/./ba;ipatrimalpgraph:'$2' \{' $1 > $3
 else
     echo -e "\t\taddNamedGraph.sh : Unsupported operating system"
     exit 1

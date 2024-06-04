@@ -1,401 +1,186 @@
-@prefix :            <http://patrimalp.org/graph/> .
-@prefix brocartso:   <http://patrimalp.org/brocarts/onto#> .
-@prefix brocartsr:   <http://patrimalp.org/brocarts/resource/> .
-@prefix brocartsvoc: <http://patrimalp.org/brocarts/thesaurus#> .
-@prefix patrimalpo:  <http://patrimalp.org/ontologies/patrimalp#> .
-@prefix patrimalpr:  <http://patrimalp.org/resource/> .
-@prefix rdf:         <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:        <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd:         <http://www.w3.org/2001/XMLSchema#> .
+PREFIX brocartso:      <http://patrimalp.org/brocarts/onto#>
+PREFIX brocartsr:      <http://patrimalp.org/brocarts/resource/>
+PREFIX brocartsvoc:    <http://patrimalp.org/brocarts/thesaurus#>
+PREFIX patrimalpgraph: <http://patrimalp.org/brocarts/graph/>
+PREFIX patrimalpo:     <http://patrimalp.org/ontologies/patrimalp#>
+PREFIX patrimalpr:     <http://patrimalp.org/resource/>
+PREFIX rdf:            <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:           <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd:            <http://www.w3.org/2001/XMLSchema#>
 
-:brocartsData {
-    brocartsr:S4infos
-            rdf:type                brocartso:WOAInformations ;
-            brocartso:denomination  brocartsvoc:denomination11 ;
-            brocartso:depth         212 ;
-            brocartso:height        405 ;
-            brocartso:material      brocartsvoc:material6 , brocartsvoc:material3 ;
-            brocartso:width         212 .
-    
-    brocartsr:S16  rdf:type               patrimalpo:Scuplture ;
-            rdfs:label                    "Vierge de pitié" ;
-            brocartso:appliedBrocades     brocartsr:S16brocartsList ;
-            brocartso:generalInformation  brocartsr:S16infos ;
-            brocartso:identification      brocartsr:S16identification .
-    
-    brocartsr:S11infos
-            rdf:type                brocartso:WOAInformations ;
-            brocartso:denomination  brocartsvoc:denomination10 ;
-            brocartso:depth         14 ;
-            brocartso:height        49 ;
-            brocartso:material      brocartsvoc:material2 ;
-            brocartso:width         84 .
-    
-    brocartsr:S6  rdf:type                patrimalpo:Scuplture ;
-            rdfs:label                    "Vierge de Calvaire" ;
-            brocartso:appliedBrocades     brocartsr:S6brocartsList ;
-            brocartso:generalInformation  brocartsr:S6infos ;
-            brocartso:identification      brocartsr:S6identification .
-    
-    patrimalpr:site1  brocartso:oeuvre  brocartsr:S6 , brocartsr:S2 , brocartsr:S1 .
-    
-    brocartsr:S10  rdf:type               patrimalpo:Scuplture ;
-            rdfs:label                    "La vision de Saint Hubert" ;
-            brocartso:appliedBrocades     brocartsr:S10brocartsList ;
-            brocartso:generalInformation  brocartsr:S10infos ;
-            brocartso:identification      brocartsr:S10identification .
-    
-    brocartsr:S7identification
-            rdf:type                   brocartso:WOAIdentification ;
-            brocartso:creationDate     "2020-08-05"^^xsd:date ;
-            brocartso:period           "1/4 du XVIe siècle" ;
-            brocartso:protectionLevel  brocartsvoc:protectionLevel2 ;
-            brocartso:siteOfOrigin     patrimalpr:site17 .
-    
-    brocartsr:S7infos
-            rdf:type                brocartso:WOAInformations ;
-            brocartso:denomination  brocartsvoc:denomination10 ;
-            brocartso:depth         13 ;
-            brocartso:height        34 ;
-            brocartso:material      brocartsvoc:material2 ;
-            brocartso:width         96 .
-    
-    brocartsr:S14infos
-            rdf:type                brocartso:WOAInformations ;
-            brocartso:denomination  brocartsvoc:denomination11 ;
-            brocartso:material      brocartsvoc:material3 ;
-            brocartso:width         55 .
-    
-    brocartsr:S6infos
-            rdf:type                brocartso:WOAInformations ;
-            brocartso:denomination  brocartsvoc:denomination10 ;
-            brocartso:depth         10 ;
-            brocartso:height        16 ;
-            brocartso:material      brocartsvoc:material2 ;
-            brocartso:width         46 .
-    
-    brocartsr:S13infos
-            rdf:type                brocartso:WOAInformations ;
-            brocartso:denomination  brocartsvoc:denomination9 ;
-            brocartso:material      brocartsvoc:material2 .
-    
-    patrimalpr:site6  brocartso:oeuvre  brocartsr:S15 , brocartsr:S8 .
-    
-    brocartsr:S15  rdf:type               patrimalpo:Scuplture ;
-            rdfs:label                    "Vierge enseignante" ;
-            brocartso:appliedBrocades     brocartsr:S15brocartsList ;
-            brocartso:generalInformation  brocartsr:S15infos ;
-            brocartso:identification      brocartsr:S15identification .
-    
-    brocartsr:S2identification
-            rdf:type                   brocartso:WOAIdentification ;
-            brocartso:creationDate     "2020-11-09"^^xsd:date ;
-            brocartso:period           "fin XVe début XVIe" ;
-            brocartso:protectionLevel  brocartsvoc:protectionLevel2 ;
-            brocartso:siteOfOrigin     patrimalpr:site13 .
-    
-    brocartsr:S5  rdf:type                patrimalpo:Scuplture ;
-            rdfs:label                    "Vierge de pitié entre Saint Jean et Marie Madeleine" ;
-            brocartso:appliedBrocades     brocartsr:S5brocartsList ;
-            brocartso:generalInformation  brocartsr:S5infos ;
-            brocartso:identification      brocartsr:S5identification .
-    
-    brocartsr:S6identification
-            rdf:type                   brocartso:WOAIdentification ;
-            brocartso:creationDate     "2020-07-12"^^xsd:date ;
-            brocartso:period           "1/4 du XVIe siècle" ;
-            brocartso:protectionLevel  brocartsvoc:protectionLevel3 ;
-            brocartso:siteOfOrigin     patrimalpr:site16 .
-    
-    brocartsr:S14identification
-            rdf:type                   brocartso:WOAIdentification ;
-            brocartso:creationDate     "2020-11-09"^^xsd:date ;
-            brocartso:period           "XIIIe siècle ?" ;
-            brocartso:protectionLevel  brocartsvoc:protectionLevel2 ;
-            brocartso:siteOfOrigin     patrimalpr:site6 .
-    
-    brocartsr:S9infos
-            rdf:type                brocartso:WOAInformations ;
-            brocartso:denomination  brocartsvoc:denomination11 ;
-            brocartso:material      brocartsvoc:material2 ;
-            brocartso:width         130 .
-    
-    brocartsr:S11brocartsList
-            rdf:type  brocartso:ListOfBrocades .
-    
-    brocartsr:S16infos
-            rdf:type                brocartso:WOAInformations ;
-            brocartso:denomination  brocartsvoc:denomination11 ;
-            brocartso:depth         23 ;
-            brocartso:height        77 ;
-            brocartso:material      brocartsvoc:material2 ;
-            brocartso:width         83 .
-    
-    brocartsr:S1brocartsList
-            rdf:type  brocartso:ListOfBrocades .
-    
-    brocartsr:S8infos
-            rdf:type                brocartso:WOAInformations ;
-            brocartso:denomination  brocartsvoc:denomination10 ;
-            brocartso:depth         17 ;
-            brocartso:height        40 ;
-            brocartso:material      brocartsvoc:material2 ;
-            brocartso:width         94 .
-    
-    brocartsr:S15infos
-            rdf:type                brocartso:WOAInformations ;
-            brocartso:denomination  brocartsvoc:denomination11 ;
-            brocartso:depth         29 ;
-            brocartso:height        43 ;
-            brocartso:material      brocartsvoc:material3 ;
-            brocartso:width         70 .
-    
-    brocartsr:S12brocartsList
-            rdf:type  brocartso:ListOfBrocades .
-    
-    patrimalpr:site5  brocartso:oeuvre  brocartsr:S16 , brocartsr:S14 , brocartsr:S11 , brocartsr:S7 .
-    
-    brocartsr:S2brocartsList
-            rdf:type  brocartso:ListOfBrocades .
-    
-    brocartsr:S14  rdf:type               patrimalpo:Scuplture ;
-            rdfs:label                    "Vierge parturiente" ;
-            brocartso:appliedBrocades     brocartsr:S14brocartsList ;
-            brocartso:generalInformation  brocartsr:S14infos ;
-            brocartso:identification      brocartsr:S14identification .
-    
-    brocartsr:S1identification
-            rdf:type                   brocartso:WOAIdentification ;
-            brocartso:creationDate     "2020-07-09"^^xsd:date ;
-            brocartso:period           "fin XVe début XVIe" ;
-            brocartso:protectionLevel  brocartsvoc:protectionLevel3 ;
-            brocartso:siteOfOrigin     patrimalpr:site12 .
-    
-    brocartsr:S4  rdf:type                patrimalpo:Scuplture ;
-            rdfs:label                    "Mise au tombeau de Lémenc" ;
-            brocartso:appliedBrocades     brocartsr:S4brocartsList ;
-            brocartso:generalInformation  brocartsr:S4infos ;
-            brocartso:identification      brocartsr:S4identification .
-    
-    brocartsr:S13brocartsList
-            rdf:type  brocartso:ListOfBrocades .
-    
-    brocartsr:S3brocartsList
-            rdf:type  brocartso:ListOfBrocades .
-    
-    brocartsr:S5identification
-            rdf:type                   brocartso:WOAIdentification ;
-            brocartso:creationDate     "2020-11-09"^^xsd:date ;
-            brocartso:period           "XVe siècle" ;
-            brocartso:protectionLevel  brocartsvoc:protectionLevel4 .
-    
-    brocartsr:S13identification
-            rdf:type                   brocartso:WOAIdentification ;
-            brocartso:creationDate     "2020-11-09"^^xsd:date ;
-            brocartso:period           "fin XVe / début XVIe" ;
-            brocartso:protectionLevel  brocartsvoc:protectionLevel2 .
-    
-    brocartsr:S9identification
-            rdf:type                   brocartso:WOAIdentification ;
-            brocartso:creationDate     "2020-07-09"^^xsd:date ;
-            brocartso:period           "fin XVe / début XVIe" ;
-            brocartso:protectionLevel  brocartsvoc:protectionLevel4 .
-    
-    brocartsr:S14brocartsList
-            rdf:type  brocartso:ListOfBrocades .
-    
-    brocartsr:S4brocartsList
-            rdf:type  brocartso:ListOfBrocades .
-    
-    brocartsr:S9  rdf:type                patrimalpo:Scuplture ;
-            rdfs:label                    "Madone, Vierge à l'enfant" ;
-            brocartso:appliedBrocades     brocartsr:S9brocartsList ;
-            brocartso:generalInformation  brocartsr:S9infos ;
-            brocartso:identification      brocartsr:S9identification .
-    
-    patrimalpr:site4  brocartso:oeuvre  brocartsr:S5 .
-    
-    brocartsr:S13  rdf:type               patrimalpo:Scuplture ;
-            rdfs:label                    "Saint Jean (Oulx)" ;
-            brocartso:appliedBrocades     brocartsr:S13brocartsList ;
-            brocartso:generalInformation  brocartsr:S13infos ;
-            brocartso:identification      brocartsr:S13identification .
-    
-    brocartsr:S15brocartsList
-            rdf:type  brocartso:ListOfBrocades .
-    
-    brocartsr:S5brocartsList
-            rdf:type  brocartso:ListOfBrocades .
-    
-    brocartsr:S3  rdf:type                patrimalpo:Scuplture ;
-            rdfs:label                    "Saint Roch" ;
-            brocartso:appliedBrocades     brocartsr:S3brocartsList ;
-            brocartso:generalInformation  brocartsr:S3infos ;
-            brocartso:identification      brocartsr:S3identification .
-    
-    brocartsr:S4identification
-            rdf:type                   brocartso:WOAIdentification ;
-            brocartso:creationDate     "2020-10-13"^^xsd:date ;
-            brocartso:period           "Après 1496" ;
-            brocartso:protectionLevel  brocartsvoc:protectionLevel4 ;
-            brocartso:siteOfOrigin     patrimalpr:site15 .
-    
-    brocartsr:S16brocartsList
-            rdf:type  brocartso:ListOfBrocades .
-    
-    brocartsr:S6brocartsList
-            rdf:type  brocartso:ListOfBrocades .
-    
-    brocartsr:S12identification
-            rdf:type                   brocartso:WOAIdentification ;
-            brocartso:creationDate     "2020-07-23"^^xsd:date ;
-            brocartso:period           "fin XVe / début XVIe" ;
-            brocartso:protectionLevel  brocartsvoc:protectionLevel2 .
-    
-    brocartsr:S1infos
-            rdf:type                brocartso:WOAInformations ;
-            brocartso:denomination  brocartsvoc:denomination10 ;
-            brocartso:material      brocartsvoc:material5 , brocartsvoc:material2 ;
-            brocartso:width         75 .
-    
-    patrimalpr:site9  brocartso:oeuvre  brocartsr:S12 .
-    
-    brocartsr:S16identification
-            rdf:type                   brocartso:WOAIdentification ;
-            brocartso:creationDate     "2020-11-09"^^xsd:date ;
-            brocartso:period           "vers 1500" ;
-            brocartso:protectionLevel  brocartsvoc:protectionLevel4 ;
+patrimalpgraph:brocartsData {
+    brocartsr:S16  rdf:type            patrimalpo:Scuplture;
+            rdfs:label                 "Vierge de pitié";
+            brocartso:creationDate     "2020-11-09"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination11;
+            brocartso:dimensions       "(L x H x P) :77 x 83 x 23 cm";
+            brocartso:material         brocartsvoc:material2;
+            brocartso:period           "vers 1500";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel4;
             brocartso:siteOfOrigin     patrimalpr:site23 .
     
-    brocartsr:S7brocartsList
-            rdf:type  brocartso:ListOfBrocades .
-    
-    brocartsr:S8  rdf:type                patrimalpo:Scuplture ;
-            rdfs:label                    "Saint Jean l'Evangéliste" ;
-            brocartso:appliedBrocades     brocartsr:S8brocartsList ;
-            brocartso:generalInformation  brocartsr:S8infos ;
-            brocartso:identification      brocartsr:S8identification .
-    
-    patrimalpr:site3  brocartso:oeuvre  brocartsr:S4 .
-    
-    brocartsr:S12  rdf:type               patrimalpo:Scuplture ;
-            rdfs:label                    "Marie Madeleine" ;
-            brocartso:appliedBrocades     brocartsr:S12brocartsList ;
-            brocartso:generalInformation  brocartsr:S12infos ;
-            brocartso:identification      brocartsr:S12identification .
-    
-    brocartsr:S8brocartsList
-            rdf:type  brocartso:ListOfBrocades .
-    
-    brocartsr:S2  rdf:type                patrimalpo:Scuplture ;
-            rdfs:label                    "Sainte Catherine d'Alexandrie" ;
-            brocartso:appliedBrocades     brocartsr:S2brocartsList ;
-            brocartso:generalInformation  brocartsr:S2infos ;
-            brocartso:identification      brocartsr:S2identification .
-    
-    brocartsr:S3identification
-            rdf:type                   brocartso:WOAIdentification ;
-            brocartso:creationDate     "2020-07-23"^^xsd:date ;
-            brocartso:period           "1/4 du XVIe siècle" ;
-            brocartso:protectionLevel  brocartsvoc:protectionLevel5 ;
-            brocartso:siteOfOrigin     patrimalpr:site14 .
-    
-    brocartsr:S3infos
-            rdf:type                brocartso:WOAInformations ;
-            brocartso:denomination  brocartsvoc:denomination10 ;
-            brocartso:depth         18 ;
-            brocartso:height        33 ;
-            brocartso:material      brocartsvoc:material2 ;
-            brocartso:width         77 .
-    
-    brocartsr:S11identification
-            rdf:type                   brocartso:WOAIdentification ;
-            brocartso:creationDate     "2020-11-09"^^xsd:date ;
-            brocartso:period           "1/4 du XVIe siècle" ;
-            brocartso:protectionLevel  brocartsvoc:protectionLevel2 ;
-            brocartso:siteOfOrigin     patrimalpr:site19 .
-    
-    brocartsr:S10infos
-            rdf:type                brocartso:WOAInformations ;
-            brocartso:denomination  brocartsvoc:denomination10 ;
-            brocartso:depth         9 ;
-            brocartso:height        32 ;
-            brocartso:material      brocartsvoc:material2 ;
-            brocartso:width         52 .
-    
-    brocartsr:S9brocartsList
-            rdf:type  brocartso:ListOfBrocades .
-    
-    patrimalpr:site8  brocartso:oeuvre  brocartsr:S10 .
-    
-    brocartsr:S15identification
-            rdf:type                   brocartso:WOAIdentification ;
-            brocartso:creationDate     "2020-11-09"^^xsd:date ;
-            brocartso:period           "fin XVe / début XVIe" ;
+    brocartsr:S15  rdf:type            patrimalpo:Scuplture;
+            rdfs:label                 "Vierge enseignante";
+            brocartso:creationDate     "2020-11-09"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination11;
+            brocartso:dimensions       "(L x H x P) :43 x 70 x 29 cm";
+            brocartso:material         brocartsvoc:material3;
+            brocartso:period           "fin XVe / début XVIe";
             brocartso:protectionLevel  brocartsvoc:protectionLevel4 .
     
-    brocartsr:S2infos
-            rdf:type                brocartso:WOAInformations ;
-            brocartso:denomination  brocartsvoc:denomination10 ;
-            brocartso:depth         16 ;
-            brocartso:height        25 ;
-            brocartso:material      brocartsvoc:material2 ;
-            brocartso:width         75 .
+    brocartsr:S14  rdf:type            patrimalpo:Scuplture;
+            rdfs:label                 "Vierge parturiente";
+            brocartso:creationDate     "2020-11-09"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination11;
+            brocartso:dimensions       "(L x H x P) :76.5 x 55 x 23.5 cm";
+            brocartso:material         brocartsvoc:material3;
+            brocartso:period           "XIIIe siècle ?";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel2;
+            brocartso:siteOfOrigin     patrimalpr:site6 .
     
-    brocartsr:S7  rdf:type                patrimalpo:Scuplture ;
-            rdfs:label                    "Saint Jean Baptiste" ;
-            brocartso:appliedBrocades     brocartsr:S7brocartsList ;
-            brocartso:generalInformation  brocartsr:S7infos ;
-            brocartso:identification      brocartsr:S7identification .
-    
-    patrimalpr:site2  brocartso:oeuvre  brocartsr:S3 .
-    
-    brocartsr:S11  rdf:type               patrimalpo:Scuplture ;
-            rdfs:label                    "Saint Crépin" ;
-            brocartso:appliedBrocades     brocartsr:S11brocartsList ;
-            brocartso:generalInformation  brocartsr:S11infos ;
-            brocartso:identification      brocartsr:S11identification .
-    
-    brocartsr:S8identification
-            rdf:type                   brocartso:WOAIdentification ;
-            brocartso:creationDate     "2020-11-09"^^xsd:date ;
-            brocartso:period           "fin XVe (entre 1470 et 1493 ?)" ;
-            brocartso:protectionLevel  brocartsvoc:protectionLevel6 .
-    
-    brocartsr:S1  rdf:type                patrimalpo:Scuplture ;
-            rdfs:label                    "Saint évêque Claude" ;
-            brocartso:appliedBrocades     brocartsr:S1brocartsList ;
-            brocartso:generalInformation  brocartsr:S1infos ;
-            brocartso:identification      brocartsr:S1identification .
-    
-    brocartsr:S10brocartsList
-            rdf:type  brocartso:ListOfBrocades .
-    
-    brocartsr:S5infos
-            rdf:type                brocartso:WOAInformations ;
-            brocartso:denomination  brocartsvoc:denomination10 ;
-            brocartso:depth         20 ;
-            brocartso:height        59 ;
-            brocartso:material      brocartsvoc:material2 ;
-            brocartso:width         64 .
-    
-    brocartsr:S12infos
-            rdf:type                brocartso:WOAInformations ;
-            brocartso:denomination  brocartsvoc:denomination10 ;
-            brocartso:depth         25 ;
-            brocartso:height        56 ;
-            brocartso:material      brocartsvoc:material2 ;
-            brocartso:width         92 .
-    
-    brocartsr:S10identification
-            rdf:type                   brocartso:WOAIdentification ;
-            brocartso:creationDate     "2020-11-09"^^xsd:date ;
-            brocartso:period           "fin XVe / début XVIe" ;
-            brocartso:protectionLevel  brocartsvoc:protectionLevel2 ;
-            brocartso:siteOfOrigin     patrimalpr:site18 .
+    brocartsr:S13  rdf:type            patrimalpo:Scuplture;
+            rdfs:label                 "Saint Jean (Oulx)";
+            brocartso:creationDate     "2020-11-09"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination9;
+            brocartso:dimensions       "(L x H x P) :???? x ???? x ???? cm";
+            brocartso:material         brocartsvoc:material2;
+            brocartso:period           "fin XVe / début XVIe";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel2 .
     
     patrimalpr:site10
             brocartso:oeuvre  brocartsr:S13 .
     
+    brocartsr:S12  rdf:type            patrimalpo:Scuplture;
+            rdfs:label                 "Marie Madeleine";
+            brocartso:creationDate     "2020-07-23"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination10;
+            brocartso:dimensions       "(L x H x P) :56 x 92 x 25 cm";
+            brocartso:material         brocartsvoc:material2;
+            brocartso:period           "fin XVe / début XVIe";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel2 .
+    
+    patrimalpr:site9  brocartso:oeuvre  brocartsr:S12 .
+    
+    brocartsr:S11  rdf:type            patrimalpo:Scuplture;
+            rdfs:label                 "Saint Crépin";
+            brocartso:creationDate     "2020-11-09"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination10;
+            brocartso:dimensions       "(L x H x P) :49 x 84 x 14 cm";
+            brocartso:material         brocartsvoc:material2;
+            brocartso:period           "1/4 du XVIe siècle";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel2;
+            brocartso:siteOfOrigin     patrimalpr:site19 .
+    
+    brocartsr:S10  rdf:type            patrimalpo:Scuplture;
+            rdfs:label                 "La vision de Saint Hubert";
+            brocartso:creationDate     "2020-11-09"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination10;
+            brocartso:dimensions       "(L x H x P) :32 x 52 x 9 cm";
+            brocartso:material         brocartsvoc:material2;
+            brocartso:period           "fin XVe / début XVIe";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel2;
+            brocartso:siteOfOrigin     patrimalpr:site18 .
+    
+    patrimalpr:site8  brocartso:oeuvre  brocartsr:S10 .
+    
+    brocartsr:S9  rdf:type             patrimalpo:Scuplture;
+            rdfs:label                 "Madone, Vierge à l'enfant";
+            brocartso:creationDate     "2020-07-09"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination11;
+            brocartso:dimensions       "(L x H x P) :???? x 130 x ???? cm";
+            brocartso:material         brocartsvoc:material2;
+            brocartso:period           "fin XVe / début XVIe";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel4 .
+    
     patrimalpr:site7  brocartso:oeuvre  brocartsr:S9 .
+    
+    brocartsr:S8  rdf:type             patrimalpo:Scuplture;
+            rdfs:label                 "Saint Jean l'Evangéliste";
+            brocartso:creationDate     "2020-11-09"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination10;
+            brocartso:dimensions       "(L x H x P) :40 x 94 x 17 cm";
+            brocartso:material         brocartsvoc:material2;
+            brocartso:period           "fin XVe (entre 1470 et 1493 ?)";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel6 .
+    
+    patrimalpr:site6  brocartso:oeuvre  brocartsr:S15 , brocartsr:S8 .
+    
+    brocartsr:S7  rdf:type             patrimalpo:Scuplture;
+            rdfs:label                 "Saint Jean Baptiste";
+            brocartso:creationDate     "2020-08-05"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination10;
+            brocartso:dimensions       "(L x H x P) :34 x 96 x 13 cm";
+            brocartso:material         brocartsvoc:material2;
+            brocartso:period           "1/4 du XVIe siècle";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel2;
+            brocartso:siteOfOrigin     patrimalpr:site17 .
+    
+    patrimalpr:site5  brocartso:oeuvre  brocartsr:S16 , brocartsr:S14 , brocartsr:S11 , brocartsr:S7 .
+    
+    brocartsr:S6  rdf:type             patrimalpo:Scuplture;
+            rdfs:label                 "Vierge de Calvaire";
+            brocartso:creationDate     "2020-07-12"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination10;
+            brocartso:dimensions       "(L x H x P) :16 x 46 x 10 cm";
+            brocartso:material         brocartsvoc:material2;
+            brocartso:period           "1/4 du XVIe siècle";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel3;
+            brocartso:siteOfOrigin     patrimalpr:site16 .
+    
+    brocartsr:S5  rdf:type             patrimalpo:Scuplture;
+            rdfs:label                 "Vierge de pitié entre Saint Jean et Marie Madeleine";
+            brocartso:creationDate     "2020-11-09"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination10;
+            brocartso:dimensions       "(L x H x P) :59 x 64 x 20 cm";
+            brocartso:material         brocartsvoc:material2;
+            brocartso:period           "XVe siècle";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel4 .
+    
+    patrimalpr:site4  brocartso:oeuvre  brocartsr:S5 .
+    
+    brocartsr:S4  rdf:type             patrimalpo:Scuplture;
+            rdfs:label                 "Mise au tombeau de Lémenc";
+            brocartso:creationDate     "2020-10-13"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination11;
+            brocartso:dimensions       "(L x H x P) :405 x 212 x 212 cm";
+            brocartso:material         brocartsvoc:material6 , brocartsvoc:material3;
+            brocartso:period           "Après 1496";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel4;
+            brocartso:siteOfOrigin     patrimalpr:site15 .
+    
+    patrimalpr:site3  brocartso:oeuvre  brocartsr:S4 .
+    
+    brocartsr:S3  rdf:type             patrimalpo:Scuplture;
+            rdfs:label                 "Saint Roch";
+            brocartso:creationDate     "2020-07-23"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination10;
+            brocartso:dimensions       "(L x H x P) :33 x 77 x 18 cm";
+            brocartso:material         brocartsvoc:material2;
+            brocartso:period           "1/4 du XVIe siècle";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel5;
+            brocartso:siteOfOrigin     patrimalpr:site14 .
+    
+    patrimalpr:site2  brocartso:oeuvre  brocartsr:S3 .
+    
+    brocartsr:S2  rdf:type             patrimalpo:Scuplture;
+            rdfs:label                 "Sainte Catherine d'Alexandrie";
+            brocartso:creationDate     "2020-11-09"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination10;
+            brocartso:dimensions       "(L x H x P) :25 x 75 x 16 cm";
+            brocartso:material         brocartsvoc:material2;
+            brocartso:period           "fin XVe début XVIe";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel2;
+            brocartso:siteOfOrigin     patrimalpr:site13 .
+    
+    brocartsr:S1  rdf:type             patrimalpo:Scuplture;
+            rdfs:label                 "Saint évêque Claude";
+            brocartso:creationDate     "2020-07-09"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination10;
+            brocartso:dimensions       "(L x H x P) :23.5 x 75 x ???? cm";
+            brocartso:material         brocartsvoc:material5 , brocartsvoc:material2;
+            brocartso:period           "fin XVe début XVIe";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel3;
+            brocartso:siteOfOrigin     patrimalpr:site12 .
+    
+    patrimalpr:site1  brocartso:oeuvre  brocartsr:S6 , brocartsr:S2 , brocartsr:S1 .
 }

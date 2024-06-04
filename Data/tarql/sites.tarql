@@ -1,4 +1,4 @@
-PREFIX : <http://patrimalp.org/graph/>
+PREFIX patrimalpgraph: <http://patrimalp.org/graph/>
 PREFIX patrimalpr: <http://patrimalp.org/resource/>
 PREFIX patrimalpo: <http://patrimalp.org/ontologies/patrimalp#>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#> 

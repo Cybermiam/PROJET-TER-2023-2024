@@ -1,7 +1,7 @@
 PREFIX brocartso:      <http://patrimalp.org/brocarts/onto#>
 PREFIX brocartsr:      <http://patrimalp.org/brocarts/resource/>
 PREFIX brocartsvoc:    <http://patrimalp.org/brocarts/thesaurus#>
-PREFIX patrimalpgraph: <http://patrimalp.org/brocarts/graph/>
+PREFIX patrimalpgraph: <http://patrimalp.org/graph/>
 PREFIX patrimalpo:     <http://patrimalp.org/ontologies/patrimalp#>
 PREFIX patrimalpr:     <http://patrimalp.org/resource/>
 PREFIX rdf:            <http://www.w3.org/1999/02/22-rdf-syntax-ns#>

@@ -1,6 +1,6 @@
 PREFIX patrimalpr: <http://patrimalp.org/resource/>
 PREFIX patrimalpo: <http://patrimalp.org/ontologies/patrimalp#>
-PREFIX patrimalpgraph:  <http://patrimalp.org/brocarts/graph/>
+PREFIX patrimalpgraph:  <http://patrimalp.org/graph/>
 PREFIX brocartsr:  <http://patrimalp.org/brocarts/resource/> 
 PREFIX brocartso: <http://patrimalp.org/brocarts/onto#>
 PREFIX brocartsvoc: <http://patrimalp.org/brocarts/thesaurus#>

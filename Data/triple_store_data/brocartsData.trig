@@ -11,190 +11,7 @@ PREFIX rdfs:           <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX wikidata:       <https://www.wikidata.org/entity/>
 PREFIX xsd:            <http://www.w3.org/2001/XMLSchema#>
 
-<http://patrimalp.org/brocarts/graph/brocartsData> {
-    patrimalpr:site1  brocartso:oeuvre  brocartsr:S1 , brocartsr:S2 , brocartsr:S6 .
-    
-    brocartsr:S1  rdf:type             patrimalpo:Scuplture;
-            rdfs:label                 "Saint évêque Claude";
-            brocartso:creationDate     "2020-07-09"^^xsd:date;
-            brocartso:denomination     brocartsvoc:denomination10;
-            brocartso:dimensions       "(L x H x P) :23.5 x 75 x ???? cm";
-            brocartso:material         brocartsvoc:material2 , brocartsvoc:material5;
-            brocartso:period           "fin XVe début XVIe";
-            brocartso:protectionLevel  brocartsvoc:protectionLevel3;
-            brocartso:siteOfOrigin     patrimalpr:site12 .
-    
-    brocartsr:S2  rdf:type             patrimalpo:Scuplture;
-            rdfs:label                 "Sainte Catherine d'Alexandrie";
-            brocartso:creationDate     "2020-11-09"^^xsd:date;
-            brocartso:denomination     brocartsvoc:denomination10;
-            brocartso:dimensions       "(L x H x P) :25 x 75 x 16 cm";
-            brocartso:material         brocartsvoc:material2;
-            brocartso:period           "fin XVe début XVIe";
-            brocartso:protectionLevel  brocartsvoc:protectionLevel2;
-            brocartso:siteOfOrigin     patrimalpr:site13 .
-    
-    patrimalpr:site2  brocartso:oeuvre  brocartsr:S3 .
-    
-    brocartsr:S3  rdf:type             patrimalpo:Scuplture;
-            rdfs:label                 "Saint Roch";
-            brocartso:creationDate     "2020-07-23"^^xsd:date;
-            brocartso:denomination     brocartsvoc:denomination10;
-            brocartso:dimensions       "(L x H x P) :33 x 77 x 18 cm";
-            brocartso:material         brocartsvoc:material2;
-            brocartso:period           "1/4 du XVIe siècle";
-            brocartso:protectionLevel  brocartsvoc:protectionLevel5;
-            brocartso:siteOfOrigin     patrimalpr:site14 .
-    
-    patrimalpr:site3  brocartso:oeuvre  brocartsr:S4 .
-    
-    brocartsr:S4  rdf:type             patrimalpo:Scuplture;
-            rdfs:label                 "Mise au tombeau de Lémenc";
-            brocartso:creationDate     "2020-10-13"^^xsd:date;
-            brocartso:denomination     brocartsvoc:denomination11;
-            brocartso:dimensions       "(L x H x P) :405 x 212 x 212 cm";
-            brocartso:material         brocartsvoc:material3 , brocartsvoc:material6;
-            brocartso:period           "Après 1496";
-            brocartso:protectionLevel  brocartsvoc:protectionLevel4;
-            brocartso:siteOfOrigin     patrimalpr:site15 .
-    
-    patrimalpr:site4  brocartso:oeuvre  brocartsr:S5 .
-    
-    brocartsr:S5  rdf:type             patrimalpo:Scuplture;
-            rdfs:label                 "Vierge de pitié entre Saint Jean et Marie Madeleine";
-            brocartso:creationDate     "2020-11-09"^^xsd:date;
-            brocartso:denomination     brocartsvoc:denomination10;
-            brocartso:dimensions       "(L x H x P) :59 x 64 x 20 cm";
-            brocartso:material         brocartsvoc:material2;
-            brocartso:period           "XVe siècle";
-            brocartso:protectionLevel  brocartsvoc:protectionLevel4 .
-    
-    brocartsr:S6  rdf:type             patrimalpo:Scuplture;
-            rdfs:label                 "Vierge de Calvaire";
-            brocartso:creationDate     "2020-07-12"^^xsd:date;
-            brocartso:denomination     brocartsvoc:denomination10;
-            brocartso:dimensions       "(L x H x P) :16 x 46 x 10 cm";
-            brocartso:material         brocartsvoc:material2;
-            brocartso:period           "1/4 du XVIe siècle";
-            brocartso:protectionLevel  brocartsvoc:protectionLevel3;
-            brocartso:siteOfOrigin     patrimalpr:site16 .
-    
-    patrimalpr:site5  brocartso:oeuvre  brocartsr:S7 , brocartsr:S11 , brocartsr:S14 , brocartsr:S16 .
-    
-    brocartsr:S7  rdf:type             patrimalpo:Scuplture;
-            rdfs:label                 "Saint Jean Baptiste";
-            brocartso:creationDate     "2020-08-05"^^xsd:date;
-            brocartso:denomination     brocartsvoc:denomination10;
-            brocartso:dimensions       "(L x H x P) :34 x 96 x 13 cm";
-            brocartso:material         brocartsvoc:material2;
-            brocartso:period           "1/4 du XVIe siècle";
-            brocartso:protectionLevel  brocartsvoc:protectionLevel2;
-            brocartso:siteOfOrigin     patrimalpr:site17 .
-    
-    patrimalpr:site6  brocartso:oeuvre  brocartsr:S8 , brocartsr:S15 .
-    
-    brocartsr:S8  rdf:type             patrimalpo:Scuplture;
-            rdfs:label                 "Saint Jean l'Evangéliste";
-            brocartso:creationDate     "2020-11-09"^^xsd:date;
-            brocartso:denomination     brocartsvoc:denomination10;
-            brocartso:dimensions       "(L x H x P) :40 x 94 x 17 cm";
-            brocartso:material         brocartsvoc:material2;
-            brocartso:period           "fin XVe (entre 1470 et 1493 ?)";
-            brocartso:protectionLevel  brocartsvoc:protectionLevel6 .
-    
-    patrimalpr:site7  brocartso:oeuvre  brocartsr:S9 .
-    
-    brocartsr:S9  rdf:type             patrimalpo:Scuplture;
-            rdfs:label                 "Madone, Vierge à l'enfant";
-            brocartso:creationDate     "2020-07-09"^^xsd:date;
-            brocartso:denomination     brocartsvoc:denomination11;
-            brocartso:dimensions       "(L x H x P) :???? x 130 x ???? cm";
-            brocartso:material         brocartsvoc:material2;
-            brocartso:period           "fin XVe / début XVIe";
-            brocartso:protectionLevel  brocartsvoc:protectionLevel4 .
-    
-    patrimalpr:site8  brocartso:oeuvre  brocartsr:S10 .
-    
-    brocartsr:S10  rdf:type            patrimalpo:Scuplture;
-            rdfs:label                 "La vision de Saint Hubert";
-            brocartso:creationDate     "2020-11-09"^^xsd:date;
-            brocartso:denomination     brocartsvoc:denomination10;
-            brocartso:dimensions       "(L x H x P) :32 x 52 x 9 cm";
-            brocartso:material         brocartsvoc:material2;
-            brocartso:period           "fin XVe / début XVIe";
-            brocartso:protectionLevel  brocartsvoc:protectionLevel2;
-            brocartso:siteOfOrigin     patrimalpr:site18 .
-    
-    brocartsr:S11  rdf:type            patrimalpo:Scuplture;
-            rdfs:label                 "Saint Crépin";
-            brocartso:creationDate     "2020-11-09"^^xsd:date;
-            brocartso:denomination     brocartsvoc:denomination10;
-            brocartso:dimensions       "(L x H x P) :49 x 84 x 14 cm";
-            brocartso:material         brocartsvoc:material2;
-            brocartso:period           "1/4 du XVIe siècle";
-            brocartso:protectionLevel  brocartsvoc:protectionLevel2;
-            brocartso:siteOfOrigin     patrimalpr:site19 .
-    
-    patrimalpr:site9  brocartso:oeuvre  brocartsr:S12 .
-    
-    brocartsr:S12  rdf:type            patrimalpo:Scuplture;
-            rdfs:label                 "Marie Madeleine";
-            brocartso:creationDate     "2020-07-23"^^xsd:date;
-            brocartso:denomination     brocartsvoc:denomination10;
-            brocartso:dimensions       "(L x H x P) :56 x 92 x 25 cm";
-            brocartso:material         brocartsvoc:material2;
-            brocartso:period           "fin XVe / début XVIe";
-            brocartso:protectionLevel  brocartsvoc:protectionLevel2 .
-    
-    patrimalpr:site10
-            brocartso:oeuvre  brocartsr:S13 .
-    
-    brocartsr:S13  rdf:type            patrimalpo:Scuplture;
-            rdfs:label                 "Saint Jean (Oulx)";
-            brocartso:creationDate     "2020-11-09"^^xsd:date;
-            brocartso:denomination     brocartsvoc:denomination9;
-            brocartso:dimensions       "(L x H x P) :???? x ???? x ???? cm";
-            brocartso:material         brocartsvoc:material2;
-            brocartso:period           "fin XVe / début XVIe";
-            brocartso:protectionLevel  brocartsvoc:protectionLevel2 .
-    
-    brocartsr:S14  rdf:type            patrimalpo:Scuplture;
-            rdfs:label                 "Vierge parturiente";
-            brocartso:creationDate     "2020-11-09"^^xsd:date;
-            brocartso:denomination     brocartsvoc:denomination11;
-            brocartso:dimensions       "(L x H x P) :76.5 x 55 x 23.5 cm";
-            brocartso:material         brocartsvoc:material3;
-            brocartso:period           "XIIIe siècle ?";
-            brocartso:protectionLevel  brocartsvoc:protectionLevel2;
-            brocartso:siteOfOrigin     patrimalpr:site6 .
-    
-    brocartsr:S15  rdf:type            patrimalpo:Scuplture;
-            rdfs:label                 "Vierge enseignante";
-            brocartso:creationDate     "2020-11-09"^^xsd:date;
-            brocartso:denomination     brocartsvoc:denomination11;
-            brocartso:dimensions       "(L x H x P) :43 x 70 x 29 cm";
-            brocartso:material         brocartsvoc:material3;
-            brocartso:period           "fin XVe / début XVIe";
-            brocartso:protectionLevel  brocartsvoc:protectionLevel4 .
-    
-    brocartsr:S16  rdf:type            patrimalpo:Scuplture;
-            rdfs:label                 "Vierge de pitié";
-            brocartso:creationDate     "2020-11-09"^^xsd:date;
-            brocartso:denomination     brocartsvoc:denomination11;
-            brocartso:dimensions       "(L x H x P) :77 x 83 x 23 cm";
-            brocartso:material         brocartsvoc:material2;
-            brocartso:period           "vers 1500";
-            brocartso:protectionLevel  brocartsvoc:protectionLevel4;
-            brocartso:siteOfOrigin     patrimalpr:site23 .
-}
-
 patrimalpgraph:brocartsData {
-    patrimalpr:site1  rdf:type  patrimalpo:Building;
-            rdfs:label        "Archives départementales de l'Ain";
-            rdfs:seeAlso      wikidata:Q2860468;
-            patrimalpo:image  patrimalpr:site1Image1;
-            geo:hasGeometry   patrimalpr:site1Geom .
-    
     patrimalpr:site1Geom
             rdf:type       geo:Geometry;
             geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.93931 , 45.5581]}"^^geo:geoJSONLiteral;
@@ -204,12 +21,6 @@ patrimalpgraph:brocartsData {
             rdf:type             patrimalpo:Image;
             patrimalpo:credits   "Florian Bouquet";
             patrimalpo:imageUrl  "http://lig-tdcge.imag.fr/steamer/patrimalp/catalogData/sites/images/site01.jpg" .
-    
-    patrimalpr:site2  rdf:type  patrimalpo:Church;
-            rdfs:label        "Église Notre-Dame";
-            rdfs:seeAlso      wikidata:Q38386547;
-            patrimalpo:image  patrimalpr:site2Image1 , patrimalpr:site2Image2;
-            geo:hasGeometry   patrimalpr:site2Geom .
     
     patrimalpr:site2Geom
             rdf:type       geo:Geometry;
@@ -226,12 +37,6 @@ patrimalpgraph:brocartsData {
             patrimalpo:credits   "Mairie de Barberaz";
             patrimalpo:imageUrl  "https://trinitechambery.paroisse73.fr/sites/trinitechambery.paroisse73.fr/local/cache-vignettes/L600xH600/c386a7a9a8e0846150eadb3c1f619d-2a7fb.jpg" .
     
-    patrimalpr:site3  rdf:type  patrimalpo:Church;
-            rdfs:label        "Crypte de l'église Saint-Pierre de Lémenc";
-            rdfs:seeAlso      wikidata:Q36790222;
-            patrimalpo:image  patrimalpr:site3Image1;
-            geo:hasGeometry   patrimalpr:site3Geom .
-    
     patrimalpr:site3Geom
             rdf:type       geo:Geometry;
             geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.236526639 , 46.19793026]}"^^geo:geoJSONLiteral;
@@ -241,12 +46,6 @@ patrimalpgraph:brocartsData {
             rdf:type             patrimalpo:Image;
             patrimalpo:credits   "Wikimedia Commons";
             patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/e/ed/Monast%C3%A8re_royal_de_Brou_%28%C3%A9glise%29_%281%29.JPG" .
-    
-    patrimalpr:site4  rdf:type  patrimalpo:Castle;
-            rdfs:label        "Château de Montrottier";
-            rdfs:seeAlso      wikidata:Q2255651;
-            patrimalpo:image  patrimalpr:site4Image1;
-            geo:hasGeometry   patrimalpr:site4Geom .
     
     patrimalpr:site4Geom
             rdf:type       geo:Geometry;
@@ -258,11 +57,6 @@ patrimalpgraph:brocartsData {
             patrimalpo:credits   "Wikimedia Commons";
             patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/e/e6/CHS_de_Bassens_%28entr%C3%A9e%29.JPG" .
     
-    patrimalpr:site5  rdf:type  patrimalpo:Museum;
-            rdfs:label        "Réserve du Musée Savoisien";
-            patrimalpo:image  patrimalpr:site5Image1;
-            geo:hasGeometry   patrimalpr:site5Geom .
-    
     patrimalpr:site5Geom
             rdf:type       geo:Geometry;
             geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.860482407 , 45.64752788]}"^^geo:geoJSONLiteral;
@@ -272,12 +66,6 @@ patrimalpgraph:brocartsData {
             rdf:type             patrimalpo:Image;
             patrimalpo:credits   "Wikimedia Commons";
             patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/c/c9/Prieur%C3%A9_du_Bourget_du_Lac_%28Chevet_de_la_prioriale%29.jpg" .
-    
-    patrimalpr:site6  rdf:type  patrimalpo:Church;
-            rdfs:label        "Église Saint Laurent";
-            rdfs:seeAlso      wikidata:Q3582324;
-            patrimalpo:image  patrimalpr:site6Image1;
-            geo:hasGeometry   patrimalpr:site6Geom .
     
     patrimalpr:site6Geom
             rdf:type       geo:Geometry;
@@ -289,12 +77,6 @@ patrimalpgraph:brocartsData {
             patrimalpo:credits   "Wikimedia Commons";
             patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/f/f9/Mairie_et_%C3%A9glise_de_Chamoux-sur-Gelon_%28juillet_2019%29.JPG" .
     
-    patrimalpr:site7  rdf:type  patrimalpo:Church;
-            rdfs:label        "Église de Myans";
-            rdfs:seeAlso      wikidata:Q3471725;
-            patrimalpo:image  patrimalpr:site7Image1;
-            geo:hasGeometry   patrimalpr:site7Geom .
-    
     patrimalpr:site7Geom
             rdf:type       geo:Geometry;
             geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [6.126436125 , 45.89758021]}"^^geo:geoJSONLiteral;
@@ -304,12 +86,6 @@ patrimalpgraph:brocartsData {
             rdf:type             patrimalpo:Image;
             patrimalpo:credits   "Wikimedia Commons";
             patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/1/11/Haute-Savoie_%28septembre_2013%29_128.JPG" .
-    
-    patrimalpr:site8  rdf:type  patrimalpo:Museum;
-            rdfs:label        "Musée du Château d'Annecy";
-            rdfs:seeAlso      wikidata:Q13389955;
-            patrimalpo:image  patrimalpr:site8Image1;
-            geo:hasGeometry   patrimalpr:site8Geom .
     
     patrimalpr:site8Geom
             rdf:type       geo:Geometry;
@@ -321,11 +97,6 @@ patrimalpgraph:brocartsData {
             patrimalpo:credits   "Wikimedia Commons";
             patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/3/32/Piedmont_in_Italy.svg" .
     
-    patrimalpr:site9  rdf:type  patrimalpo:Monastery;
-            rdfs:label        "Musée du Monastère Royal de Brou";
-            patrimalpo:image  patrimalpr:site9Image1;
-            geo:hasGeometry   patrimalpr:site9Geom .
-    
     patrimalpr:site9Geom
             rdf:type       geo:Geometry;
             geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [6.039967621 , 45.89884798]}"^^geo:geoJSONLiteral;
@@ -335,11 +106,6 @@ patrimalpgraph:brocartsData {
             rdf:type             patrimalpo:Image;
             patrimalpo:credits   "Wikimedia Commons";
             patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/c/c7/Ch%C3%A2teau_de_Montrottier.jpg" .
-    
-    patrimalpr:site10
-            rdf:type         patrimalpo:Building;
-            rdfs:label       "Collection privée Piémontaise ";
-            geo:hasGeometry  patrimalpr:site10Geom .
     
     patrimalpr:site10Geom
             rdf:type  geo:Geometry .
@@ -466,4 +232,225 @@ patrimalpgraph:brocartsData {
             rdf:type       geo:Geometry;
             geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [6.00574 , 45.73066]}"^^geo:geoJSONLiteral;
             geo:asWKT      "POINT(6.00574 45.73066)"^^geo:wktLiteral .
+    
+    patrimalpr:site1  rdf:type  patrimalpo:Building;
+            rdfs:label        "Archives départementales de l'Ain";
+            rdfs:seeAlso      wikidata:Q2860468;
+            brocartso:oeuvre  brocartsr:S1 , brocartsr:S2 , brocartsr:S6;
+            patrimalpo:image  patrimalpr:site1Image1;
+            geo:hasGeometry   patrimalpr:site1Geom .
+    
+    brocartsr:S1  rdf:type             patrimalpo:Scuplture;
+            rdfs:label                 "Saint évêque Claude";
+            brocartso:creationDate     "2020-07-09"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination10;
+            brocartso:dimensions       "(L x H x P) :23.5 x 75 x ???? cm";
+            brocartso:material         brocartsvoc:material2 , brocartsvoc:material5;
+            brocartso:period           "fin XVe début XVIe";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel3;
+            brocartso:siteOfOrigin     patrimalpr:site12 .
+    
+    brocartsr:S2  rdf:type             patrimalpo:Scuplture;
+            rdfs:label                 "Sainte Catherine d'Alexandrie";
+            brocartso:creationDate     "2020-11-09"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination10;
+            brocartso:dimensions       "(L x H x P) :25 x 75 x 16 cm";
+            brocartso:material         brocartsvoc:material2;
+            brocartso:period           "fin XVe début XVIe";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel2;
+            brocartso:siteOfOrigin     patrimalpr:site13 .
+    
+    patrimalpr:site2  rdf:type  patrimalpo:Church;
+            rdfs:label        "Église Notre-Dame";
+            rdfs:seeAlso      wikidata:Q38386547;
+            brocartso:oeuvre  brocartsr:S3;
+            patrimalpo:image  patrimalpr:site2Image1 , patrimalpr:site2Image2;
+            geo:hasGeometry   patrimalpr:site2Geom .
+    
+    brocartsr:S3  rdf:type             patrimalpo:Scuplture;
+            rdfs:label                 "Saint Roch";
+            brocartso:creationDate     "2020-07-23"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination10;
+            brocartso:dimensions       "(L x H x P) :33 x 77 x 18 cm";
+            brocartso:material         brocartsvoc:material2;
+            brocartso:period           "1/4 du XVIe siècle";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel5;
+            brocartso:siteOfOrigin     patrimalpr:site14 .
+    
+    patrimalpr:site3  rdf:type  patrimalpo:Church;
+            rdfs:label        "Crypte de l'église Saint-Pierre de Lémenc";
+            rdfs:seeAlso      wikidata:Q36790222;
+            brocartso:oeuvre  brocartsr:S4;
+            patrimalpo:image  patrimalpr:site3Image1;
+            geo:hasGeometry   patrimalpr:site3Geom .
+    
+    brocartsr:S4  rdf:type             patrimalpo:Scuplture;
+            rdfs:label                 "Mise au tombeau de Lémenc";
+            brocartso:creationDate     "2020-10-13"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination11;
+            brocartso:dimensions       "(L x H x P) :405 x 212 x 212 cm";
+            brocartso:material         brocartsvoc:material3 , brocartsvoc:material6;
+            brocartso:period           "Après 1496";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel4;
+            brocartso:siteOfOrigin     patrimalpr:site15 .
+    
+    patrimalpr:site4  rdf:type  patrimalpo:Castle;
+            rdfs:label        "Château de Montrottier";
+            rdfs:seeAlso      wikidata:Q2255651;
+            brocartso:oeuvre  brocartsr:S5;
+            patrimalpo:image  patrimalpr:site4Image1;
+            geo:hasGeometry   patrimalpr:site4Geom .
+    
+    brocartsr:S5  rdf:type             patrimalpo:Scuplture;
+            rdfs:label                 "Vierge de pitié entre Saint Jean et Marie Madeleine";
+            brocartso:creationDate     "2020-11-09"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination10;
+            brocartso:dimensions       "(L x H x P) :59 x 64 x 20 cm";
+            brocartso:material         brocartsvoc:material2;
+            brocartso:period           "XVe siècle";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel4 .
+    
+    brocartsr:S6  rdf:type             patrimalpo:Scuplture;
+            rdfs:label                 "Vierge de Calvaire";
+            brocartso:creationDate     "2020-07-12"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination10;
+            brocartso:dimensions       "(L x H x P) :16 x 46 x 10 cm";
+            brocartso:material         brocartsvoc:material2;
+            brocartso:period           "1/4 du XVIe siècle";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel3;
+            brocartso:siteOfOrigin     patrimalpr:site16 .
+    
+    patrimalpr:site5  rdf:type  patrimalpo:Museum;
+            rdfs:label        "Réserve du Musée Savoisien";
+            brocartso:oeuvre  brocartsr:S7 , brocartsr:S11 , brocartsr:S14 , brocartsr:S16;
+            patrimalpo:image  patrimalpr:site5Image1;
+            geo:hasGeometry   patrimalpr:site5Geom .
+    
+    brocartsr:S7  rdf:type             patrimalpo:Scuplture;
+            rdfs:label                 "Saint Jean Baptiste";
+            brocartso:creationDate     "2020-08-05"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination10;
+            brocartso:dimensions       "(L x H x P) :34 x 96 x 13 cm";
+            brocartso:material         brocartsvoc:material2;
+            brocartso:period           "1/4 du XVIe siècle";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel2;
+            brocartso:siteOfOrigin     patrimalpr:site17 .
+    
+    patrimalpr:site6  rdf:type  patrimalpo:Church;
+            rdfs:label        "Église Saint Laurent";
+            rdfs:seeAlso      wikidata:Q3582324;
+            brocartso:oeuvre  brocartsr:S8 , brocartsr:S15;
+            patrimalpo:image  patrimalpr:site6Image1;
+            geo:hasGeometry   patrimalpr:site6Geom .
+    
+    brocartsr:S8  rdf:type             patrimalpo:Scuplture;
+            rdfs:label                 "Saint Jean l'Evangéliste";
+            brocartso:creationDate     "2020-11-09"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination10;
+            brocartso:dimensions       "(L x H x P) :40 x 94 x 17 cm";
+            brocartso:material         brocartsvoc:material2;
+            brocartso:period           "fin XVe (entre 1470 et 1493 ?)";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel6 .
+    
+    patrimalpr:site7  rdf:type  patrimalpo:Church;
+            rdfs:label        "Église de Myans";
+            rdfs:seeAlso      wikidata:Q3471725;
+            brocartso:oeuvre  brocartsr:S9;
+            patrimalpo:image  patrimalpr:site7Image1;
+            geo:hasGeometry   patrimalpr:site7Geom .
+    
+    brocartsr:S9  rdf:type             patrimalpo:Scuplture;
+            rdfs:label                 "Madone, Vierge à l'enfant";
+            brocartso:creationDate     "2020-07-09"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination11;
+            brocartso:dimensions       "(L x H x P) :???? x 130 x ???? cm";
+            brocartso:material         brocartsvoc:material2;
+            brocartso:period           "fin XVe / début XVIe";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel4 .
+    
+    patrimalpr:site8  rdf:type  patrimalpo:Museum;
+            rdfs:label        "Musée du Château d'Annecy";
+            rdfs:seeAlso      wikidata:Q13389955;
+            brocartso:oeuvre  brocartsr:S10;
+            patrimalpo:image  patrimalpr:site8Image1;
+            geo:hasGeometry   patrimalpr:site8Geom .
+    
+    brocartsr:S10  rdf:type            patrimalpo:Scuplture;
+            rdfs:label                 "La vision de Saint Hubert";
+            brocartso:creationDate     "2020-11-09"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination10;
+            brocartso:dimensions       "(L x H x P) :32 x 52 x 9 cm";
+            brocartso:material         brocartsvoc:material2;
+            brocartso:period           "fin XVe / début XVIe";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel2;
+            brocartso:siteOfOrigin     patrimalpr:site18 .
+    
+    brocartsr:S11  rdf:type            patrimalpo:Scuplture;
+            rdfs:label                 "Saint Crépin";
+            brocartso:creationDate     "2020-11-09"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination10;
+            brocartso:dimensions       "(L x H x P) :49 x 84 x 14 cm";
+            brocartso:material         brocartsvoc:material2;
+            brocartso:period           "1/4 du XVIe siècle";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel2;
+            brocartso:siteOfOrigin     patrimalpr:site19 .
+    
+    patrimalpr:site9  rdf:type  patrimalpo:Monastery;
+            rdfs:label        "Musée du Monastère Royal de Brou";
+            brocartso:oeuvre  brocartsr:S12;
+            patrimalpo:image  patrimalpr:site9Image1;
+            geo:hasGeometry   patrimalpr:site9Geom .
+    
+    brocartsr:S12  rdf:type            patrimalpo:Scuplture;
+            rdfs:label                 "Marie Madeleine";
+            brocartso:creationDate     "2020-07-23"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination10;
+            brocartso:dimensions       "(L x H x P) :56 x 92 x 25 cm";
+            brocartso:material         brocartsvoc:material2;
+            brocartso:period           "fin XVe / début XVIe";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel2 .
+    
+    patrimalpr:site10
+            rdf:type          patrimalpo:Building;
+            rdfs:label        "Collection privée Piémontaise ";
+            brocartso:oeuvre  brocartsr:S13;
+            geo:hasGeometry   patrimalpr:site10Geom .
+    
+    brocartsr:S13  rdf:type            patrimalpo:Scuplture;
+            rdfs:label                 "Saint Jean (Oulx)";
+            brocartso:creationDate     "2020-11-09"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination9;
+            brocartso:dimensions       "(L x H x P) :???? x ???? x ???? cm";
+            brocartso:material         brocartsvoc:material2;
+            brocartso:period           "fin XVe / début XVIe";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel2 .
+    
+    brocartsr:S14  rdf:type            patrimalpo:Scuplture;
+            rdfs:label                 "Vierge parturiente";
+            brocartso:creationDate     "2020-11-09"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination11;
+            brocartso:dimensions       "(L x H x P) :76.5 x 55 x 23.5 cm";
+            brocartso:material         brocartsvoc:material3;
+            brocartso:period           "XIIIe siècle ?";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel2;
+            brocartso:siteOfOrigin     patrimalpr:site6 .
+    
+    brocartsr:S15  rdf:type            patrimalpo:Scuplture;
+            rdfs:label                 "Vierge enseignante";
+            brocartso:creationDate     "2020-11-09"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination11;
+            brocartso:dimensions       "(L x H x P) :43 x 70 x 29 cm";
+            brocartso:material         brocartsvoc:material3;
+            brocartso:period           "fin XVe / début XVIe";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel4 .
+    
+    brocartsr:S16  rdf:type            patrimalpo:Scuplture;
+            rdfs:label                 "Vierge de pitié";
+            brocartso:creationDate     "2020-11-09"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination11;
+            brocartso:dimensions       "(L x H x P) :77 x 83 x 23 cm";
+            brocartso:material         brocartsvoc:material2;
+            brocartso:period           "vers 1500";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel4;
+            brocartso:siteOfOrigin     patrimalpr:site23 .
 }

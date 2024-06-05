@@ -67,7 +67,7 @@ awk 'BEGIN {p=1} !NF && !f {print; system("cat"); f=1; next} p' "${file}" > ../b
 	rdfs:comment "Ontologie définissant les concepts SKOS permettant de déclarer les valeurs des propriétés énumérées décrivant les brocarts"@fr .
 
 EOF
-cp ../brocartsThesaurusOnto.ttl ../../Ontologies/brocartsThesaurusOnto.trig
+cp ../brocartsThesaurusOnto.ttl ../../Ontologies/brocartsThesaurusOnto.ttl
 echo "---- Deleting temporary files"
 rm merged.*
 echo "---- Done"

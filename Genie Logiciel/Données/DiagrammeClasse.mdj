@@ -18482,7 +18482,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGOLf18juD3smI="
 							},
-							"name": "codeIdentiifcation",
+							"name": "label",
 							"type": "string"
 						}
 					]
@@ -30134,7 +30134,7 @@
 											"top": 532,
 											"width": 148.7861328125,
 											"height": 13,
-											"text": "+codeIdentiifcation: string",
+											"text": "+label: string",
 											"horizontalAlignment": 0
 										}
 									],
@@ -32153,9 +32153,9 @@
 							"font": "Arial;13;0",
 							"left": 944,
 							"top": 512,
-							"width": 128,
-							"height": 38,
-							"text": "dorure : gilding (en)"
+							"width": 184,
+							"height": 27,
+							"text": "dorure : gilding (en)\n"
 						},
 						{
 							"_type": "UMLNoteLinkView",
@@ -32171,7 +32171,36 @@
 								"$ref": "AAAAAAGQAk3hzmZf6NQ="
 							},
 							"lineStyle": 1,
-							"points": "943:531;873:531"
+							"points": "943:527;873:529"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAGQAsSsYIf6HWg=",
+							"_parent": {
+								"$ref": "AAAAAAGQAYa+iGm7Yhc="
+							},
+							"font": "Arial;13;0",
+							"left": 928,
+							"top": 560,
+							"width": 192,
+							"height": 40,
+							"text": "le label correspond au code d'identification du brocart"
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "AAAAAAGQAsT+r4pKAwA=",
+							"_parent": {
+								"$ref": "AAAAAAGQAYa+iGm7Yhc="
+							},
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGQAYcy7ntBAno="
+							},
+							"tail": {
+								"$ref": "AAAAAAGQAsSsYIf6HWg="
+							},
+							"lineStyle": 1,
+							"points": "927:560;873:548"
 						}
 					]
 				},

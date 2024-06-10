@@ -18473,7 +18473,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGOLf18juD3smI="
 							},
-							"name": "dorure",
+							"name": "aDorure",
 							"type": "boolean"
 						},
 						{
@@ -30117,7 +30117,7 @@
 											"top": 517,
 											"width": 148.7861328125,
 											"height": 13,
-											"text": "+dorure: boolean",
+											"text": "+aDorure: boolean",
 											"horizontalAlignment": 0
 										},
 										{
@@ -32143,6 +32143,35 @@
 							"headQualifiersCompartment": {
 								"$ref": "AAAAAAGQAdB0PLhlERg="
 							}
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAGQAk3hzmZf6NQ=",
+							"_parent": {
+								"$ref": "AAAAAAGQAYa+iGm7Yhc="
+							},
+							"font": "Arial;13;0",
+							"left": 944,
+							"top": 512,
+							"width": 128,
+							"height": 38,
+							"text": "dorure : gilding (en)"
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "AAAAAAGQAk6i7XwWvJg=",
+							"_parent": {
+								"$ref": "AAAAAAGQAYa+iGm7Yhc="
+							},
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGQAYcy7ntBAno="
+							},
+							"tail": {
+								"$ref": "AAAAAAGQAk3hzmZf6NQ="
+							},
+							"lineStyle": 1,
+							"points": "943:531;873:531"
 						}
 					]
 				},

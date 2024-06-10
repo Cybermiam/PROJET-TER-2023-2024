@@ -12,7 +12,7 @@ Le contenu de ce répertoire est :
 
 l'ontologie **brocartsonto.ttl** utilise (importe) les ontologies suivantes
 
-- **brocartsThesaurus.ttl** qui définit à l'aide SKOS un vocabulaire contrôlé dont les termes servent de valeurs à certaines des propriétés des entités (classes) définies dans l'ontologie **brocartsonto.ttl**
+- **brocartsThesaurusOnto.ttl** qui définit à l'aide SKOS un vocabulaire contrôlé dont les termes servent de valeurs à certaines des propriétés des entités (classes) définies dans l'ontologie **brocartsonto.ttl**
 
 - **partimalpOnto.ttl** : une ontologie owl définissant le modèle de données général de partimalp et à laquelle on rattachera le modèle de données spécifique au brocarts (actuellement ce modèle est défini dans **brocartsonto.ttl**, le travail en cours avec Fatima va être de faire converger ces différentes ontologies en s'appuyant sur [FORT](https://github.com/DanashFatima/FORT/
 )).
@@ -25,7 +25,6 @@ PagtrimalpOnto utilise les ontologies suivantes
 ## Préfixes utilisés
 
 ```
-@prefix :            <http://patrimalp.org/graph/> .
 @prefix brocartso:   <http://patrimalp.org/brocarts/onto#> .
 @prefix brocartsr:   <http://patrimalp.org/brocarts/resource/> .
 @prefix brocartsvoc: <http://patrimalp.org/brocarts/thesaurus#> .
@@ -33,15 +32,12 @@ PagtrimalpOnto utilise les ontologies suivantes
 @prefix owl:         <http://www.w3.org/2002/07/owl#> .
 @prefix patrimalpo:  <http://patrimalp.org/ontologies/patrimalp#> .
 @prefix patrimalpr:  <http://patrimalp.org/resource/> .
+@prefix patrimalpgraph:            <http://patrimalp.org/graph/> .
 @prefix rdf:         <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:        <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix wikidata:    <https://www.wikidata.org/entity/> .
 @prefix xsd:         <http://www.w3.org/2001/XMLSchema#> .
 ```
-
-- ****@prefix : <http://patrimalp.org/graph/>**** : préfixe utilisé pour les nom des graphes nommés 
-     (**brocartsThesaurus** pour le thésaurus contrôlant le vocabulaire permettant des qualifier les brocarts ,
-      **brocartsData** pour les données spécifiques aux brocarts)
 
 - ****@prefix brocartso:   <http://patrimalp.org/brocarts/onto#>**** : préfixe utilisé pour les concepts (classes, propriétés) 
      définis dans l'ontologie OWL des brocarts (**brocartsonto.ttl**)
@@ -52,5 +48,9 @@ PagtrimalpOnto utilise les ontologies suivantes
      définis dans l'ontologie générale (Top Level Ontology) OWL patrimalp (**patrimalpOnto.ttl**)
 
 - ****@prefix patrimalpr:  <http://patrimalp.org/resource/>**** : préfixe utilisé pour les ressources pouvant être partagées dans différents sous projets de Patrimalp (par exemple les sites)
+
+- ****@prefix patrimalpgraph: <http://patrimalp.org/graph/>**** : préfixe utilisé pour les nom des graphes nommés 
+     (**brocartsThesaurus** pour le thésaurus contrôlant le vocabulaire permettant des qualifier les brocarts ,
+      **brocartsData** pour les données spécifiques aux brocarts)
 
 Les autres prefixes sont des préfixes standards (**geo:** pour les concepts de l'ontologie GeoSPARQL, **owl:** pour l'ontologie définissant le langage OWL, etc.')

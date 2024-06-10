@@ -1,0 +1,67 @@
+PREFIX patrimalpr: <http://patrimalp.org/resource/>
+PREFIX patrimalpo: <http://patrimalp.org/ontologies/patrimalp#>
+PREFIX patrimalpgraph:  <http://patrimalp.org/graph/>
+PREFIX brocartsr:  <http://patrimalp.org/brocarts/resource/> 
+PREFIX brocartso: <http://patrimalp.org/brocarts/onto#>
+PREFIX brocartsvoc: <http://patrimalp.org/brocarts/thesaurus#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+CONSTRUCT {
+    ?oeuvreUri brocartso:appliedBrocade ?brocartUri.
+	
+	?brocartUri a brocartso:Brocade;
+                rdfs:label ?brocartID;
+                brocartso:typeOfBrocade ?typeOfBrocadeUri;
+                brocartso:typpeOfEngraving ?typeOfEngravingUri;
+                brocartso:theme ?themeUri;
+                brocartso:hasGilding ?gildingLiteral.
+
+				#à rajouter plus tard ?
+				#brocartso:formePlaque ?formePlaqueUri;
+                #brocartso:nbrePlaques ?lit_nbrePlaques;
+	            #brocartso:largeurPlaque ?lit_largeurPlaque;
+	            #brocartso:hauteurPlaque ?lit_hauteurPlaque;
+                #brocartso:localisationBrocart ?localisationBrocartUri;
+				#brocartso:glaçureCouleur ?lit_glaçureCouleur;
+				#brocartso:coucheColorée ?lit_coucheColorée;
+				#brocartso:couchePréparation ?couchePréparationUri;
+				#brocartso:orientation ?orientationUri;
+				#
+				#
+				#brocartso:imagesBrocart ?imageBrocartUri.
+
+    #?imageBrocartUri a brocartso:Image;
+	#	brocartso:auteur ?lit_auteur;
+	#	brocartso:description ?lit_description;
+	#	brocartso:image ?imageURI.
+} 
+
+#pas de "FROM"?
+WHERE {
+   BIND (URI(CONCAT(tarql:expandPrefix("brocartsr"), 'S', ENCODE_FOR_URI(?oeuvreID))) AS ?oeuvreUri)
+   BIND (URI(CONCAT(tarql:expandPrefix("brocartsr"), ENCODE_FOR_URI(?brocartID))) AS ?brocartUri)
+   BIND (URI(CONCAT(tarql:expandPrefix("brocartsvoc"), "typeOfBrocarde", ?typeOfBrocade)) AS ?typeOfBrocadeUri)
+   BIND (URI(CONCAT(tarql:expandPrefix("brocartsvoc"), "typeOfEngraving", ?typeOfEngraving)) AS ?typeOfEngravingUri)
+   BIND (URI(CONCAT(tarql:expandPrefix("brocartsvoc"), "theme" , ?theme)) AS ?themeUri)
+
+   BIND (xsd:boolean(?aDorure = "Oui") AS ?gildingLiteral)
+
+   # a rajouter plus tard ?
+   # BIND (URI(CONCAT(tarql:expandPrefix("brocartsvoc"), "localisationBrocart", ?localisationBrocart)) AS ?localisationBrocartUri)
+   # BIND (URI(CONCAT(tarql:expandPrefix("brocartsvoc"), "formePlaque", ?formePlaque)) AS ?formePlaqueUri)
+   # BIND (URI(CONCAT('http://patrimalp.org/brocarts/resource/brocart/', ?brocartID,'_image_', ?imageID)) AS ?imageBrocartUri)
+   # BIND (URI(CONCAT('http://patrimalp.org/brocarts/thesaurus#couchePréparation/', ?couchePréparation)) AS ?couchePréparationUri)
+   # BIND (URI(CONCAT('http://patrimalp.org/brocarts/thesaurus#orientation/', ?orientation)) AS ?orientationUri)
+
+   #BIND (xsd:integer(?largeurPlaque) AS ?lit_largeurPlaque)
+   #BIND (xsd:integer(?nbrePlaques) AS ?lit_nbrePlaques)
+   #BIND (xsd:integer(?hauteurPlaque) AS ?lit_hauteurPlaque)
+   #BIND (xsd:string(?auteur) AS ?lit_auteur)
+   #BIND (xsd:string(?description) AS ?lit_description)
+   #BIND (CONCAT('http://lig-tdcge.imag.fr/steamer/patrimalp/catalogData/brocarts/images/', ?image) AS ?imageURI) 
+
+   #  BIND (URI(CONCAT('http://patrimalp.org/brocarts/thesaurus#couchePréparation/', ?couchePréparation)) AS ?couchePréparationUri)
+   # BIND (URI(CONCAT('http://patrimalp.org/brocarts/thesaurus#orientation/', ?orientation)) AS ?orientationUri
+   
+}

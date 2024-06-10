@@ -1,6 +1,7 @@
 className	classLabel	conceptBaseName	conceptID	prefLabelFr	prefLabelEn	broaderConceptID	definition
-Theme	Thème						Définit le thème d'une œuvre
-Theme		theme	1	Type Theme			Définit le thème d'une œuvre
+Theme	Thème						Définit le thème d'un brocart
+Theme		theme	1	Type Theme			Définit le thème d'un brocart
 Theme		theme	2	Géométrique		1	
 Theme		theme	3	Végétal		1	
-Theme		theme	4	Ornementaux		1	
+Theme		theme	4	Ornemental		1	
+Theme		theme	5	Inconnu		1	

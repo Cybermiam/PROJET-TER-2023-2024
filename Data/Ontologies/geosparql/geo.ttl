@@ -822,11 +822,7 @@ _:genid11 a owl:Restriction ;
 # http://www.opengis.net/ont/geosparql#SpatialObjectCollection
 
 :SpatialObjectCollection a owl:Class ;
-	rdfs:subClassOf rdfs:Container .
-
-rdfs:Container a owl:Class .
-
-:SpatialObjectCollection rdfs:subClassOf _:genid12 .
+	rdfs:subClassOf rdfs:Container , _:genid12 .
 
 _:genid12 a owl:Restriction ;
 	owl:onProperty rdfs:member ;
@@ -838,6 +834,8 @@ _:genid12 a owl:Restriction ;
 	skos:prefLabel "Spatial Object Collection"@en .
 # 
 # http://www.w3.org/2000/01/rdf-schema#Container
+
+rdfs:Container a owl:Class .
 # 
 # https://schema.org/Organization
 

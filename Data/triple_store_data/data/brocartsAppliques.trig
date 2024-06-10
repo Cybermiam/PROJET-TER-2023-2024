@@ -1,0 +1,325 @@
+PREFIX brocartso:      <http://patrimalp.org/brocarts/onto#>
+PREFIX brocartsr:      <http://patrimalp.org/brocarts/resource/>
+PREFIX brocartsvoc:    <http://patrimalp.org/brocarts/thesaurus#>
+PREFIX patrimalpgraph: <http://patrimalp.org/graph/>
+PREFIX patrimalpo:     <http://patrimalp.org/ontologies/patrimalp#>
+PREFIX patrimalpr:     <http://patrimalp.org/resource/>
+PREFIX rdf:            <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:           <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd:            <http://www.w3.org/2001/XMLSchema#>
+
+patrimalpgraph:brocartsData {
+    brocartsr:E.15  rdf:type         brocartso:Brocade;
+            rdfs:label               "E.15";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:E.14  rdf:type         brocartso:Brocade;
+            rdfs:label               "E.14";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:E.11.1  rdf:type       brocartso:Brocade;
+            rdfs:label               "E.11.1";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde3 .
+    
+    brocartsr:E.12  rdf:type         brocartso:Brocade;
+            rdfs:label               "E.12";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:E.11  rdf:type         brocartso:Brocade;
+            rdfs:label               "E.11";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde3 .
+    
+    brocartsr:E.10  rdf:type         brocartso:Brocade;
+            rdfs:label               "E.10";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:E.9  rdf:type          brocartso:Brocade;
+            rdfs:label               "E.9";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:E.8  rdf:type          brocartso:Brocade;
+            rdfs:label               "E.8";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:E.7  rdf:type          brocartso:Brocade;
+            rdfs:label               "E.7";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:E.6  rdf:type          brocartso:Brocade;
+            rdfs:label               "E.6";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde3 .
+    
+    brocartsr:E.5  rdf:type          brocartso:Brocade;
+            rdfs:label               "E.5";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:E.4  rdf:type          brocartso:Brocade;
+            rdfs:label               "E.4";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:E.3  rdf:type          brocartso:Brocade;
+            rdfs:label               "E.3";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:E.2  rdf:type          brocartso:Brocade;
+            rdfs:label               "E.2";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:E.1  rdf:type          brocartso:Brocade;
+            rdfs:label               "E.1";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde3 .
+    
+    brocartsr:S5  brocartso:appliedBrocade  brocartsr:E.15 , brocartsr:E.14 , brocartsr:E.11.1 , brocartsr:E.12 , brocartsr:E.11 , brocartsr:E.10 , brocartsr:E.9 , brocartsr:E.8 , brocartsr:E.7 , brocartsr:E.6 , brocartsr:E.5 , brocartsr:E.4 , brocartsr:E.3 , brocartsr:E.2 , brocartsr:E.1 .
+    
+    brocartsr:D.3  rdf:type          brocartso:Brocade;
+            rdfs:label               "D.3";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde3 .
+    
+    brocartsr:D.2  rdf:type          brocartso:Brocade;
+            rdfs:label               "D.2";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde3 .
+    
+    brocartsr:D.1.9  rdf:type        brocartso:Brocade;
+            rdfs:label               "D.1.9";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:D.1.8  rdf:type        brocartso:Brocade;
+            rdfs:label               "D.1.8";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:D.1.7  rdf:type        brocartso:Brocade;
+            rdfs:label               "D.1.7";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:D.1.6  rdf:type        brocartso:Brocade;
+            rdfs:label               "D.1.6";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:D.1.5  rdf:type        brocartso:Brocade;
+            rdfs:label               "D.1.5";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:D.1.4  rdf:type        brocartso:Brocade;
+            rdfs:label               "D.1.4";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:D.1.3  rdf:type        brocartso:Brocade;
+            rdfs:label               "D.1.3";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:D.1.2  rdf:type        brocartso:Brocade;
+            rdfs:label               "D.1.2";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:D.1.1  rdf:type        brocartso:Brocade;
+            rdfs:label               "D.1.1";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:S4  brocartso:appliedBrocade  brocartsr:D.3 , brocartsr:D.2 , brocartsr:D.1.9 , brocartsr:D.1.8 , brocartsr:D.1.7 , brocartsr:D.1.6 , brocartsr:D.1.5 , brocartsr:D.1.4 , brocartsr:D.1.3 , brocartsr:D.1.2 , brocartsr:D.1.1 .
+    
+    brocartsr:C4  rdf:type              brocartso:Brocade;
+            rdfs:label                  "C4";
+            brocartso:theme             brocartsvoc:theme5;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:C3  rdf:type              brocartso:Brocade;
+            rdfs:label                  "C3";
+            brocartso:theme             brocartsvoc:theme5;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:C2  rdf:type              brocartso:Brocade;
+            rdfs:label                  "C2";
+            brocartso:theme             brocartsvoc:theme5;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:C1  rdf:type              brocartso:Brocade;
+            rdfs:label                  "C1";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme2;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde3;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving12 , brocartsvoc:typeOfEngraving13 , brocartsvoc:typeOfEngraving3 , brocartsvoc:typeOfEngraving5 , brocartsvoc:typeOfEngraving8 .
+    
+    brocartsr:S3  brocartso:appliedBrocade  brocartsr:C4 , brocartsr:C3 , brocartsr:C2 , brocartsr:C1 .
+    
+    brocartsr:B.12  rdf:type            brocartso:Brocade;
+            rdfs:label                  "B.12";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:B.11  rdf:type            brocartso:Brocade;
+            rdfs:label                  "B.11";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:B.10  rdf:type            brocartso:Brocade;
+            rdfs:label                  "B.10";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:B.9  rdf:type             brocartso:Brocade;
+            rdfs:label                  "B.9";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:B.8  rdf:type             brocartso:Brocade;
+            rdfs:label                  "B.8";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:B.7  rdf:type             brocartso:Brocade;
+            rdfs:label                  "B.7";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:B.6  rdf:type             brocartso:Brocade;
+            rdfs:label                  "B.6";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:B.5  rdf:type             brocartso:Brocade;
+            rdfs:label                  "B.5";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:B.4  rdf:type             brocartso:Brocade;
+            rdfs:label                  "B.4";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:B.3  rdf:type             brocartso:Brocade;
+            rdfs:label                  "B.3";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:B.2  rdf:type             brocartso:Brocade;
+            rdfs:label                  "B.2";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:B.1  rdf:type             brocartso:Brocade;
+            rdfs:label                  "B.1";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme2;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde3;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving12 , brocartsvoc:typeOfEngraving13 , brocartsvoc:typeOfEngraving7 , brocartsvoc:typeOfEngraving3 , brocartsvoc:typeOfEngraving9 .
+    
+    brocartsr:S2  brocartso:appliedBrocade  brocartsr:B.12 , brocartsr:B.11 , brocartsr:B.10 , brocartsr:B.9 , brocartsr:B.8 , brocartsr:B.7 , brocartsr:B.6 , brocartsr:B.5 , brocartsr:B.4 , brocartsr:B.3 , brocartsr:B.2 , brocartsr:B.1 .
+    
+    brocartsr:A.13  rdf:type            brocartso:Brocade;
+            rdfs:label                  "A.13";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:A.12  rdf:type            brocartso:Brocade;
+            rdfs:label                  "A.12";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:A.11  rdf:type            brocartso:Brocade;
+            rdfs:label                  "A.11";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:A.10  rdf:type            brocartso:Brocade;
+            rdfs:label                  "A.10";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:A.9  rdf:type             brocartso:Brocade;
+            rdfs:label                  "A.9";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:A.8  rdf:type             brocartso:Brocade;
+            rdfs:label                  "A.8";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:A.7  rdf:type             brocartso:Brocade;
+            rdfs:label                  "A.7";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:A.6  rdf:type             brocartso:Brocade;
+            rdfs:label                  "A.6";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:A.5  rdf:type             brocartso:Brocade;
+            rdfs:label                  "A.5";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:A.4  rdf:type             brocartso:Brocade;
+            rdfs:label                  "A.4";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:A.3  rdf:type             brocartso:Brocade;
+            rdfs:label                  "A.3";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:A.2  rdf:type             brocartso:Brocade;
+            rdfs:label                  "A.2";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:A.1  rdf:type             brocartso:Brocade;
+            rdfs:label                  "A.1";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme2;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde3;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving12 , brocartsvoc:typeOfEngraving13 , brocartsvoc:typeOfEngraving5 , brocartsvoc:typeOfEngraving8 .
+    
+    brocartsr:S1  brocartso:appliedBrocade  brocartsr:A.13 , brocartsr:A.12 , brocartsr:A.11 , brocartsr:A.10 , brocartsr:A.9 , brocartsr:A.8 , brocartsr:A.7 , brocartsr:A.6 , brocartsr:A.5 , brocartsr:A.4 , brocartsr:A.3 , brocartsr:A.2 , brocartsr:A.1 .
+}

@@ -240,42 +240,12 @@ patrimalpgraph:brocartsData {
             patrimalpo:image  patrimalpr:site1Image1;
             geo:hasGeometry   patrimalpr:site1Geom .
     
-    brocartsr:S1  rdf:type             patrimalpo:Scuplture;
-            rdfs:label                 "Saint évêque Claude";
-            brocartso:creationDate     "2020-07-09"^^xsd:date;
-            brocartso:denomination     brocartsvoc:denomination10;
-            brocartso:dimensions       "(L x H x P) :23.5 x 75 x ???? cm";
-            brocartso:material         brocartsvoc:material2 , brocartsvoc:material5;
-            brocartso:period           "fin XVe début XVIe";
-            brocartso:protectionLevel  brocartsvoc:protectionLevel3;
-            brocartso:siteOfOrigin     patrimalpr:site12 .
-    
-    brocartsr:S2  rdf:type             patrimalpo:Scuplture;
-            rdfs:label                 "Sainte Catherine d'Alexandrie";
-            brocartso:creationDate     "2020-11-09"^^xsd:date;
-            brocartso:denomination     brocartsvoc:denomination10;
-            brocartso:dimensions       "(L x H x P) :25 x 75 x 16 cm";
-            brocartso:material         brocartsvoc:material2;
-            brocartso:period           "fin XVe début XVIe";
-            brocartso:protectionLevel  brocartsvoc:protectionLevel2;
-            brocartso:siteOfOrigin     patrimalpr:site13 .
-    
     patrimalpr:site2  rdf:type  patrimalpo:Church;
             rdfs:label        "Église Notre-Dame";
             rdfs:seeAlso      wikidata:Q38386547;
             brocartso:oeuvre  brocartsr:S3;
             patrimalpo:image  patrimalpr:site2Image1 , patrimalpr:site2Image2;
             geo:hasGeometry   patrimalpr:site2Geom .
-    
-    brocartsr:S3  rdf:type             patrimalpo:Scuplture;
-            rdfs:label                 "Saint Roch";
-            brocartso:creationDate     "2020-07-23"^^xsd:date;
-            brocartso:denomination     brocartsvoc:denomination10;
-            brocartso:dimensions       "(L x H x P) :33 x 77 x 18 cm";
-            brocartso:material         brocartsvoc:material2;
-            brocartso:period           "1/4 du XVIe siècle";
-            brocartso:protectionLevel  brocartsvoc:protectionLevel5;
-            brocartso:siteOfOrigin     patrimalpr:site14 .
     
     patrimalpr:site3  rdf:type  patrimalpo:Church;
             rdfs:label        "Crypte de l'église Saint-Pierre de Lémenc";
@@ -284,31 +254,12 @@ patrimalpgraph:brocartsData {
             patrimalpo:image  patrimalpr:site3Image1;
             geo:hasGeometry   patrimalpr:site3Geom .
     
-    brocartsr:S4  rdf:type             patrimalpo:Scuplture;
-            rdfs:label                 "Mise au tombeau de Lémenc";
-            brocartso:creationDate     "2020-10-13"^^xsd:date;
-            brocartso:denomination     brocartsvoc:denomination11;
-            brocartso:dimensions       "(L x H x P) :405 x 212 x 212 cm";
-            brocartso:material         brocartsvoc:material3 , brocartsvoc:material6;
-            brocartso:period           "Après 1496";
-            brocartso:protectionLevel  brocartsvoc:protectionLevel4;
-            brocartso:siteOfOrigin     patrimalpr:site15 .
-    
     patrimalpr:site4  rdf:type  patrimalpo:Castle;
             rdfs:label        "Château de Montrottier";
             rdfs:seeAlso      wikidata:Q2255651;
             brocartso:oeuvre  brocartsr:S5;
             patrimalpo:image  patrimalpr:site4Image1;
             geo:hasGeometry   patrimalpr:site4Geom .
-    
-    brocartsr:S5  rdf:type             patrimalpo:Scuplture;
-            rdfs:label                 "Vierge de pitié entre Saint Jean et Marie Madeleine";
-            brocartso:creationDate     "2020-11-09"^^xsd:date;
-            brocartso:denomination     brocartsvoc:denomination10;
-            brocartso:dimensions       "(L x H x P) :59 x 64 x 20 cm";
-            brocartso:material         brocartsvoc:material2;
-            brocartso:period           "XVe siècle";
-            brocartso:protectionLevel  brocartsvoc:protectionLevel4 .
     
     brocartsr:S6  rdf:type             patrimalpo:Scuplture;
             rdfs:label                 "Vierge de Calvaire";
@@ -453,4 +404,362 @@ patrimalpgraph:brocartsData {
             brocartso:period           "vers 1500";
             brocartso:protectionLevel  brocartsvoc:protectionLevel4;
             brocartso:siteOfOrigin     patrimalpr:site23 .
+    
+    brocartsr:S1  rdf:type             patrimalpo:Scuplture;
+            rdfs:label                 "Saint évêque Claude";
+            brocartso:appliedBrocade   brocartsr:A.13 , brocartsr:A.12 , brocartsr:A.11 , brocartsr:A.10 , brocartsr:A.9 , brocartsr:A.8 , brocartsr:A.7 , brocartsr:A.6 , brocartsr:A.5 , brocartsr:A.4 , brocartsr:A.3 , brocartsr:A.2 , brocartsr:A.1;
+            brocartso:creationDate     "2020-07-09"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination10;
+            brocartso:dimensions       "(L x H x P) :23.5 x 75 x ???? cm";
+            brocartso:material         brocartsvoc:material2 , brocartsvoc:material5;
+            brocartso:period           "fin XVe début XVIe";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel3;
+            brocartso:siteOfOrigin     patrimalpr:site12 .
+    
+    brocartsr:A.1  rdf:type             brocartso:Brocade;
+            rdfs:label                  "A.1";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme2;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde3;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving8 , brocartsvoc:typeOfEngraving5 , brocartsvoc:typeOfEngraving13 , brocartsvoc:typeOfEngraving12 .
+    
+    brocartsr:A.2  rdf:type             brocartso:Brocade;
+            rdfs:label                  "A.2";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:A.3  rdf:type             brocartso:Brocade;
+            rdfs:label                  "A.3";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:A.4  rdf:type             brocartso:Brocade;
+            rdfs:label                  "A.4";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:A.5  rdf:type             brocartso:Brocade;
+            rdfs:label                  "A.5";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:A.6  rdf:type             brocartso:Brocade;
+            rdfs:label                  "A.6";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:A.7  rdf:type             brocartso:Brocade;
+            rdfs:label                  "A.7";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:A.8  rdf:type             brocartso:Brocade;
+            rdfs:label                  "A.8";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:A.9  rdf:type             brocartso:Brocade;
+            rdfs:label                  "A.9";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:A.10  rdf:type            brocartso:Brocade;
+            rdfs:label                  "A.10";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:A.11  rdf:type            brocartso:Brocade;
+            rdfs:label                  "A.11";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:A.12  rdf:type            brocartso:Brocade;
+            rdfs:label                  "A.12";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:A.13  rdf:type            brocartso:Brocade;
+            rdfs:label                  "A.13";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:S2  rdf:type             patrimalpo:Scuplture;
+            rdfs:label                 "Sainte Catherine d'Alexandrie";
+            brocartso:appliedBrocade   brocartsr:B.12 , brocartsr:B.11 , brocartsr:B.10 , brocartsr:B.9 , brocartsr:B.8 , brocartsr:B.7 , brocartsr:B.6 , brocartsr:B.5 , brocartsr:B.4 , brocartsr:B.3 , brocartsr:B.2 , brocartsr:B.1;
+            brocartso:creationDate     "2020-11-09"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination10;
+            brocartso:dimensions       "(L x H x P) :25 x 75 x 16 cm";
+            brocartso:material         brocartsvoc:material2;
+            brocartso:period           "fin XVe début XVIe";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel2;
+            brocartso:siteOfOrigin     patrimalpr:site13 .
+    
+    brocartsr:B.1  rdf:type             brocartso:Brocade;
+            rdfs:label                  "B.1";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme2;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde3;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving9 , brocartsvoc:typeOfEngraving3 , brocartsvoc:typeOfEngraving7 , brocartsvoc:typeOfEngraving13 , brocartsvoc:typeOfEngraving12 .
+    
+    brocartsr:B.2  rdf:type             brocartso:Brocade;
+            rdfs:label                  "B.2";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:B.3  rdf:type             brocartso:Brocade;
+            rdfs:label                  "B.3";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:B.4  rdf:type             brocartso:Brocade;
+            rdfs:label                  "B.4";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:B.5  rdf:type             brocartso:Brocade;
+            rdfs:label                  "B.5";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:B.6  rdf:type             brocartso:Brocade;
+            rdfs:label                  "B.6";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:B.7  rdf:type             brocartso:Brocade;
+            rdfs:label                  "B.7";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:B.8  rdf:type             brocartso:Brocade;
+            rdfs:label                  "B.8";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:B.9  rdf:type             brocartso:Brocade;
+            rdfs:label                  "B.9";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:B.10  rdf:type            brocartso:Brocade;
+            rdfs:label                  "B.10";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:B.11  rdf:type            brocartso:Brocade;
+            rdfs:label                  "B.11";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:B.12  rdf:type            brocartso:Brocade;
+            rdfs:label                  "B.12";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme3;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:S3  rdf:type             patrimalpo:Scuplture;
+            rdfs:label                 "Saint Roch";
+            brocartso:appliedBrocade   brocartsr:C1 , brocartsr:C2 , brocartsr:C3 , brocartsr:C4;
+            brocartso:creationDate     "2020-07-23"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination10;
+            brocartso:dimensions       "(L x H x P) :33 x 77 x 18 cm";
+            brocartso:material         brocartsvoc:material2;
+            brocartso:period           "1/4 du XVIe siècle";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel5;
+            brocartso:siteOfOrigin     patrimalpr:site14 .
+    
+    brocartsr:C1  rdf:type              brocartso:Brocade;
+            rdfs:label                  "C1";
+            brocartso:hasGilding        true;
+            brocartso:theme             brocartsvoc:theme2;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde3;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving8 , brocartsvoc:typeOfEngraving5 , brocartsvoc:typeOfEngraving3 , brocartsvoc:typeOfEngraving13 , brocartsvoc:typeOfEngraving12 .
+    
+    brocartsr:C2  rdf:type              brocartso:Brocade;
+            rdfs:label                  "C2";
+            brocartso:theme             brocartsvoc:theme5;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:C3  rdf:type              brocartso:Brocade;
+            rdfs:label                  "C3";
+            brocartso:theme             brocartsvoc:theme5;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:C4  rdf:type              brocartso:Brocade;
+            rdfs:label                  "C4";
+            brocartso:theme             brocartsvoc:theme5;
+            brocartso:typeOfBrocade     brocartsvoc:typeOfBrocarde4;
+            brocartso:typpeOfEngraving  brocartsvoc:typeOfEngraving4 .
+    
+    brocartsr:S4  rdf:type             patrimalpo:Scuplture;
+            rdfs:label                 "Mise au tombeau de Lémenc";
+            brocartso:appliedBrocade   brocartsr:D.3 , brocartsr:D.2 , brocartsr:D.1.9 , brocartsr:D.1.8 , brocartsr:D.1.7 , brocartsr:D.1.6 , brocartsr:D.1.5 , brocartsr:D.1.4 , brocartsr:D.1.3 , brocartsr:D.1.2 , brocartsr:D.1.1;
+            brocartso:creationDate     "2020-10-13"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination11;
+            brocartso:dimensions       "(L x H x P) :405 x 212 x 212 cm";
+            brocartso:material         brocartsvoc:material3 , brocartsvoc:material6;
+            brocartso:period           "Après 1496";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel4;
+            brocartso:siteOfOrigin     patrimalpr:site15 .
+    
+    brocartsr:D.1.1  rdf:type        brocartso:Brocade;
+            rdfs:label               "D.1.1";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:D.1.2  rdf:type        brocartso:Brocade;
+            rdfs:label               "D.1.2";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:D.1.3  rdf:type        brocartso:Brocade;
+            rdfs:label               "D.1.3";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:D.1.4  rdf:type        brocartso:Brocade;
+            rdfs:label               "D.1.4";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:D.1.5  rdf:type        brocartso:Brocade;
+            rdfs:label               "D.1.5";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:D.1.6  rdf:type        brocartso:Brocade;
+            rdfs:label               "D.1.6";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:D.1.7  rdf:type        brocartso:Brocade;
+            rdfs:label               "D.1.7";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:D.1.8  rdf:type        brocartso:Brocade;
+            rdfs:label               "D.1.8";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:D.1.9  rdf:type        brocartso:Brocade;
+            rdfs:label               "D.1.9";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:D.2  rdf:type          brocartso:Brocade;
+            rdfs:label               "D.2";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde3 .
+    
+    brocartsr:D.3  rdf:type          brocartso:Brocade;
+            rdfs:label               "D.3";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde3 .
+    
+    brocartsr:S5  rdf:type             patrimalpo:Scuplture;
+            rdfs:label                 "Vierge de pitié entre Saint Jean et Marie Madeleine";
+            brocartso:appliedBrocade   brocartsr:E.15 , brocartsr:E.14 , brocartsr:E.11.1 , brocartsr:E.12 , brocartsr:E.11 , brocartsr:E.10 , brocartsr:E.9 , brocartsr:E.8 , brocartsr:E.7 , brocartsr:E.6 , brocartsr:E.5 , brocartsr:E.4 , brocartsr:E.3 , brocartsr:E.2 , brocartsr:E.1;
+            brocartso:creationDate     "2020-11-09"^^xsd:date;
+            brocartso:denomination     brocartsvoc:denomination10;
+            brocartso:dimensions       "(L x H x P) :59 x 64 x 20 cm";
+            brocartso:material         brocartsvoc:material2;
+            brocartso:period           "XVe siècle";
+            brocartso:protectionLevel  brocartsvoc:protectionLevel4 .
+    
+    brocartsr:E.1  rdf:type          brocartso:Brocade;
+            rdfs:label               "E.1";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde3 .
+    
+    brocartsr:E.2  rdf:type          brocartso:Brocade;
+            rdfs:label               "E.2";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:E.3  rdf:type          brocartso:Brocade;
+            rdfs:label               "E.3";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:E.4  rdf:type          brocartso:Brocade;
+            rdfs:label               "E.4";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:E.5  rdf:type          brocartso:Brocade;
+            rdfs:label               "E.5";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:E.6  rdf:type          brocartso:Brocade;
+            rdfs:label               "E.6";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde3 .
+    
+    brocartsr:E.7  rdf:type          brocartso:Brocade;
+            rdfs:label               "E.7";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:E.8  rdf:type          brocartso:Brocade;
+            rdfs:label               "E.8";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:E.9  rdf:type          brocartso:Brocade;
+            rdfs:label               "E.9";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:E.10  rdf:type         brocartso:Brocade;
+            rdfs:label               "E.10";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:E.11  rdf:type         brocartso:Brocade;
+            rdfs:label               "E.11";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde3 .
+    
+    brocartsr:E.12  rdf:type         brocartso:Brocade;
+            rdfs:label               "E.12";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:E.11.1  rdf:type       brocartso:Brocade;
+            rdfs:label               "E.11.1";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde3 .
+    
+    brocartsr:E.14  rdf:type         brocartso:Brocade;
+            rdfs:label               "E.14";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
+    
+    brocartsr:E.15  rdf:type         brocartso:Brocade;
+            rdfs:label               "E.15";
+            brocartso:typeOfBrocade  brocartsvoc:typeOfBrocarde4 .
 }

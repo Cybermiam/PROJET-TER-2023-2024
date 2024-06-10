@@ -1,9 +1,8 @@
 PREFIX : <http://patrimalp.org/brocarts/thesaurus#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#> 
-PREFIX : <http://patrimalp.org/brocarts/thesaurus#>
-PREFIX brocartsgraph: <http://patrimalp.org/brocarts/graph/> 
+PREFIX patrimalpgraph:  <http://patrimalp.org/graph/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
 # BASE <http://patrimalp.org/brocarts/thesaurus>

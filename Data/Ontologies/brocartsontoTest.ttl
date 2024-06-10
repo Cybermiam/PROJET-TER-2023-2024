@@ -45,13 +45,13 @@ edytem:position rdf:type owl:ObjectProperty ;
                            "Position"@en .
 
 
-###  http://patrimalp.org/brocarts/onto#appliedBrocades
-brocartsonto:appliedBrocades rdf:type owl:ObjectProperty ;
-                             rdfs:domain patrimalpo:Sculpture ;
-                             rdfs:range brocartsonto:Brocade ;
-                             brocartsonto:typeNavigation "nav" ;
-                             rdfs:label "applied brocade"@en ,
-                                        "brocarts appliqués"@fr .
+###  http://patrimalp.org/brocarts/onto#appliedBrocade
+brocartsonto:appliedBrocade rdf:type owl:ObjectProperty ;
+                            rdfs:domain patrimalpo:Sculpture ;
+                            rdfs:range brocartsonto:Brocade ;
+                            brocartsonto:typeNavigation "nav" ;
+                            rdfs:label "applied brocade"@en ,
+                                       "brocart appliqué"@fr .
 
 
 ###  http://patrimalp.org/brocarts/onto#denomination
@@ -101,6 +101,22 @@ brocartsonto:siteOfOrigin rdf:type owl:ObjectProperty ;
                           rdfs:range patrimalpo:Site ;
                           rdfs:label "Lieu d'origine"@fr ,
                                      "Site of origin"@en .
+
+
+###  http://patrimalp.org/brocarts/onto#typeOfBrocade
+brocartsonto:typeOfBrocade rdf:type owl:ObjectProperty ;
+                           rdfs:domain brocartsonto:Brocade ;
+                           rdfs:range <http://patrimalp.org/brocarts/thesaurus#TypeOfBrocade> ;
+                           rdfs:label "type de brocart"@fr ,
+                                      "type of brocade"@en .
+
+
+###  http://patrimalp.org/brocarts/onto#typeOfEngraving
+brocartsonto:typeOfEngraving rdf:type owl:ObjectProperty ;
+                             rdfs:domain brocartsonto:Brocade ;
+                             rdfs:range <http://patrimalp.org/brocarts/thesaurus#TypeOfEngraving> ;
+                             rdfs:label "engraving typology"@en ,
+                                        "typologie gravure"@fr .
 
 
 #################################################################

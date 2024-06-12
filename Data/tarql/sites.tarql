@@ -10,6 +10,7 @@ PREFIX wikidata: <https://www.wikidata.org/entity/>
 CONSTRUCT {
   ?siteUri a ?siteTypeUri ;
            rdfs:label ?name ;
+           patrimalpo:address ?adresse;
            geo:hasGeometry ?geomUri ;
            patrimalpo:image ?imageSiteUri ;
            rdfs:seeAlso ?seeAlsoUri .
@@ -26,7 +27,6 @@ CONSTRUCT {
 } 
 
 WHERE { 
-#  FILTER(?siteID="2"^^xsd:string)
   BIND (URI(tarql:expandPrefixedName(?seeAlso)) AS ?seeAlsoUri) 
   BIND (URI(CONCAT(tarql:expandPrefix("patrimalpo"), ENCODE_FOR_URI(?siteType))) AS ?siteTypeUri)
   BIND (URI(CONCAT(tarql:expandPrefix("patrimalpr"),'site', ENCODE_FOR_URI(?siteID))) AS ?siteUri)

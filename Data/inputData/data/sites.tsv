@@ -1,19 +1,19 @@
 siteID	siteType	name	adresse	seeAlso	latitude	longitude	imageID	credits	image
-1	Building	Archives départementales de l'Ain	Bourg-en-Bresse,  Ain (01), Auvergne-Rhône-Alpes	wikidata:Q2860468	45.5581	5.93931	1	Florian Bouquet	http://lig-tdcge.imag.fr/steamer/patrimalp/catalogData/sites/images/site01.jpg
-2	Church	Église Notre-Dame	Barberaz, Savoie (73),  Auvergne-Rhône-Alpes (73)	wikidata:Q38386547	46.19514614	5.226045639	1	Wikimedia Commons	https://upload.wikimedia.org/wikipedia/commons/e/e5/Archives_d%C3%A9partementales_Ain_Bourg_Bresse_3.jpg
+1	Building	Archives départementales de l'Ain	Bourg-en-Bresse,  Ain (01), Auvergne-Rhône-Alpes	wikidata:Q2860468	46.195254	5.226158	1	Florian Bouquet	http://lig-tdcge.imag.fr/steamer/patrimalp/catalogData/sites/images/site01.jpg
+2	Church	Église Notre-Dame	Barberaz, Savoie (73),  Auvergne-Rhône-Alpes (73)	wikidata:Q38386547	45.558074   5.939313	1	Wikimedia Commons	https://upload.wikimedia.org/wikipedia/commons/e/e5/Archives_d%C3%A9partementales_Ain_Bourg_Bresse_3.jpg
 2							2	Mairie de Barberaz	https://trinitechambery.paroisse73.fr/sites/trinitechambery.paroisse73.fr/local/cache-vignettes/L600xH600/c386a7a9a8e0846150eadb3c1f619d-2a7fb.jpg
-3	Church	Crypte de l'église Saint-Pierre de Lémenc	Chambéry (73) Auvergne-Rhône-Alpes	wikidata:Q36790222	46.19793026	5.236526639	1	Wikimedia Commons	https://upload.wikimedia.org/wikipedia/commons/e/ed/Monast%C3%A8re_royal_de_Brou_%28%C3%A9glise%29_%281%29.JPG
-4	Castle	Château de Montrottier	Lovagny, Haute Savoie (74), Auvergne-Rhône-Alpes	wikidata:Q2255651	45.57776086	5.938995201	1	Wikimedia Commons	https://upload.wikimedia.org/wikipedia/commons/e/e6/CHS_de_Bassens_%28entr%C3%A9e%29.JPG
-5	Museum	Réserve du Musée Savoisien	Centre hospitalier spécialisé de Savoie, Bassin (73), Auvergne-Rhône-Alpes		45.64752788	5.860482407	1	Wikimedia Commons	https://upload.wikimedia.org/wikipedia/commons/c/c9/Prieur%C3%A9_du_Bourget_du_Lac_%28Chevet_de_la_prioriale%29.jpg
-6	Church	Église Saint Laurent	Le Bourget du Lac (73), Auvergne-Rhône-Alpes	wikidata:Q3582324	45.5338653	6.21443655	1	Wikimedia Commons	https://upload.wikimedia.org/wikipedia/commons/f/f9/Mairie_et_%C3%A9glise_de_Chamoux-sur-Gelon_%28juillet_2019%29.JPG
-7	Church	Église de Myans	Myans, Savoie (73) Auvergne-Rhône Alpes	wikidata:Q3471725	45.89758021	6.126436125	1	Wikimedia Commons	https://upload.wikimedia.org/wikipedia/commons/1/11/Haute-Savoie_%28septembre_2013%29_128.JPG
-8	Museum	Musée du Château d'Annecy	Annecy,  Haute-Savoie (74)	wikidata:Q13389955	45.1290306	7.716740075	1	Wikimedia Commons	https://upload.wikimedia.org/wikipedia/commons/3/32/Piedmont_in_Italy.svg
-9	Monastery	Musée du Monastère Royal de Brou	Bourg-en-Bresse, Ain (01), Auvergne-Rhône-Alpes		45.89884798	6.039967621	1	Wikimedia Commons	https://upload.wikimedia.org/wikipedia/commons/c/c7/Ch%C3%A2teau_de_Montrottier.jpg
+3	Church	Crypte de l'église Saint-Pierre de Lémenc	Chambéry (73) Auvergne-Rhône-Alpes	wikidata:Q36790222	45.583796	5.907417	1	Wikimedia Commons	https://upload.wikimedia.org/wikipedia/commons/e/ed/Monast%C3%A8re_royal_de_Brou_%28%C3%A9glise%29_%281%29.JPG
+4	Castle	Château de Montrottier	Lovagny, Haute Savoie (74), Auvergne-Rhône-Alpes	wikidata:Q2255651	45.8986	6.0389	1	Wikimedia Commons	https://upload.wikimedia.org/wikipedia/commons/e/e6/CHS_de_Bassens_%28entr%C3%A9e%29.JPG
+5	Museum	Réserve du Musée Savoisien	Centre hospitalier spécialisé de Savoie, Bassin (73), Auvergne-Rhône-Alpes	Q22968397	45.577755   5.938570	1	Wikimedia Commons	https://upload.wikimedia.org/wikipedia/commons/c/c9/Prieur%C3%A9_du_Bourget_du_Lac_%28Chevet_de_la_prioriale%29.jpg
+6	Church	Église Saint Laurent	Le Bourget du Lac (73), Auvergne-Rhône-Alpes	wikidata:Q3582324	45.6474 5.86083	1	Wikimedia Commons	https://upload.wikimedia.org/wikipedia/commons/f/f9/Mairie_et_%C3%A9glise_de_Chamoux-sur-Gelon_%28juillet_2019%29.JPG
+7	Church	Église de Myans	Myans, Savoie (73) Auvergne-Rhône Alpes	wikidata:Q3471725	45.51441    5.9873	1	Wikimedia Commons	https://upload.wikimedia.org/wikipedia/commons/1/11/Haute-Savoie_%28septembre_2013%29_128.JPG
+8	Museum	Musée du Château d'Annecy	Annecy,  Haute-Savoie (74)	wikidata:Q13389955	45.897263   6.124916	1	Wikimedia Commons	https://upload.wikimedia.org/wikipedia/commons/3/32/Piedmont_in_Italy.svg
+9	Monastery	Musée du Monastère Royal de Brou	Bourg-en-Bresse, Ain (01), Auvergne-Rhône-Alpes	wikidata:Q3330655	46.1974 5.2366	1	Wikimedia Commons	https://upload.wikimedia.org/wikipedia/commons/c/c7/Ch%C3%A2teau_de_Montrottier.jpg
 10	Building	Collection privée Piémontaise 							
-11	Church	Église Saint-Martin	Chamoux-sur-Gelon, Savoie 73, Auvergne-hône-Alpes	wikidata:Q41795771	45.53363	6.21449			
-12	Presbitery	Cure de Chazey-Bons	Chazey-Bons, Ain (01), Auvergne Rhônes-Alpes	wikidata:Q27305626	45.80312	5.68064			
-13	Chapel	Chapelle Sainte-Catherine-et-Saint-Nicolas d'Égieu	Hameau de Egieu, Commune de Rossillon (01)	wikidata:Q60367472	45.84273	5.60889	1	Wikimedia Commons	https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Chapelle_Ste_Catherine_St_Nicolas_%C3%89gieu_Rossillon_3.jpg/567px-Chapelle_Ste_Catherine_St_Nicolas_%C3%89gieu_Rossillon_3.jpg
-14	Building	Ancienne maladrerie des Antonins	hôpital de Chambéry, Savoie (73), Auvergne Rhône-Alpes	wikidata:Q22968426					
+11	Church	Église Saint-Martin	Chamoux-sur-Gelon, Savoie 73, Auvergne-hône-Alpes	wikidata:Q41795771	45.53358    6.21454			
+12	Presbitery	Cure de Chazey-Bons	Chazey-Bons, Ain (01), Auvergne Rhônes-Alpes	wikidata:Q27305626	45.80315    5.68063			
+13	Chapel	Chapelle Sainte-Catherine-et-Saint-Nicolas d'Égieu	Hameau de Egieu, Commune de Rossillon (01)	wikidata:Q60367472	45.842686   5.608894	1	Wikimedia Commons	https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Chapelle_Ste_Catherine_St_Nicolas_%C3%89gieu_Rossillon_3.jpg/567px-Chapelle_Ste_Catherine_St_Nicolas_%C3%89gieu_Rossillon_3.jpg
+14	Building	Ancienne maladrerie des Antonins	hôpital de Chambéry, Savoie (73), Auvergne Rhône-Alpes	wikidata:Q22968426	45.564699   5.91015				
 15	Building	Ancienne commanderie antonine de Chambéry	Chambéry (73) Auvergne-Rhône-Alpes						
 16	Hamlet	Hameau de Egieu	Commune de Rossillon, Ain (01)						
 17	Valley	Haute Tarentaise	Savoie (73)						

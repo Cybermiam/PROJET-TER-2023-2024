@@ -15,10 +15,11 @@ patrimalpgraph:brocartsData {
             geo:asWKT      "POINT(6.00574 45.73066)"^^geo:wktLiteral .
     
     patrimalpr:site23
-            rdf:type         patrimalpo:Church;
-            rdfs:label       "Église Saints-Pierre-et-Paul";
-            rdfs:seeAlso     wikidata:Q60392390;
-            geo:hasGeometry  patrimalpr:site23Geom .
+            rdf:type            patrimalpo:Church;
+            rdfs:label          "Église Saints-Pierre-et-Paul";
+            rdfs:seeAlso        wikidata:Q60392390;
+            patrimalpo:address  "Saint Offenge-Dessus, Savoie (73) ,Auvergne Rhône-Alpes";
+            geo:hasGeometry     patrimalpr:site23Geom .
     
     patrimalpr:site22Geom
             rdf:type  geo:Geometry .
@@ -40,97 +41,102 @@ patrimalpgraph:brocartsData {
             rdf:type  geo:Geometry .
     
     patrimalpr:site20
-            rdf:type         patrimalpo:City;
-            rdfs:label       "Chambéry";
-            geo:hasGeometry  patrimalpr:site20Geom .
+            rdf:type            patrimalpo:City;
+            rdfs:label          "Chambéry";
+            patrimalpo:address  "Savoie (73)";
+            geo:hasGeometry     patrimalpr:site20Geom .
     
     patrimalpr:site19Geom
             rdf:type  geo:Geometry .
     
     patrimalpr:site19
-            rdf:type         patrimalpo:Chapel;
-            rdfs:label       "Chapelle de l'Église Saint-Léger";
-            geo:hasGeometry  patrimalpr:site19Geom .
+            rdf:type            patrimalpo:Chapel;
+            rdfs:label          "Chapelle de l'Église Saint-Léger";
+            patrimalpo:address  "Chambéry (73)";
+            geo:hasGeometry     patrimalpr:site19Geom .
     
     patrimalpr:site18Geom
             rdf:type  geo:Geometry .
     
     patrimalpr:site18
-            rdf:type         patrimalpo:Church;
-            rdfs:label       "Ancienne Eglise Saint-Julien de Duingt";
-            geo:hasGeometry  patrimalpr:site18Geom .
+            rdf:type            patrimalpo:Church;
+            rdfs:label          "Ancienne Eglise Saint-Julien de Duingt";
+            patrimalpo:address  "Duingt, Haute-Savoie (74)";
+            geo:hasGeometry     patrimalpr:site18Geom .
     
     patrimalpr:site17Geom
             rdf:type  geo:Geometry .
     
     patrimalpr:site17
-            rdf:type         patrimalpo:Valley;
-            rdfs:label       "Haute Tarentaise";
-            geo:hasGeometry  patrimalpr:site17Geom .
+            rdf:type            patrimalpo:Valley;
+            rdfs:label          "Haute Tarentaise";
+            patrimalpo:address  "Savoie (73)";
+            geo:hasGeometry     patrimalpr:site17Geom .
     
     patrimalpr:site16Geom
             rdf:type  geo:Geometry .
     
     patrimalpr:site16
-            rdf:type         patrimalpo:Hamlet;
-            rdfs:label       "Hameau de Egieu";
-            geo:hasGeometry  patrimalpr:site16Geom .
+            rdf:type            patrimalpo:Hamlet;
+            rdfs:label          "Hameau de Egieu";
+            patrimalpo:address  "Commune de Rossillon, Ain (01)";
+            geo:hasGeometry     patrimalpr:site16Geom .
     
     patrimalpr:site15Geom
             rdf:type  geo:Geometry .
     
     patrimalpr:site15
-            rdf:type         patrimalpo:Building;
-            rdfs:label       "Ancienne commanderie antonine de Chambéry";
-            geo:hasGeometry  patrimalpr:site15Geom .
+            rdf:type            patrimalpo:Building;
+            rdfs:label          "Ancienne commanderie antonine de Chambéry";
+            patrimalpo:address  "Chambéry (73) Auvergne-Rhône-Alpes";
+            geo:hasGeometry     patrimalpr:site15Geom .
     
     patrimalpr:site14Geom
             rdf:type  geo:Geometry .
     
     patrimalpr:site14
-            rdf:type         patrimalpo:Building;
-            rdfs:label       "Ancienne maladrerie des Antonins";
-            rdfs:seeAlso     wikidata:Q22968426;
-            geo:hasGeometry  patrimalpr:site14Geom .
+            rdf:type            patrimalpo:Building;
+            rdfs:label          "Ancienne maladrerie des Antonins";
+            rdfs:seeAlso        wikidata:Q22968426;
+            patrimalpo:address  "hôpital de Chambéry, Savoie (73), Auvergne Rhône-Alpes";
+            geo:hasGeometry     patrimalpr:site14Geom .
     
-    patrimalpr:site13Image1
-            rdf:type             patrimalpo:Image;
-            patrimalpo:credits   "Wikimedia Commons";
-            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Chapelle_Ste_Catherine_St_Nicolas_%C3%89gieu_Rossillon_3.jpg/567px-Chapelle_Ste_Catherine_St_Nicolas_%C3%89gieu_Rossillon_3.jpg" .
+    <http://patrimalp.org/resource/site13ImageWikimedia%20Commons>
+            rdf:type            patrimalpo:Image;
+            patrimalpo:credits  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Chapelle_Ste_Catherine_St_Nicolas_%C3%89gieu_Rossillon_3.jpg/567px-Chapelle_Ste_Catherine_St_Nicolas_%C3%89gieu_Rossillon_3.jpg" .
     
     patrimalpr:site13Geom
             rdf:type       geo:Geometry;
-            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.60889 , 45.84273]}"^^geo:geoJSONLiteral;
-            geo:asWKT      "POINT(5.60889 45.84273)"^^geo:wktLiteral .
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [1 , 45.842686   5.608894]}"^^geo:geoJSONLiteral;
+            geo:asWKT      "POINT(1 45.842686   5.608894)"^^geo:wktLiteral .
     
     patrimalpr:site13
-            rdf:type          patrimalpo:Chapel;
-            rdfs:label        "Chapelle Sainte-Catherine-et-Saint-Nicolas d'Égieu";
-            rdfs:seeAlso      wikidata:Q60367472;
-            patrimalpo:image  patrimalpr:site13Image1;
-            geo:hasGeometry   patrimalpr:site13Geom .
+            rdf:type            patrimalpo:Chapel;
+            rdfs:label          "Chapelle Sainte-Catherine-et-Saint-Nicolas d'Égieu";
+            rdfs:seeAlso        wikidata:Q60367472;
+            patrimalpo:address  "Hameau de Egieu, Commune de Rossillon (01)";
+            patrimalpo:image    <http://patrimalp.org/resource/site13ImageWikimedia%20Commons>;
+            geo:hasGeometry     patrimalpr:site13Geom .
     
     patrimalpr:site12Geom
-            rdf:type       geo:Geometry;
-            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.68064 , 45.80312]}"^^geo:geoJSONLiteral;
-            geo:asWKT      "POINT(5.68064 45.80312)"^^geo:wktLiteral .
+            rdf:type  geo:Geometry .
     
     patrimalpr:site12
-            rdf:type         patrimalpo:Presbitery;
-            rdfs:label       "Cure de Chazey-Bons";
-            rdfs:seeAlso     wikidata:Q27305626;
-            geo:hasGeometry  patrimalpr:site12Geom .
+            rdf:type            patrimalpo:Presbitery;
+            rdfs:label          "Cure de Chazey-Bons";
+            rdfs:seeAlso        wikidata:Q27305626;
+            patrimalpo:address  "Chazey-Bons, Ain (01), Auvergne Rhônes-Alpes";
+            geo:hasGeometry     patrimalpr:site12Geom .
     
     patrimalpr:site11Geom
-            rdf:type       geo:Geometry;
-            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [6.21449 , 45.53363]}"^^geo:geoJSONLiteral;
-            geo:asWKT      "POINT(6.21449 45.53363)"^^geo:wktLiteral .
+            rdf:type  geo:Geometry .
     
     patrimalpr:site11
-            rdf:type         patrimalpo:Church;
-            rdfs:label       "Église Saint-Martin";
-            rdfs:seeAlso     wikidata:Q41795771;
-            geo:hasGeometry  patrimalpr:site11Geom .
+            rdf:type            patrimalpo:Church;
+            rdfs:label          "Église Saint-Martin";
+            rdfs:seeAlso        wikidata:Q41795771;
+            patrimalpo:address  "Chamoux-sur-Gelon, Savoie 73, Auvergne-hône-Alpes";
+            geo:hasGeometry     patrimalpr:site11Geom .
     
     patrimalpr:site10Geom
             rdf:type  geo:Geometry .
@@ -140,83 +146,84 @@ patrimalpgraph:brocartsData {
             rdfs:label       "Collection privée Piémontaise ";
             geo:hasGeometry  patrimalpr:site10Geom .
     
-    patrimalpr:site9Image1
-            rdf:type             patrimalpo:Image;
-            patrimalpo:credits   "Wikimedia Commons";
-            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/c/c7/Ch%C3%A2teau_de_Montrottier.jpg" .
+    <http://patrimalp.org/resource/site9ImageWikimedia%20Commons>
+            rdf:type            patrimalpo:Image;
+            patrimalpo:credits  "https://upload.wikimedia.org/wikipedia/commons/c/c7/Ch%C3%A2teau_de_Montrottier.jpg" .
     
     patrimalpr:site9Geom
             rdf:type       geo:Geometry;
-            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [6.039967621 , 45.89884798]}"^^geo:geoJSONLiteral;
-            geo:asWKT      "POINT(6.039967621 45.89884798)"^^geo:wktLiteral .
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [1 , 46.1974 5.2366]}"^^geo:geoJSONLiteral;
+            geo:asWKT      "POINT(1 46.1974 5.2366)"^^geo:wktLiteral .
     
     patrimalpr:site9  rdf:type  patrimalpo:Monastery;
-            rdfs:label        "Musée du Monastère Royal de Brou";
-            patrimalpo:image  patrimalpr:site9Image1;
-            geo:hasGeometry   patrimalpr:site9Geom .
+            rdfs:label          "Musée du Monastère Royal de Brou";
+            rdfs:seeAlso        wikidata:Q3330655;
+            patrimalpo:address  "Bourg-en-Bresse, Ain (01), Auvergne-Rhône-Alpes";
+            patrimalpo:image    <http://patrimalp.org/resource/site9ImageWikimedia%20Commons>;
+            geo:hasGeometry     patrimalpr:site9Geom .
     
-    patrimalpr:site8Image1
-            rdf:type             patrimalpo:Image;
-            patrimalpo:credits   "Wikimedia Commons";
-            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/3/32/Piedmont_in_Italy.svg" .
+    <http://patrimalp.org/resource/site8ImageWikimedia%20Commons>
+            rdf:type            patrimalpo:Image;
+            patrimalpo:credits  "https://upload.wikimedia.org/wikipedia/commons/3/32/Piedmont_in_Italy.svg" .
     
     patrimalpr:site8Geom
             rdf:type       geo:Geometry;
-            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [7.716740075 , 45.1290306]}"^^geo:geoJSONLiteral;
-            geo:asWKT      "POINT(7.716740075 45.1290306)"^^geo:wktLiteral .
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [1 , 45.897263   6.124916]}"^^geo:geoJSONLiteral;
+            geo:asWKT      "POINT(1 45.897263   6.124916)"^^geo:wktLiteral .
     
     patrimalpr:site8  rdf:type  patrimalpo:Museum;
-            rdfs:label        "Musée du Château d'Annecy";
-            rdfs:seeAlso      wikidata:Q13389955;
-            patrimalpo:image  patrimalpr:site8Image1;
-            geo:hasGeometry   patrimalpr:site8Geom .
+            rdfs:label          "Musée du Château d'Annecy";
+            rdfs:seeAlso        wikidata:Q13389955;
+            patrimalpo:address  "Annecy,  Haute-Savoie (74)";
+            patrimalpo:image    <http://patrimalp.org/resource/site8ImageWikimedia%20Commons>;
+            geo:hasGeometry     patrimalpr:site8Geom .
     
-    patrimalpr:site7Image1
-            rdf:type             patrimalpo:Image;
-            patrimalpo:credits   "Wikimedia Commons";
-            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/1/11/Haute-Savoie_%28septembre_2013%29_128.JPG" .
+    <http://patrimalp.org/resource/site7ImageWikimedia%20Commons>
+            rdf:type            patrimalpo:Image;
+            patrimalpo:credits  "https://upload.wikimedia.org/wikipedia/commons/1/11/Haute-Savoie_%28septembre_2013%29_128.JPG" .
     
     patrimalpr:site7Geom
             rdf:type       geo:Geometry;
-            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [6.126436125 , 45.89758021]}"^^geo:geoJSONLiteral;
-            geo:asWKT      "POINT(6.126436125 45.89758021)"^^geo:wktLiteral .
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [1 , 45.51441    5.9873]}"^^geo:geoJSONLiteral;
+            geo:asWKT      "POINT(1 45.51441    5.9873)"^^geo:wktLiteral .
     
     patrimalpr:site7  rdf:type  patrimalpo:Church;
-            rdfs:label        "Église de Myans";
-            rdfs:seeAlso      wikidata:Q3471725;
-            patrimalpo:image  patrimalpr:site7Image1;
-            geo:hasGeometry   patrimalpr:site7Geom .
+            rdfs:label          "Église de Myans";
+            rdfs:seeAlso        wikidata:Q3471725;
+            patrimalpo:address  "Myans, Savoie (73) Auvergne-Rhône Alpes";
+            patrimalpo:image    <http://patrimalp.org/resource/site7ImageWikimedia%20Commons>;
+            geo:hasGeometry     patrimalpr:site7Geom .
     
-    patrimalpr:site6Image1
-            rdf:type             patrimalpo:Image;
-            patrimalpo:credits   "Wikimedia Commons";
-            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/f/f9/Mairie_et_%C3%A9glise_de_Chamoux-sur-Gelon_%28juillet_2019%29.JPG" .
+    <http://patrimalp.org/resource/site6ImageWikimedia%20Commons>
+            rdf:type            patrimalpo:Image;
+            patrimalpo:credits  "https://upload.wikimedia.org/wikipedia/commons/f/f9/Mairie_et_%C3%A9glise_de_Chamoux-sur-Gelon_%28juillet_2019%29.JPG" .
     
     patrimalpr:site6Geom
             rdf:type       geo:Geometry;
-            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [6.21443655 , 45.5338653]}"^^geo:geoJSONLiteral;
-            geo:asWKT      "POINT(6.21443655 45.5338653)"^^geo:wktLiteral .
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [1 , 45.6474 5.86083]}"^^geo:geoJSONLiteral;
+            geo:asWKT      "POINT(1 45.6474 5.86083)"^^geo:wktLiteral .
     
     patrimalpr:site6  rdf:type  patrimalpo:Church;
-            rdfs:label        "Église Saint Laurent";
-            rdfs:seeAlso      wikidata:Q3582324;
-            patrimalpo:image  patrimalpr:site6Image1;
-            geo:hasGeometry   patrimalpr:site6Geom .
+            rdfs:label          "Église Saint Laurent";
+            rdfs:seeAlso        wikidata:Q3582324;
+            patrimalpo:address  "Le Bourget du Lac (73), Auvergne-Rhône-Alpes";
+            patrimalpo:image    <http://patrimalp.org/resource/site6ImageWikimedia%20Commons>;
+            geo:hasGeometry     patrimalpr:site6Geom .
     
-    patrimalpr:site5Image1
-            rdf:type             patrimalpo:Image;
-            patrimalpo:credits   "Wikimedia Commons";
-            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/c/c9/Prieur%C3%A9_du_Bourget_du_Lac_%28Chevet_de_la_prioriale%29.jpg" .
+    <http://patrimalp.org/resource/site5ImageWikimedia%20Commons>
+            rdf:type            patrimalpo:Image;
+            patrimalpo:credits  "https://upload.wikimedia.org/wikipedia/commons/c/c9/Prieur%C3%A9_du_Bourget_du_Lac_%28Chevet_de_la_prioriale%29.jpg" .
     
     patrimalpr:site5Geom
             rdf:type       geo:Geometry;
-            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.860482407 , 45.64752788]}"^^geo:geoJSONLiteral;
-            geo:asWKT      "POINT(5.860482407 45.64752788)"^^geo:wktLiteral .
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [1 , 45.577755   5.938570]}"^^geo:geoJSONLiteral;
+            geo:asWKT      "POINT(1 45.577755   5.938570)"^^geo:wktLiteral .
     
     patrimalpr:site5  rdf:type  patrimalpo:Museum;
-            rdfs:label        "Réserve du Musée Savoisien";
-            patrimalpo:image  patrimalpr:site5Image1;
-            geo:hasGeometry   patrimalpr:site5Geom .
+            rdfs:label          "Réserve du Musée Savoisien";
+            patrimalpo:address  "Centre hospitalier spécialisé de Savoie, Bassin (73), Auvergne-Rhône-Alpes";
+            patrimalpo:image    <http://patrimalp.org/resource/site5ImageWikimedia%20Commons>;
+            geo:hasGeometry     patrimalpr:site5Geom .
     
     patrimalpr:site4Image1
             rdf:type             patrimalpo:Image;
@@ -225,14 +232,15 @@ patrimalpgraph:brocartsData {
     
     patrimalpr:site4Geom
             rdf:type       geo:Geometry;
-            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.938995201 , 45.57776086]}"^^geo:geoJSONLiteral;
-            geo:asWKT      "POINT(5.938995201 45.57776086)"^^geo:wktLiteral .
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [6.0389 , 45.8986]}"^^geo:geoJSONLiteral;
+            geo:asWKT      "POINT(6.0389 45.8986)"^^geo:wktLiteral .
     
     patrimalpr:site4  rdf:type  patrimalpo:Castle;
-            rdfs:label        "Château de Montrottier";
-            rdfs:seeAlso      wikidata:Q2255651;
-            patrimalpo:image  patrimalpr:site4Image1;
-            geo:hasGeometry   patrimalpr:site4Geom .
+            rdfs:label          "Château de Montrottier";
+            rdfs:seeAlso        wikidata:Q2255651;
+            patrimalpo:address  "Lovagny, Haute Savoie (74), Auvergne-Rhône-Alpes";
+            patrimalpo:image    patrimalpr:site4Image1;
+            geo:hasGeometry     patrimalpr:site4Geom .
     
     patrimalpr:site3Image1
             rdf:type             patrimalpo:Image;
@@ -241,35 +249,36 @@ patrimalpgraph:brocartsData {
     
     patrimalpr:site3Geom
             rdf:type       geo:Geometry;
-            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.236526639 , 46.19793026]}"^^geo:geoJSONLiteral;
-            geo:asWKT      "POINT(5.236526639 46.19793026)"^^geo:wktLiteral .
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.907417 , 45.583796]}"^^geo:geoJSONLiteral;
+            geo:asWKT      "POINT(5.907417 45.583796)"^^geo:wktLiteral .
     
     patrimalpr:site3  rdf:type  patrimalpo:Church;
-            rdfs:label        "Crypte de l'église Saint-Pierre de Lémenc";
-            rdfs:seeAlso      wikidata:Q36790222;
-            patrimalpo:image  patrimalpr:site3Image1;
-            geo:hasGeometry   patrimalpr:site3Geom .
+            rdfs:label          "Crypte de l'église Saint-Pierre de Lémenc";
+            rdfs:seeAlso        wikidata:Q36790222;
+            patrimalpo:address  "Chambéry (73) Auvergne-Rhône-Alpes";
+            patrimalpo:image    patrimalpr:site3Image1;
+            geo:hasGeometry     patrimalpr:site3Geom .
     
     patrimalpr:site2Image2
             rdf:type             patrimalpo:Image;
             patrimalpo:credits   "Mairie de Barberaz";
             patrimalpo:imageUrl  "https://trinitechambery.paroisse73.fr/sites/trinitechambery.paroisse73.fr/local/cache-vignettes/L600xH600/c386a7a9a8e0846150eadb3c1f619d-2a7fb.jpg" .
     
-    patrimalpr:site2Image1
-            rdf:type             patrimalpo:Image;
-            patrimalpo:credits   "Wikimedia Commons";
-            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/e/e5/Archives_d%C3%A9partementales_Ain_Bourg_Bresse_3.jpg" .
+    <http://patrimalp.org/resource/site2ImageWikimedia%20Commons>
+            rdf:type            patrimalpo:Image;
+            patrimalpo:credits  "https://upload.wikimedia.org/wikipedia/commons/e/e5/Archives_d%C3%A9partementales_Ain_Bourg_Bresse_3.jpg" .
     
     patrimalpr:site2Geom
             rdf:type       geo:Geometry;
-            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.226045639 , 46.19514614]}"^^geo:geoJSONLiteral;
-            geo:asWKT      "POINT(5.226045639 46.19514614)"^^geo:wktLiteral .
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [1 , 45.558074   5.939313]}"^^geo:geoJSONLiteral;
+            geo:asWKT      "POINT(1 45.558074   5.939313)"^^geo:wktLiteral .
     
     patrimalpr:site2  rdf:type  patrimalpo:Church;
-            rdfs:label        "Église Notre-Dame";
-            rdfs:seeAlso      wikidata:Q38386547;
-            patrimalpo:image  patrimalpr:site2Image2 , patrimalpr:site2Image1;
-            geo:hasGeometry   patrimalpr:site2Geom .
+            rdfs:label          "Église Notre-Dame";
+            rdfs:seeAlso        wikidata:Q38386547;
+            patrimalpo:address  "Barberaz, Savoie (73),  Auvergne-Rhône-Alpes (73)";
+            patrimalpo:image    patrimalpr:site2Image2 , <http://patrimalp.org/resource/site2ImageWikimedia%20Commons>;
+            geo:hasGeometry     patrimalpr:site2Geom .
     
     patrimalpr:site1Image1
             rdf:type             patrimalpo:Image;
@@ -278,12 +287,13 @@ patrimalpgraph:brocartsData {
     
     patrimalpr:site1Geom
             rdf:type       geo:Geometry;
-            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.93931 , 45.5581]}"^^geo:geoJSONLiteral;
-            geo:asWKT      "POINT(5.93931 45.5581)"^^geo:wktLiteral .
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.226158 , 46.195254]}"^^geo:geoJSONLiteral;
+            geo:asWKT      "POINT(5.226158 46.195254)"^^geo:wktLiteral .
     
     patrimalpr:site1  rdf:type  patrimalpo:Building;
-            rdfs:label        "Archives départementales de l'Ain";
-            rdfs:seeAlso      wikidata:Q2860468;
-            patrimalpo:image  patrimalpr:site1Image1;
-            geo:hasGeometry   patrimalpr:site1Geom .
+            rdfs:label          "Archives départementales de l'Ain";
+            rdfs:seeAlso        wikidata:Q2860468;
+            patrimalpo:address  "Bourg-en-Bresse,  Ain (01), Auvergne-Rhône-Alpes";
+            patrimalpo:image    patrimalpr:site1Image1;
+            geo:hasGeometry     patrimalpr:site1Geom .
 }

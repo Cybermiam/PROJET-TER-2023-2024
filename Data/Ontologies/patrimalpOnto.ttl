@@ -30,6 +30,14 @@ patrimalpo:image rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
+###  http://patrimalp.org/ontologies/patrimalp#address
+patrimalpo:address rdf:type owl:DatatypeProperty ;
+                   rdfs:domain patrimalpo:Site ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "address"@en ,
+                                "adresse"@fr .
+
+
 ###  http://patrimalp.org/ontologies/patrimalp#imageUrl
 patrimalpo:imageUrl rdf:type owl:DatatypeProperty ;
                     rdfs:domain patrimalpo:Image ;

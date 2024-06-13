@@ -24,12 +24,13 @@ patrimalpgraph:brocartsData {
     
     patrimalpr:site2Geom
             rdf:type       geo:Geometry;
-            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [1 , 45.558074   5.939313]}"^^geo:geoJSONLiteral;
-            geo:asWKT      "POINT(1 45.558074   5.939313)"^^geo:wktLiteral .
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.939313 , 45.558074]}"^^geo:geoJSONLiteral;
+            geo:asWKT      "POINT(5.939313 45.558074)"^^geo:wktLiteral .
     
-    <http://patrimalp.org/resource/site2ImageWikimedia%20Commons>
-            rdf:type            patrimalpo:Image;
-            patrimalpo:credits  "https://upload.wikimedia.org/wikipedia/commons/e/e5/Archives_d%C3%A9partementales_Ain_Bourg_Bresse_3.jpg" .
+    patrimalpr:site2Image1
+            rdf:type             patrimalpo:Image;
+            patrimalpo:credits   "Wikimedia Commons";
+            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/e/e5/Archives_d%C3%A9partementales_Ain_Bourg_Bresse_3.jpg" .
     
     patrimalpr:site2Image2
             rdf:type             patrimalpo:Image;
@@ -58,48 +59,53 @@ patrimalpgraph:brocartsData {
     
     patrimalpr:site5Geom
             rdf:type       geo:Geometry;
-            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [1 , 45.577755   5.938570]}"^^geo:geoJSONLiteral;
-            geo:asWKT      "POINT(1 45.577755   5.938570)"^^geo:wktLiteral .
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.938570 , 45.577755]}"^^geo:geoJSONLiteral;
+            geo:asWKT      "POINT(5.938570 45.577755)"^^geo:wktLiteral .
     
-    <http://patrimalp.org/resource/site5ImageWikimedia%20Commons>
-            rdf:type            patrimalpo:Image;
-            patrimalpo:credits  "https://upload.wikimedia.org/wikipedia/commons/c/c9/Prieur%C3%A9_du_Bourget_du_Lac_%28Chevet_de_la_prioriale%29.jpg" .
+    patrimalpr:site5Image1
+            rdf:type             patrimalpo:Image;
+            patrimalpo:credits   "Wikimedia Commons";
+            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/c/c9/Prieur%C3%A9_du_Bourget_du_Lac_%28Chevet_de_la_prioriale%29.jpg" .
     
     patrimalpr:site6Geom
             rdf:type       geo:Geometry;
-            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [1 , 45.6474 5.86083]}"^^geo:geoJSONLiteral;
-            geo:asWKT      "POINT(1 45.6474 5.86083)"^^geo:wktLiteral .
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.86083 , 45.6474]}"^^geo:geoJSONLiteral;
+            geo:asWKT      "POINT(5.86083 45.6474)"^^geo:wktLiteral .
     
-    <http://patrimalp.org/resource/site6ImageWikimedia%20Commons>
-            rdf:type            patrimalpo:Image;
-            patrimalpo:credits  "https://upload.wikimedia.org/wikipedia/commons/f/f9/Mairie_et_%C3%A9glise_de_Chamoux-sur-Gelon_%28juillet_2019%29.JPG" .
+    patrimalpr:site6Image1
+            rdf:type             patrimalpo:Image;
+            patrimalpo:credits   "Wikimedia Commons";
+            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/f/f9/Mairie_et_%C3%A9glise_de_Chamoux-sur-Gelon_%28juillet_2019%29.JPG" .
     
     patrimalpr:site7Geom
             rdf:type       geo:Geometry;
-            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [1 , 45.51441    5.9873]}"^^geo:geoJSONLiteral;
-            geo:asWKT      "POINT(1 45.51441    5.9873)"^^geo:wktLiteral .
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.9873 , 45.51441]}"^^geo:geoJSONLiteral;
+            geo:asWKT      "POINT(5.9873 45.51441)"^^geo:wktLiteral .
     
-    <http://patrimalp.org/resource/site7ImageWikimedia%20Commons>
-            rdf:type            patrimalpo:Image;
-            patrimalpo:credits  "https://upload.wikimedia.org/wikipedia/commons/1/11/Haute-Savoie_%28septembre_2013%29_128.JPG" .
+    patrimalpr:site7Image1
+            rdf:type             patrimalpo:Image;
+            patrimalpo:credits   "Wikimedia Commons";
+            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/1/11/Haute-Savoie_%28septembre_2013%29_128.JPG" .
     
     patrimalpr:site8Geom
             rdf:type       geo:Geometry;
-            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [1 , 45.897263   6.124916]}"^^geo:geoJSONLiteral;
-            geo:asWKT      "POINT(1 45.897263   6.124916)"^^geo:wktLiteral .
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [6.124916 , 45.897263]}"^^geo:geoJSONLiteral;
+            geo:asWKT      "POINT(6.124916 45.897263)"^^geo:wktLiteral .
     
-    <http://patrimalp.org/resource/site8ImageWikimedia%20Commons>
-            rdf:type            patrimalpo:Image;
-            patrimalpo:credits  "https://upload.wikimedia.org/wikipedia/commons/3/32/Piedmont_in_Italy.svg" .
+    patrimalpr:site8Image1
+            rdf:type             patrimalpo:Image;
+            patrimalpo:credits   "Wikimedia Commons";
+            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/3/32/Piedmont_in_Italy.svg" .
     
     patrimalpr:site9Geom
             rdf:type       geo:Geometry;
-            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [1 , 46.1974 5.2366]}"^^geo:geoJSONLiteral;
-            geo:asWKT      "POINT(1 46.1974 5.2366)"^^geo:wktLiteral .
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.2366 , 46.1974]}"^^geo:geoJSONLiteral;
+            geo:asWKT      "POINT(5.2366 46.1974)"^^geo:wktLiteral .
     
-    <http://patrimalp.org/resource/site9ImageWikimedia%20Commons>
-            rdf:type            patrimalpo:Image;
-            patrimalpo:credits  "https://upload.wikimedia.org/wikipedia/commons/c/c7/Ch%C3%A2teau_de_Montrottier.jpg" .
+    patrimalpr:site9Image1
+            rdf:type             patrimalpo:Image;
+            patrimalpo:credits   "Wikimedia Commons";
+            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/c/c7/Ch%C3%A2teau_de_Montrottier.jpg" .
     
     patrimalpr:site10Geom
             rdf:type  geo:Geometry .
@@ -112,7 +118,9 @@ patrimalpgraph:brocartsData {
             geo:hasGeometry     patrimalpr:site11Geom .
     
     patrimalpr:site11Geom
-            rdf:type  geo:Geometry .
+            rdf:type       geo:Geometry;
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [6.21454 , 45.53358]}"^^geo:geoJSONLiteral;
+            geo:asWKT      "POINT(6.21454 45.53358)"^^geo:wktLiteral .
     
     patrimalpr:site12
             rdf:type            patrimalpo:Presbitery;
@@ -122,24 +130,27 @@ patrimalpgraph:brocartsData {
             geo:hasGeometry     patrimalpr:site12Geom .
     
     patrimalpr:site12Geom
-            rdf:type  geo:Geometry .
+            rdf:type       geo:Geometry;
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.68063 , 45.80315]}"^^geo:geoJSONLiteral;
+            geo:asWKT      "POINT(5.68063 45.80315)"^^geo:wktLiteral .
     
     patrimalpr:site13
             rdf:type            patrimalpo:Chapel;
             rdfs:label          "Chapelle Sainte-Catherine-et-Saint-Nicolas d'Égieu";
             rdfs:seeAlso        wikidata:Q60367472;
             patrimalpo:address  "Hameau de Egieu, Commune de Rossillon (01)";
-            patrimalpo:image    <http://patrimalp.org/resource/site13ImageWikimedia%20Commons>;
+            patrimalpo:image    patrimalpr:site13Image1;
             geo:hasGeometry     patrimalpr:site13Geom .
     
     patrimalpr:site13Geom
             rdf:type       geo:Geometry;
-            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [1 , 45.842686   5.608894]}"^^geo:geoJSONLiteral;
-            geo:asWKT      "POINT(1 45.842686   5.608894)"^^geo:wktLiteral .
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.608894 , 45.842686]}"^^geo:geoJSONLiteral;
+            geo:asWKT      "POINT(5.608894 45.842686)"^^geo:wktLiteral .
     
-    <http://patrimalp.org/resource/site13ImageWikimedia%20Commons>
-            rdf:type            patrimalpo:Image;
-            patrimalpo:credits  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Chapelle_Ste_Catherine_St_Nicolas_%C3%89gieu_Rossillon_3.jpg/567px-Chapelle_Ste_Catherine_St_Nicolas_%C3%89gieu_Rossillon_3.jpg" .
+    patrimalpr:site13Image1
+            rdf:type             patrimalpo:Image;
+            patrimalpo:credits   "Wikimedia Commons";
+            patrimalpo:imageUrl  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Chapelle_Ste_Catherine_St_Nicolas_%C3%89gieu_Rossillon_3.jpg/567px-Chapelle_Ste_Catherine_St_Nicolas_%C3%89gieu_Rossillon_3.jpg" .
     
     patrimalpr:site14
             rdf:type            patrimalpo:Building;
@@ -149,7 +160,9 @@ patrimalpgraph:brocartsData {
             geo:hasGeometry     patrimalpr:site14Geom .
     
     patrimalpr:site14Geom
-            rdf:type  geo:Geometry .
+            rdf:type       geo:Geometry;
+            geo:asGeoJSON  "{\"type\": \"Point\", \"coordinates\": [5.91015 , 45.564699]}"^^geo:geoJSONLiteral;
+            geo:asWKT      "POINT(5.91015 45.564699)"^^geo:wktLiteral .
     
     patrimalpr:site15
             rdf:type            patrimalpo:Building;
@@ -246,7 +259,7 @@ patrimalpgraph:brocartsData {
             rdfs:seeAlso        wikidata:Q38386547;
             brocartso:oeuvre    brocartsr:S3;
             patrimalpo:address  "Barberaz, Savoie (73),  Auvergne-Rhône-Alpes (73)";
-            patrimalpo:image    <http://patrimalp.org/resource/site2ImageWikimedia%20Commons> , patrimalpr:site2Image2;
+            patrimalpo:image    patrimalpr:site2Image1 , patrimalpr:site2Image2;
             geo:hasGeometry     patrimalpr:site2Geom .
     
     patrimalpr:site3  rdf:type  patrimalpo:Church;
@@ -277,9 +290,10 @@ patrimalpgraph:brocartsData {
     
     patrimalpr:site5  rdf:type  patrimalpo:Museum;
             rdfs:label          "Réserve du Musée Savoisien";
+            rdfs:seeAlso        wikidata:Q22968397;
             brocartso:oeuvre    brocartsr:S7 , brocartsr:S11 , brocartsr:S14 , brocartsr:S16;
             patrimalpo:address  "Centre hospitalier spécialisé de Savoie, Bassin (73), Auvergne-Rhône-Alpes";
-            patrimalpo:image    <http://patrimalp.org/resource/site5ImageWikimedia%20Commons>;
+            patrimalpo:image    patrimalpr:site5Image1;
             geo:hasGeometry     patrimalpr:site5Geom .
     
     brocartsr:S7  rdf:type             patrimalpo:Scuplture;
@@ -297,7 +311,7 @@ patrimalpgraph:brocartsData {
             rdfs:seeAlso        wikidata:Q3582324;
             brocartso:oeuvre    brocartsr:S8 , brocartsr:S15;
             patrimalpo:address  "Le Bourget du Lac (73), Auvergne-Rhône-Alpes";
-            patrimalpo:image    <http://patrimalp.org/resource/site6ImageWikimedia%20Commons>;
+            patrimalpo:image    patrimalpr:site6Image1;
             geo:hasGeometry     patrimalpr:site6Geom .
     
     brocartsr:S8  rdf:type             patrimalpo:Scuplture;
@@ -314,7 +328,7 @@ patrimalpgraph:brocartsData {
             rdfs:seeAlso        wikidata:Q3471725;
             brocartso:oeuvre    brocartsr:S9;
             patrimalpo:address  "Myans, Savoie (73) Auvergne-Rhône Alpes";
-            patrimalpo:image    <http://patrimalp.org/resource/site7ImageWikimedia%20Commons>;
+            patrimalpo:image    patrimalpr:site7Image1;
             geo:hasGeometry     patrimalpr:site7Geom .
     
     brocartsr:S9  rdf:type             patrimalpo:Scuplture;
@@ -331,7 +345,7 @@ patrimalpgraph:brocartsData {
             rdfs:seeAlso        wikidata:Q13389955;
             brocartso:oeuvre    brocartsr:S10;
             patrimalpo:address  "Annecy,  Haute-Savoie (74)";
-            patrimalpo:image    <http://patrimalp.org/resource/site8ImageWikimedia%20Commons>;
+            patrimalpo:image    patrimalpr:site8Image1;
             geo:hasGeometry     patrimalpr:site8Geom .
     
     brocartsr:S10  rdf:type            patrimalpo:Scuplture;
@@ -359,7 +373,7 @@ patrimalpgraph:brocartsData {
             rdfs:seeAlso        wikidata:Q3330655;
             brocartso:oeuvre    brocartsr:S12;
             patrimalpo:address  "Bourg-en-Bresse, Ain (01), Auvergne-Rhône-Alpes";
-            patrimalpo:image    <http://patrimalp.org/resource/site9ImageWikimedia%20Commons>;
+            patrimalpo:image    patrimalpr:site9Image1;
             geo:hasGeometry     patrimalpr:site9Geom .
     
     brocartsr:S12  rdf:type            patrimalpo:Scuplture;
